@@ -1,0 +1,19 @@
+.blue{
+    color: blue;
+    word-spacing: 450px;
+}
+.white{
+    color: white;
+    font-size: 50px;
+
+}
+.bi-bi-trash3{
+color: red;
+float: right;
+}
+.card{
+
+    display: inline-block;
+    /* aligner haut */
+    vertical-align: top;
+}
