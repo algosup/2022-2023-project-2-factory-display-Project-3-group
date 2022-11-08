@@ -1,5 +1,5 @@
 .blue{
-    color: blue;
+    color: rgb(114, 114, 226);
     word-spacing: 450px;
 }
 .white{
@@ -12,7 +12,6 @@ color: red;
 float: right;
 }
 .card{
-
     display: inline-block;
     /* aligner haut */
     vertical-align: top;
