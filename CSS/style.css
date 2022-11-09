@@ -1,0 +1,44 @@
+
+ .navbar-nav{
+    padding-left: 400px;
+    
+} 
+.logo{
+    width: 80px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    float: left;
+}
+.navbar-brand{
+    width: min-content;
+    height: min-content;
+    padding-top: 0px;
+}
+.navbar-nav li a{
+    color: black;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+ h5{
+    padding-left: 100px;
+    padding-top: 80px;
+ } 
+  
+.btn{
+    margin-left: 1080px;
+    margin-top: -45px;
+
+}
+img{
+    margin-left: 100px;
+    margin-top: 50px;
+}
+.btn-primary{
+    margin-left: 1057px;
+    margin-top: 50px;
+}
