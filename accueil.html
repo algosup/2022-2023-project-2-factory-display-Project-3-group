@@ -56,13 +56,109 @@
     <h5>Dernières <b>campagnes</b></h5>
     <button type="button" class="btn btn-success">+ Créer une campagne</button>
     <div class="img">
-      <img src="img/download.jpeg" alt="..."  height="10%"/>
-      <img src="img/JacobiLogo.png" alt="..." width="10%" /> 
-      <img src="img/download.jpeg" alt="..." height="10%"/>
-      <img src="img/JacobiLogo.png" alt="..." width="10%" /> 
+      <img src="img/download.jpeg" alt="..." width="15%"/>
+      <img src="img/download.jpeg" alt="..." width="15%" /> 
+      <img src="img/download.jpeg" alt="..." width="15%"/>
+      <img src="img/download.jpeg" alt="..." width="15%" /> 
     </div>
     <button type="button" class="btn btn-primary">Voir toutes les campagnes</button>
 
+    <h5>Mes <b>écrans</b></h5>
+    <input id="searchbar" onkeyup="search_ecran()" type="text"
+        name="search" placeholder="Recherche écrans..">
+      
+        
+    <table class="ecranSeul">
+      <tr>
+          <th>Connexion</th>
+          <th>Nom</th>
+          <th>Adresse</th>
+      </tr>
+      <tr>
+          <td class="ecran">Non, trop violent</td>
+          <td class="ecran">Cat</td>
+          <td class="ecran">Oui</td>
+      </tr>
+      <tr>
+          <td class="ecran">Oui, adapté</td>
+          <td class="ecran">Dog</td>
+          <td class="ecran">Pas assez violent...</td>
+      </tr>
+      <tr>
+          <td class="ecran">Pour toute la famille !</td>
+          <td class="ecran">Elephant</td>
+          <td class="ecran"> non</td>
+      </tr>
+      <tr>
+          <td class="ecran">Non, trop violent</td>
+          <td class="ecran">Fish</td>
+          <td class="ecran">Oui</td>
+      </tr>
+      <tr>
+          <td class="ecran">Oui, adapté</td>
+          <td class="ecran">Gorilla</td>
+          <td class="ecran">Pas assez violent...</td>
+      </tr>
+      <tr>
+          <td class="ecran">Pour toute la famille !</td>
+          <td class="ecran">Monkey</td>
+          <td class="ecran">Non</td>
+      </tr>
+      <tr>
+          <td class="ecran">Non, trop violent</td>
+          <td class="ecran">Turtle</td>
+          <td class="ecran">Oui</td>
+      </tr>
+      <tr>
+          <td class="ecran">Oui, adapté</td>
+          <td class="ecran">Whale</td>
+          <td class="ecran">Pas assez violent...</td>
+      </tr>
+      <tr>
+          <td class="ecran">Pour toute la famille !</td>
+          <td class="ecran">Aligator</td>
+          <td class="ecran">Non</td>
+      </tr>
+      <tr>
+          <td class="ecran">Non, trop violent</td>
+          <td class="ecran">Donkey</td>
+          <td class="ecran">Oui</td>
+      </tr>
+      <tr>
+          <td class="ecran">Oui, adapté</td>
+          <td class="ecran">Horse</td>
+          <td class="ecran">Pas assez violent...</td>
+      </tr>
+   </table>
+
+   <h5>Mes <b> groupe d'écrans</b></h5>
+   <button id="groupe"type="button" class="btn btn-success">+ Nouveau groupe</button>
+
+   <table class="groupeEcran">
+    <tr>
+        <th>Nom du groupe</th>
+        <th>Nombre d'écrans</th>
+        <th>Mon statut</th>
+    </tr>
+    <tr>
+        <td >Accueil</td>
+        <td >4</td>
+        <td >Propriétaire</td>
+    </tr>
+    <tr>
+        <td >Mur d'écrans</td>
+        <td >2</td>
+        <td >Propriétaire</td>
+    </tr>
+    <tr>
+        <td >Showroom</td>
+        <td >3</td>
+        <td >Propriétaire</td>
+    </tr>
+ </table>
+  
+    <!-- linking javascript -->
+    <script src="js/ecran.js"></script>
 	</body>
 </html>
 

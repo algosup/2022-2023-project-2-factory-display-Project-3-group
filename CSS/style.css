@@ -42,3 +42,78 @@ img{
     margin-left: 1057px;
     margin-top: 50px;
 }
+@media screen and (max-width: 768px){
+    .navbar-nav{
+        padding-left: 0px;
+    }
+    .logo{
+        margin-left: 0px;
+    }
+    .btn{
+        margin-left: 0px;
+    }
+    .btn-primary{
+        margin-left: 0px;
+    }
+    img{
+        margin-left: 0px;
+    }
+    h5{
+        padding-left: 0px;
+    }
+} 
+#searchbar{
+    margin-left: 100px;
+    padding:15px;
+    border-radius: 10px;
+  }
+
+  input[type=text] {
+     width: 20%;
+     -webkit-transition: width 0.15s ease-in-out;
+     transition: width 0.15s ease-in-out;
+  }
+
+  /* When the input field gets focus,
+       change its width to 100% */
+  input[type=text]:focus {
+    width: 25%;
+  }
+
+ #list{
+   font-size:  1.5em;
+   margin-left: 90px;
+  }
+
+/* .ecran{
+  display: list-item;    
+ }  */
+
+ table
+{
+    border-collapse: collapse;
+    margin-left: 100px
+    
+}
+td, th /* Mettre une bordure sur les td ET les th */
+{
+    border: 1px solid black;
+    width: 40%;
+}
+th
+{
+    background-color: lightgrey;
+    color: black;
+    padding: 10px;
+}
+#groupe{
+    margin-left: 1130px;
+}
+.groupeEcran{
+    border: 1px solid black;
+    width: 92%;
+}
+.ecranSeul{
+    border: 1px solid black;
+    width: 92%;
+}
