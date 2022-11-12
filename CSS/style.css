@@ -91,29 +91,43 @@ img{
 
  table
 {
-    border-collapse: collapse;
     margin-left: 100px
+    
     
 }
 td, th /* Mettre une bordure sur les td ET les th */
 {
-    border: 1px solid black;
-    width: 40%;
+    padding: 1%;
+    text-align: left;
 }
 th
 {
-    background-color: lightgrey;
+    background-color: #FF700F;
     color: black;
-    padding: 10px;
+    padding: 1%;
 }
 #groupe{
     margin-left: 1130px;
 }
 .groupeEcran{
-    border: 1px solid black;
+    border: 1px solid #ddd;
     width: 92%;
 }
-.ecranSeul{
-    border: 1px solid black;
-    width: 92%;
+
+.groupeEcran tr{
+    border-bottom: 1px solid #ddd;
 }
+
+#ecranSeul{
+    width: 92%;
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+}
+
+#ecranSeul tr{
+    border-bottom: 1px solid #ddd;
+}
+
+
+
+
