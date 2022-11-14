@@ -16,24 +16,3 @@ float: right;
     /* aligner haut */
     vertical-align: top;
 }
-.btn-btn-info{
-    background-color: rgb(114, 114, 226);
-    color: white;
-    border-radius: 5px;
-    border: none;
-    padding: 10px;
-    margin: 10px;
-    font-size: 20px;
-    font-weight: bold;
-    text-decoration: none;
-    text-align: center;
-    cursor: pointer;
-    display: inline-block;
-    transition-duration: 0.4s;
-    float: right;
-}
-    .btn-btn-info:hover{
-        background-color: rgb(33, 33, 225);
-        color: white;
-    }
-
