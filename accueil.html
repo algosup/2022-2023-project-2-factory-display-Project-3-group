@@ -137,9 +137,34 @@
       </tr>
    </table>
 
+   <!-- pop up groupe d'ecrans -->
    <h5>Mes <b> groupe d'écrans</b></h5>
-   <button id="groupe"type="button" class="btn btn-success">+ Nouveau groupe</button>
+   <a class="btn btn-success" data-bs-toggle="modal" href="#exampleModalToggle" role="button">+ Nouveau groupe</a>
 
+   <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content popup">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="title">Créer un nouveau groupe</h1>
+        </div>
+        <p class="card-text">Nom*</p>
+        <input type="text" class="form-control" placeholder="Nom du groupe" aria-label="Nom du groupe">
+        <br>
+        <p class="card-text">Description</p>
+        <input type="text" class="form-control" placeholder="description" aria-label="description">
+        <br>
+        <p class="card-text">Sous-groupes</p>
+        <input type="text" class="form-control" placeholder="nom" aria-label="Nom">
+        <br>
+        <p class="card-text">Ecrans</p>
+        <select id="disabledSelect" class="form-select">
+        <option>Disabled select</option>
+        </select>
+        <br>
+        </div>
+      </div>
+    </div>
+    
    <table class="groupeEcran">
     <tr>
         <th>Nom du groupe</th>

@@ -23,6 +23,9 @@ img{
     margin-left: 1057px;
     margin-top: 50px;
 }
+p{
+    margin-left: 20px;
+}
 @media screen and (max-width: 768px){
     .navbar-nav{
         padding-left: 0px;
@@ -50,7 +53,7 @@ img{
   }
 
   input[type=text] {
-     width: 20%;
+     width: 80%;
      -webkit-transition: width 0.15s ease-in-out;
      transition: width 0.15s ease-in-out;
   }
@@ -154,3 +157,11 @@ th
     
 }
 
+.card-body {
+    height: 500px;
+    width: 500px;
+}
+
+#title{
+    color: rgb(43, 104, 104);
+}
