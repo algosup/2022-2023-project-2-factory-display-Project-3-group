@@ -1,28 +1,9 @@
 
- .navbar-nav{
-    padding-left: 400px;
-    
-} 
-.logo{
-    width: 80px;
-    height: 40px;
-    margin-top: 20px;
-    margin-left: 50px;
-    margin-right: 50px;
-    float: left;
+
+.btn-success{
+    background-color: black;
 }
-.navbar-brand{
-    width: min-content;
-    height: min-content;
-    padding-top: 0px;
-}
-.navbar-nav li a{
-    color: black;
-    font-size: 14px;
-    text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: 1px;
-}
+
 
  h5{
     padding-left: 100px;
@@ -128,6 +109,48 @@ th
     border-bottom: 1px solid #ddd;
 }
 
+#popup{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    width: 80%;
+    height: 60%;
+    transform: translate(-50%, -50%);
+    background-color: #ff6f0f7e;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    overflow-y: scroll;
+
+}
+
+#popup.active{
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+
+}
+
+#popup a{
+    margin-top: 10%;
+    margin-left: 10%;
+    position: relative;
+    padding: 5px 20px;
+    display: inline-block;
+    text-decoration: none;
+    color: #FFF;
+    background-color: #111;
+}
+
+#blur.active{
+    filter: blur(10px);
+}
 
 
+#popup img{
+    width: 20%;
+    
+}
 

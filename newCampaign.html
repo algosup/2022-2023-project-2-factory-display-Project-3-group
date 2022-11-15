@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nouvelle campagne</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="/CSS/newCampaign.css">
+    <link rel="stylesheet" href="/CSS/navbar.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+
+</head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-light">
+        <a class="navbar-brand" href="https://www.jacobi.net/fr/">
+          <img class="logo" src="img/JacobiLogo.png" width="80" height="40" alt="">
+        </a>
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav m-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="accueil.html">Accueil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="campaign.html">Campagne</a>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://www.jacobi.net/fr/produits/">Ecrans</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://www.jacobi.net/fr/produits/">Groupes</a>
+                </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Mon Espace
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="../account/my_account.html">Mon compte</a></li>
+                  <li><a class="dropdown-item" href="../account/settings.html">Paramètres</a></li>
+                  <li><a class="dropdown-item" href="#">Déconnexion</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <hr>
+    </header>
+      <h3 class="orange">Formulaire   Aperçus</h3><br>
+
+
+      <div class="card" style="width: 35rem;">
+        <div class="card-body">
+          <h5 class="card-title">Informations sur la campagne</h5><br>
+          <p class="card-text">Nom de la campagne*</p>
+          <input type="text" class="form-control" placeholder="Nom de la campagne" aria-label="Nom de la campagne">
+        </div>
+        <div class="card-body">
+           
+            <h5 class="card-title">Lieu de diffusion</h5>
+
+            <p class="card-text">Groupe</p>
+            <select id="disabledSelect" class="form-select">
+                <option>Disabled select</option>
+              </select><br>
+            <p class="card-text">Ecran*</p>
+            <select id="disabledSelect" class="form-select">
+                <option>Disabled select</option>
+              </select>
+
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Paramètres de diffusion</h5><br>
+            <p class="card-text">Type de campagne</p>
+            <select id="disabledSelect" class="form-select">
+                <option>Disabled select</option>
+              </select><br>
+            <p class="card-text">Début de diffusion*</p>
+            <input type="date" class="form-control" placeholder="date" aria-label="Date">
+            <input type="time" class="form-control" placeholder="time" aria-label="Time">
+              <br>
+            <p class="card-text">Fin de diffusion*</p>
+            <input type="date" class="form-control" placeholder="date" aria-label="Date">
+            <input type="time" class="form-control" placeholder="time" aria-label="Time">
+          </div><br>
+          <button type="button" class="btn-btn-info">Valider</button>
+      </div>
+
+
+
+
+      <div class="card" style="width: 35rem;">
+        <img src="/img/video.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">An item</li>
+          <li class="list-group-item">A second item</li>
+          <li class="list-group-item">A third item</li>
+        </ul>
+        <div class="card-body">
+          <a href="#" class="card-link">Card link</a>
+          <a href="#" class="card-link">Another link</a>
+        </div>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </body>
+</html>
