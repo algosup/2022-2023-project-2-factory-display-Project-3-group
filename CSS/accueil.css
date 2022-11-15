@@ -1,4 +1,10 @@
-
+.deleteMeetingClose {
+    font-size: 1.5em;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
 
 .btn-success{
     background-color: black;
