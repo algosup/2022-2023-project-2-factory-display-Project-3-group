@@ -1,0 +1,172 @@
+<h1 style="text-align: center">Project 1 smart signage project 4 group - Functional Specifications</h1>
+
+<details> 
+<summary style="text-decoration: underline; font-size:150%">Table of contents:</summary>
+
+- [1. Introduction](#1-introduction)
+- [2. Glossary:](#2-glossary)
+- [3. Stakeholders:](#3-stakeholders)
+  - [3.1. The sponsor:](#31-the-sponsor)
+  - [3.2. The engineering team:](#32-the-engineering-team)
+- [4. Monitoring of whole screen in the company:](#4-monitoring-of-whole-screen-in-the-company)
+- [5. Remote control of whole screen in the company:](#5-remote-control-of-whole-screen-in-the-company)
+- [6. Personas:](#6-personas)
+  - [6.1 Producer Content:](#61-producer-content)
+  - [6.2 Viewers:](#62-viewers)
+- [7. User cases:](#7-user-cases)
+- [8. The technology:](#8-the-technology)
+- [9. Improvements for V2?](#9-improvements-for-v2)
+  - [9.1 Software:](#91-software)
+- [10. Non-functional requirements:](#10-non-functional-requirements)
+  - [10.1 Cost:](#101-cost)
+    - [10.1.1 Hardware:](#1011-hardware)
+    - [10.1.2 Software:](#1012-software)
+      - [Server Costs](#server-costs)
+      - [Maintenance](#maintenance)
+      - [Energies](#energies)
+  - [10.2 Security:](#102-security)
+- [11. Conclusion:](#11-conclusion)
+</details>
+
+---  
+
+## 1. Introduction 
+
+Jacobi Group is world leader in purification solution of air and water, using Activated Carbon, Ion Exchange Resins and Mobile Filtration Units. With its factory in Forges industrial zone since 1956, it has a heritage of being the only French industry manufacturing this unique product and supplying customers like Veolia, Valeo, Honeywell and French Ministry of Defence to name a few<br>
+The factory in Vierzon is the oldest in the Group however one of the most successful thanks to a flexible and can-do approach.
+Now the Jacobi group want to improve his management.
+They contacted us to created this project to improve the management of the factory
+
+
+## 2. Glossary:
+
+- **Jacobi**: The company that we are working for.
+
+## 3. Stakeholders:
+
+During this project for Jacobi, there are 2 different kind of stakeholders.
+
+### 3.1. The sponsor:
+
+First of all, there is the client, at the beginning of the project it will be represented by Franck JEANNIN, but after it, it will be directly the sponsor : Jacobi <br>
+
+At Jacobi the aim is to become the most sustainable supplier in the industry. they put their all into their sustainability programmes and do everything we can to have a positive impact on our planet and environment. their processes are refined so that we make use of any surplus energy, we invest in local communities across the globe, and they are constantly looking for ways to reduce our carbon footprint. They are proud to be a part of the Jacobi Group and they are committed to making a difference. <br> 
+
+The Jacobi team who works on this project is composed of:
+- Project owner, Mr. Usman Saeed.
+- Content creator, Ms. Karen Blanque (HR Assistant), Mr. Pierre Page (HR Manager), Mr. Nicolas Yvelin (Factory Manager)
+- Power user, Ms. Karen Blanque
+- On-site Installation Manager, Mr. Samuel Neves (Maintenance Shop Manager)
+
+### 3.2. The engineering team:
+
+The second stakeholders type is the engineering team who will directly work on the development and the conception of the project. This team his made of 5 people : <br>
+* Quentin CLEMENT as the project manager 
+* Robin DEBRY as the program manager
+* Thomas PLANCHARD as the software engineer
+* Karine VINETTE as the tech lead
+
+## 4. Monitoring of whole screen in the company:
+
+The monitoring of the screen is the main point of the development of this project. <br>
+
+The user will use an application connected to the others screens with a wifi connection. <br>
+He should be able to see if the screen is on, if it is off, the actual connection of the screen (with WiFi bar) and the time since the screen is connect (in hours and minutes). <br>
+
+This function will really be an informative one, it has the role of informing the user of the status of the screen in real time.
+
+## 5. Remote control of whole screen in the company:
+
+The remote control of the screen is the second parameter to consider during this project. <br>
+
+The user will be able to manage the others screens via an application. The user will be able to change the campaign who want on the screen and choose for which screen he want to apply this campaign(one screen or multiple screen).<br>
+The user will also be able to configure an automatic on/off time that he will be able to change at anytime with some precise hours.
+
+This will be the interactive features between the screen and the user.
+
+## 6. Personas:
+
+### 6.1 Producer Content:
+
+Karen Blanque is the content creator of Jacobi since april 2022. She is 43 years old married with 2 children who are now adults. He loves sport and road trips with his husband during his free time. She lives in Bourges, he takes the train every morning and evening. <br>
+Her job is to recruit people in the company and she will produce some content to the others screen <br>
+She is a power user of the application and she will use it to manage the screen in the company.<br>
+With these improvements, she will inform the workers of the company if there is a problem in the factory and she will be able to inform them of the new campaign of the company.<br>
+Also with the website she will be able to know if a screen is on or off and if it is connected to the wifi.
+
+### 6.2 Viewers:
+
+Michel Landry is a technician at Jacobi since 2019. He is 32 years old, married and has 4 children, and lives in Méreau with them. He loves food and spending time with her friends. <br>
+His job is to install and repair the machine in the factory. He also has to make control of every machine one time a month to know if it needs a reparation. <br>
+Michel will have the role "Technician", he will be able to check if TV is on or not. With the website, he will be able to avoid this monthly intervention and he will only intervene if karen Blanque sees that the TV has a problem and it needs to be repaired.<br> 
+It will reduce the frequency of his verification in the shop and will be able to replace the time lost with the Television to do other tasks.
+
+<!-- ### 6.3 CEO of Jacobi:
+
+Bertrand MEURIOT is the CEO of Jacobi. He is 41 years old, married and has 3 children. His hobbies are running and dogs.
+<br>
+His job is to manage the company and especially the commercial part. He has 80 employees under his responsability. He wants to make the company grown and he is constantly trying to innovate in the signage field, for him, Appsolu is the first innovation to improve his signs. <br>
+He wants a technology that will possesse these features: monitoring of the signage, a remote control and a consumption reduction of the signages. He wants something that is addable to old signages and new ones. He wants something not too big, not laggy and something that will not be too sensitive to weather constraints. Signages are a product with a long life expectancy so he wants a product that will last a long time.
+
+### 6.4 Roles on the application:
+
+The roles on the application is a very important point of the project. <br>
+- Is role is to give the right to the user to access to the application and to the features of the application.<br>
+- If your role is Content producer you can do everything on the application.<br>
+- If your role is Viewer you can only see the information on the application.<br> -->
+
+## 7. User cases:
+
+![image](img/user_case.png)
+
+## 8. The technology:
+
+The hardware we will use is just a simple monitor. Moreover we need a little computer.<br>
+The software we will use is a web application. this application will be related with the simple monitor with the help of a little computer. <br>
+
+## 9. Improvements for V2?
+
+### 9.1 Software:
+
+The following step of this project is to create the application for the users to let them control the screen. It will be improve in the following months.
+
+## 10. Non-functional requirements:
+
+### 10.1 Cost:
+
+#### 10.1.1 Hardware:
+
+The hardware is the most expensive part of the project. <br>
+The hardware is composed of a monitor and a little computer. <br>
+The monitor is a 50" monitor with a resolution of 3840x2160 4K. <br>
+The little computer is a micro PC 4K Wifi 5 Gigabit Ethernet. <br>
+The total cost of the hardware is 1856€ because we need 2 screens and 2 little computer <br>
+
+#### 10.1.2 Software:
+
+##### Server Costs
+
+The server to host the website and to have a database is a server with 500GB of storage and 2GB of RAM with this you will have 1 domain name free for 1 year <br>
+
+The total cost of the server is 13€/month <br>
+
+##### Maintenance
+- The monitor: Should be changed every 7/8 years but you have 2 years of guaranteed <br>
+- The mini computer: Should last at least 4 years <br>
+
+##### Energies
+Peak Consumption of the screen: 1287.72kWh per year. Annually the screen cost 179.50€ <br>
+
+
+### 10.2 Security:
+
+Following the ANSSI's guidelines, we ensured that our product followed the DICP criteria. (AIPT)
+- Availability: By using the WiFi of the factory Jacobi with it we can ensure that the product will be available 24/7.
+- Confidentiality/Privacy: All the passwords are encrypted
+- Traceability: we use a logging system that provides the modification made by the user and the date of the modification.
+
+## 11. Conclusion:
+
+In spite of the specifications transmitted by Jacobi, a lot of freedom was voluntarily left to us so that we could find ideas which they had not necessarily thought of. <br>
+
+Thanks to the communication between the stakeholders we were able to imagine and develop a rich project in the image of ALGOSUP and Jacobi. <br>
