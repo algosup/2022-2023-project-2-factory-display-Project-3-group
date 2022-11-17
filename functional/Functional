@@ -15,20 +15,21 @@ The author of this functional specification is **Robin Debry**
 - [6. Personas:](#6-personas)
   - [6.1 Producer Content:](#61-producer-content)
   - [6.2 Viewers:](#62-viewers)
-- [7. User cases:](#7-user-cases)
-- [8. Functional analysis:](#8-functional-analysis)
-- [9. The technology:](#9-the-technology)
-- [10. Improvements for V2?](#10-improvements-for-v2)
-  - [10.1 Software:](#101-software)
-- [11. Non-functional requirements:](#11-non-functional-requirements)
-  - [11.1 Cost:](#111-cost)
-    - [11.1.1 Hardware:](#1111-hardware)
-    - [11.1.2 Software:](#1112-software)
+- [7. Out of scope:](#7-out-of-scope)
+- [8. User cases:](#8-user-cases)
+- [9. Functional analysis:](#9-functional-analysis)
+- [10. The technology:](#10-the-technology)
+- [11. Improvements for V2?](#11-improvements-for-v2)
+  - [11.1 Software:](#111-software)
+- [12. Non-functional requirements:](#12-non-functional-requirements)
+  - [12.1 Cost:](#121-cost)
+    - [12.1.1 Hardware:](#1211-hardware)
+    - [12.1.2 Software:](#1212-software)
       - [Server Costs](#server-costs)
       - [Maintenance](#maintenance)
       - [Energies](#energies)
-  - [11.2 Security:](#112-security)
-- [12. Conclusion:](#12-conclusion)
+  - [12.2 Security:](#122-security)
+- [13. Conclusion:](#13-conclusion)
 </details>
 
 ---  
@@ -110,25 +111,17 @@ His job is to install and repair the machine in the factory. He also has to make
 Michel will have the role "Technician", he will be able to check if TV is on or not. With the website, he will be able to avoid this monthly intervention and he will only intervene if karen Blanque sees that the TV has a problem and it needs to be repaired.<br> 
 It will reduce the frequency of his verification in the shop and will be able to replace the time lost with the Television to do other tasks.
 
-<!-- ### 6.3 CEO of Jacobi:
 
-Bertrand MEURIOT is the CEO of Jacobi. He is 41 years old, married and has 3 children. His hobbies are running and dogs.
-<br>
-His job is to manage the company and especially the commercial part. He has 80 employees under his responsability. He wants to make the company grown and he is constantly trying to innovate in the signage field, for him, Appsolu is the first innovation to improve his signs. <br>
-He wants a technology that will possesse these features: monitoring of the signage, a remote control and a consumption reduction of the signages. He wants something that is addable to old signages and new ones. He wants something not too big, not laggy and something that will not be too sensitive to weather constraints. Signages are a product with a long life expectancy so he wants a product that will last a long time.
+## 7. Out of scope:
+Due to time and resources constraints, these features might be included in the upcoming versions :
+- Differents languages for the website in the future
+- Displays the campaigns on the screen in Paris
 
-### 6.4 Roles on the application:
-
-The roles on the application is a very important point of the project. <br>
-- Is role is to give the right to the user to access to the application and to the features of the application.<br>
-- If your role is Content producer you can do everything on the application.<br>
-- If your role is Viewer you can only see the information on the application.<br> -->
-
-## 7. User cases:
+## 8. User cases:
 
 ![UserCase](img/user_case.png)
 
-## 8. Functional analysis:
+## 9. Functional analysis:
 
 For this project to be considered done, we need to have at least the following specifications :
 
@@ -140,22 +133,22 @@ For this project to be considered done, we need to have at least the following s
 
 ![UserCase](img/functionalAnalysis.png)
 
-## 9. The technology:
+## 10. The technology:
 
 The hardware we will use is just a simple monitor. Moreover we need a little computer.<br>
 The software we will use is a web application. this application will be related with the simple monitor with the help of a little computer. <br>
 
-## 10. Improvements for V2?
+## 11. Improvements for V2?
 
-### 10.1 Software:
+### 11.1 Software:
 
 The following step of this project is to create the application for the users to let them control a lot of screens. It will be improve in the following months.
 
-## 11. Non-functional requirements:
+## 12. Non-functional requirements:
 
-### 11.1 Cost:
+### 12.1 Cost:
 
-#### 11.1.1 Hardware:
+#### 12.1.1 Hardware:
 
 The hardware is the most expensive part of the project. <br>
 The hardware is composed of a monitor and a little computer. <br>
@@ -163,7 +156,7 @@ The monitor is a 50" monitor with a resolution of 3840x2160 4K. <br>
 The little computer is a micro PC 4K Wifi 5 Gigabit Ethernet. <br>
 The total cost of the hardware is 1856€ because we need 2 screens and 2 little computer <br>
 
-#### 11.1.2 Software:
+#### 12.1.2 Software:
 
 ##### Server Costs
 
@@ -178,14 +171,14 @@ The total cost of the server is 15€/year <br>
 Peak Consumption of the screen: 1287.72kWh per year. Annually the screen cost 179.50€ <br>
 
 
-### 11.2 Security:
+### 12.2 Security:
 
-Following the ANSSI's guidelines, we ensured that our product followed the DICP criteria. (AIPT)
+- Following the GDPR, we will have to make sure that the data is not shared with anyone else than the user. <br>
 - Availability: By using the WiFi of the factory Jacobi with it we can ensure that the product will be available 24/7.
 - Confidentiality/Privacy: All the passwords are encrypted
 - Traceability: we use a logging system that provides the modification made by the user and the date of the modification.
 
-## 12. Conclusion:
+## 13. Conclusion:
 
 In spite of the specifications transmitted by Jacobi, a lot of freedom was voluntarily left to us so that we could find ideas which they had not necessarily thought of. <br>
 
