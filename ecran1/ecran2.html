@@ -5,23 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="script2.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 
     <title>Document</title>
 </head>
 <body>
    
    <h1 id="start2"></h1>
-   <!-- <div id="iframeContainer" style="width: 800px; height: 600px; overflow: auto;">
-    <iframe width="2000" height="6000" src="Anti-Guns.pdf" scrolling="no">
+   <div id="iframeContainer" style="width: 800px; height: 600px; overflow: auto;">
+    <iframe id="a" width="800" height="6000" src="Anti-Guns.pdf" scrolling="no">
     </iframe>
- //You have to know exact width and height of PDF file
- </div> -->
- <embed src="http://docs.google.com/gview?url=Anti-Guns.pdf" width=800 height=500 type='application/pdf'/>
+ </div>
  <script type="text/javascript">
     $("document").ready(function()
     {
-      $("#iframeContainer").scrollTop(2200);
-    });
-    </script>
+      $("#iframeContainer").animate({scrollTop: 6000}, 10000); //500 - time of animation
+   });
+   
+</script>
 </body>
 </html>

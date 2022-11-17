@@ -17,4 +17,4 @@ socket.on('data', function(data) {
     document.getElementById('time').innerHTML = data.time;
 }
 
-
+);
