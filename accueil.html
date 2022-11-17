@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Accueil</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+
+
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous" defer ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer ></script>
+
+    <link rel="stylesheet" href="CSS/accueil.css">
+    <link rel="stylesheet" href="CSS/navbar.css">
+	</head>
+
+
+	<body>
+      <header>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <a class="navbar-brand" href="https://www.jacobi.net/fr/">
+        <img class="logo" src="img/JacobiLogo.png" width="80" height="40" alt="">
+      </a>
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav m-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="accueil.html">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="campaign.html">Campagne</a>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.jacobi.net/fr/produits/">Ecrans</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.jacobi.net/fr/produits/">Groupes</a>
+              </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Mon Espace
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../account/my_account.html">Mon compte</a></li>
+                <li><a class="dropdown-item" href="../account/settings.html">Paramètres</a></li>
+                <li><a class="dropdown-item" href="#">Déconnexion</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <hr>
+  </header>
+    
+    <h5>Dernières <b>campagnes</b></h5>
+    <button type="button" class="btn btn-success">+ Créer une campagne</button>
+    <div class="img">
+      <img src="img/video.jpeg" alt="..." width="15%"/>
+      <img src="img/video.jpeg" alt="..." width="15%" /> 
+      <img src="img/video.jpeg" alt="..." width="15%"/>
+      <img src="img/video.jpeg" alt="..." width="15%" /> 
+    </div>
+
+
+    <h5>Mes <b>écrans</b></h5>
+    <input id="searchbar" onkeyup="searchFunction()" type="text"
+        name="search" placeholder="Recherche écrans..">
+      
+    <br><br>  
+    <table id="ecranSeul">
+      <tr>
+          <th>Connexion</th>
+          <th>Nom</th>
+          <th>Adresse</th>
+      </tr>
+      <tr>
+          <td class="ecran">Connectée depuis 12 heures</td>
+          <td class="ecran">Meeting room</td>
+          <td class="ecran">Vierzon</td>
+      </tr>
+      <tr>
+          <td class="ecran">Connectée depuis 1 jours</td>
+          <td class="ecran">Factory</td>
+          <td class="ecran">Paris</td>
+      </tr>
+      <tr>
+          <td class="ecran">Connectée depuis 2 jours</td>
+          <td class="ecran">Factory 2</td>
+          <td class="ecran">Paris</td>
+      </tr>
+      <tr>
+          <td class="ecran">Connectée depuis 15 secondes</td>
+          <td class="ecran">Office 2</td>
+          <td class="ecran">Vierzon</td>
+      </tr>
+      <tr>
+          <td class="ecran">Connectée depuis 30 min</td>
+          <td class="ecran">Office 3</td>
+          <td class="ecran">Bruges</td>
+      </tr>
+      <tr>
+          <td class="ecran">Connectée depuis 3 min</td>
+          <td class="ecran">Factory 3</td>
+          <td class="ecran">Lyon</td>
+      </tr>
+      <tr>
+          <td class="ecran">Connectée depuis 3 heures</td>
+          <td class="ecran">Office</td>
+          <td class="ecran">Saint-étienne</td>
+      </tr>
+      <tr>
+          <td class="ecran">Connectée depuis 2 jours</td>
+          <td class="ecran">Accueil</td>
+          <td class="ecran">Barcelone<td>
+      </tr>
+      <tr>
+          <td class="ecran">Connectée depuis 1 semaine</td>
+          <td class="ecran">Meeting room</td>
+          <td class="ecran">Paris</td>
+      </tr>
+      <tr>
+          <td class="ecran">Connectée depuis 4 jours</td>
+          <td class="ecran">Factory</td>
+          <td class="ecran">Lorient</td>
+      </tr>
+      <tr>
+          <td class="ecran">Connectée depuis 2 jours</td>
+          <td class="ecran">Meeting room</td>
+          <td class="ecran">Brest<td>
+      </tr>
+   </table>
+
+   <!-- pop up groupe d'ecrans -->
+   <h5>Mes <b> groupe d'écrans</b></h5>
+   <a class="btn btn-success" data-bs-toggle="modal" href="#exampleModalToggle" role="button">+ Nouveau groupe</a>
+
+   <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content popup">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="title">Créer un nouveau groupe</h1>
+          <span class="deleteMeetingClose" data-bs-toggle="modal">&times;</span>
+
+        </div>
+        <p class="card-text">Nom*</p>
+        <input type="text" class="form-control" placeholder="Nom du groupe" aria-label="Nom du groupe">
+        <br>
+        <p class="card-text">Description</p>
+        <input type="text" class="form-control" placeholder="description" aria-label="description">
+        <br>
+        <p class="card-text">Sous-groupes</p>
+        <input type="text" class="form-control" placeholder="nom" aria-label="Nom">
+        <br>
+        <p class="card-text">Ecrans</p>
+        <select id="disabledSelect" class="form-select">
+        <option>Disabled select</option>
+        </select>
+        <br>
+        </div>
+      </div>
+    </div>
+    
+   <table class="groupeEcran">
+    <tr>
+        <th>Nom du groupe</th>
+        <th>Nombre d'écrans</th>
+        <th>Mon statut</th>
+    </tr>
+    <tr>
+        <td >Accueil</td>
+        <td >4</td>
+        <td >Propriétaire</td>
+    </tr>
+    <tr>
+        <td >Mur d'écrans</td>
+        <td >2</td>
+        <td >Propriétaire</td>
+    </tr>
+    <tr>
+        <td >Showroom</td>
+        <td >3</td>
+        <td >Propriétaire</td>
+    </tr>
+ </table>
+</section>
+
+    <!-- linking javascript -->
+    <script src="js/main.js" type="module"></script>
+	</body>
+</html>
+
