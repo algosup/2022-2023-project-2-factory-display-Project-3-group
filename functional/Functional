@@ -1,3 +1,5 @@
+The author of this functional specification is **Robin Debry**
+<br>
 <h1 style="text-align: center">Project 1 smart signage project 4 group - Functional Specifications</h1>
 
 <details> 
@@ -14,18 +16,19 @@
   - [6.1 Producer Content:](#61-producer-content)
   - [6.2 Viewers:](#62-viewers)
 - [7. User cases:](#7-user-cases)
-- [8. The technology:](#8-the-technology)
-- [9. Improvements for V2?](#9-improvements-for-v2)
-  - [9.1 Software:](#91-software)
-- [10. Non-functional requirements:](#10-non-functional-requirements)
-  - [10.1 Cost:](#101-cost)
-    - [10.1.1 Hardware:](#1011-hardware)
-    - [10.1.2 Software:](#1012-software)
+- [8. Functional analysis:](#8-functional-analysis)
+- [9. The technology:](#9-the-technology)
+- [10. Improvements for V2?](#10-improvements-for-v2)
+  - [10.1 Software:](#101-software)
+- [11. Non-functional requirements:](#11-non-functional-requirements)
+  - [11.1 Cost:](#111-cost)
+    - [11.1.1 Hardware:](#1111-hardware)
+    - [11.1.2 Software:](#1112-software)
       - [Server Costs](#server-costs)
       - [Maintenance](#maintenance)
       - [Energies](#energies)
-  - [10.2 Security:](#102-security)
-- [11. Conclusion:](#11-conclusion)
+  - [11.2 Security:](#112-security)
+- [12. Conclusion:](#12-conclusion)
 </details>
 
 ---  
@@ -41,6 +44,12 @@ They contacted us to created this project to improve the management of the facto
 ## 2. Glossary:
 
 - **Jacobi**: The company that we are working for.
+- **RGPD**: The european law that protect the data of the people.
+- **HTML** (HyperText Markup Language) We use this language to create a web page. It is the skeleton of the page. We write all the content as well as its structure. It is the language that the browser understands.
+- **CSS** (Cascading Style Sheets) This language completes HTML. It allows to format and make more ergonomic the website. It is the flesh that embellishes the skeleton.
+- **JS** (JavaScript) It's an object-oriented scripting language. This means that we can make the elements that make up the website dynamic. It is the muscles and joints of the site.
+- **Firebase:** It's a service that allows us to store data in the cloud. It is a database that is hosted on the internet. It is a service that allows us to store data in the cloud. It is a database that is hosted on the internet.
+- **Stakeholders:** The people who are interested in the project.
 
 ## 3. Stakeholders:
 
@@ -117,24 +126,36 @@ The roles on the application is a very important point of the project. <br>
 
 ## 7. User cases:
 
-![image](img/user_case.png)
+![UserCase](img/user_case.png)
 
-## 8. The technology:
+## 8. Functional analysis:
+
+For this project to be considered done, we need to have at least the following specifications :
+
+|Flexibility | importance                      |
+| ---------- | ------------------------------- |
+| F0         | mandatory                       |
+| F1         | important (product performance) |
+| F2         | secondary (nice to have)        |
+
+![UserCase](img/functionalAnalysis.png)
+
+## 9. The technology:
 
 The hardware we will use is just a simple monitor. Moreover we need a little computer.<br>
 The software we will use is a web application. this application will be related with the simple monitor with the help of a little computer. <br>
 
-## 9. Improvements for V2?
+## 10. Improvements for V2?
 
-### 9.1 Software:
+### 10.1 Software:
 
-The following step of this project is to create the application for the users to let them control the screen. It will be improve in the following months.
+The following step of this project is to create the application for the users to let them control a lot of screens. It will be improve in the following months.
 
-## 10. Non-functional requirements:
+## 11. Non-functional requirements:
 
-### 10.1 Cost:
+### 11.1 Cost:
 
-#### 10.1.1 Hardware:
+#### 11.1.1 Hardware:
 
 The hardware is the most expensive part of the project. <br>
 The hardware is composed of a monitor and a little computer. <br>
@@ -142,13 +163,12 @@ The monitor is a 50" monitor with a resolution of 3840x2160 4K. <br>
 The little computer is a micro PC 4K Wifi 5 Gigabit Ethernet. <br>
 The total cost of the hardware is 1856€ because we need 2 screens and 2 little computer <br>
 
-#### 10.1.2 Software:
+#### 11.1.2 Software:
 
 ##### Server Costs
 
-The server to host the website and to have a database is a server with 500GB of storage and 2GB of RAM with this you will have 1 domain name free for 1 year <br>
-
-The total cost of the server is 13€/month <br>
+The server we will use is Firebase. Firebase is free we will only pay the name domain is average 15€ <br>
+The total cost of the server is 15€/year <br>
 
 ##### Maintenance
 - The monitor: Should be changed every 7/8 years but you have 2 years of guaranteed <br>
@@ -158,15 +178,19 @@ The total cost of the server is 13€/month <br>
 Peak Consumption of the screen: 1287.72kWh per year. Annually the screen cost 179.50€ <br>
 
 
-### 10.2 Security:
+### 11.2 Security:
 
 Following the ANSSI's guidelines, we ensured that our product followed the DICP criteria. (AIPT)
 - Availability: By using the WiFi of the factory Jacobi with it we can ensure that the product will be available 24/7.
 - Confidentiality/Privacy: All the passwords are encrypted
 - Traceability: we use a logging system that provides the modification made by the user and the date of the modification.
 
-## 11. Conclusion:
+## 12. Conclusion:
 
 In spite of the specifications transmitted by Jacobi, a lot of freedom was voluntarily left to us so that we could find ideas which they had not necessarily thought of. <br>
 
 Thanks to the communication between the stakeholders we were able to imagine and develop a rich project in the image of ALGOSUP and Jacobi. <br>
+
+<b><u>Author:</u></b>
+Debry Robin
+
