@@ -11,10 +11,17 @@
 <body>
    
    <h1 id="start2"></h1>
-   <div id="iframeContainer" style="width: 800px; height: 600px; overflow: auto;">
-    <iframe width="1800" height="6000" src="yourPDFfileSRC" scrolling="no">
+   <!-- <div id="iframeContainer" style="width: 800px; height: 600px; overflow: auto;">
+    <iframe width="2000" height="6000" src="Anti-Guns.pdf" scrolling="no">
     </iframe>
  //You have to know exact width and height of PDF file
- </div>
+ </div> -->
+ <embed src="http://docs.google.com/gview?url=Anti-Guns.pdf" width=800 height=500 type='application/pdf'/>
+ <script type="text/javascript">
+    $("document").ready(function()
+    {
+      $("#iframeContainer").scrollTop(2200);
+    });
+    </script>
 </body>
 </html>
