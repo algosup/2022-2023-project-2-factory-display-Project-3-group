@@ -45,7 +45,7 @@ They contacted us to created this project to improve the management of the facto
 ## 2. Glossary:
 
 - **Jacobi**: The company that we are working for.
-- **RGPD**: The european law that protect the data of the people.
+- **GDPR**: The european law that protect the data of the people.
 - **HTML** (HyperText Markup Language) We use this language to create a web page. It is the skeleton of the page. We write all the content as well as its structure. It is the language that the browser understands.
 - **CSS** (Cascading Style Sheets) This language completes HTML. It allows to format and make more ergonomic the website. It is the flesh that embellishes the skeleton.
 - **JS** (JavaScript) It's an object-oriented scripting language. This means that we can make the elements that make up the website dynamic. It is the muscles and joints of the site.
@@ -81,6 +81,7 @@ The second stakeholders type is the engineering team who will directly work on t
 The monitoring of the screen is the main point of the development of this project. <br>
 
 The user will use an application connected to the others screens with a wifi connection. <br>
+because of the GDPR, the user will have to log in to the application to be able to see the content of the screen.Also, the user can stay connected to the application without reconnect every time he wants to see or change the content of the screen. <br>
 He should be able to see if the screen is on, if it is off, the actual connection of the screen (with WiFi bar) and the time since the screen is connect (in hours and minutes). <br>
 
 This function will really be an informative one, it has the role of informing the user of the status of the screen in real time.
