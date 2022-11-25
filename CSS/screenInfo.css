@@ -6,6 +6,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    font-family: 'Oswald', sans-serif;
 }
 
 #text {
@@ -54,6 +55,8 @@
 h1 {
     margin-top: 2%;
     text-align: center;
+    font-family: 'Oswald', sans-serif;
+
 }
 
 #title {
@@ -72,8 +75,7 @@ h1 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 60%;
-    height: 300%;
+    width: 20%;
     background-color: #FF700F;
     border-radius: 5%;
 }
@@ -93,10 +95,10 @@ h1 {
 
 #container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    align-items: flex-start;
     justify-content: space-evenly;
-    height: 100vh;
+    height: 100%;
     width: 100%;
 } 
 
@@ -108,22 +110,21 @@ h1 {
     margin-top: 2%;
     margin-left: 5%;
     margin-right: 8%;
-    width: 40%;
+}
+
+#users {
+    display: flex;
+    flex-direction: row;
+    margin-left: 0%;
 }
 
 .h3 {
     height: 6vh;
     margin-top: 1%;
-    margin-bottom: 0%;
     margin-left: 2%;
+    margin-bottom: 5%;
     display: flex;
     flex-direction: column;
-}
-
-p {
-    margin-left: 2%;
-    font-size: 80%;
-    color: #fff;
 }
 
 .subtitle {
@@ -134,13 +135,20 @@ p {
 
 }
 
-#users {
-    display: flex;
-    flex-direction: row;
+#add-user {
+    font-size: 50%;
+    margin-left: 3%;
+    color: black;
 }
 
-#add-user {
-    font-size: 70%;
-    margin-left: 5%;
-    color: black;
+ul {
+    padding-left: 0%;
+}
+
+#user-cat {
+    margin-left: 2%;
+}
+
+img {
+    margin-top: 3%;
 }
