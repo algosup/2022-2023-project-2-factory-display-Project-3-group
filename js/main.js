@@ -1,4 +1,8 @@
 
+
+
+
+
 function searchFunction() {
   // Declare variables
   let input, filter, table, tr, td, i, txtValue;
