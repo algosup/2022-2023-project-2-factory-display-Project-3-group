@@ -59,15 +59,21 @@ p{
   }
 
   input[type=text] {
-     width: 80%;
+     width: 20%;
      -webkit-transition: width 0.15s ease-in-out;
      transition: width 0.15s ease-in-out;
   }
 
+  #NewScreenGroup input[type=text] {
+    width: 40% !important;
+    margin-left:1vh ;
+ }
+
   /* When the input field gets focus,
        change its width to 100% */
   input[type=text]:focus {
-    width: 25%;
+    width: 40%;
+    transition: 1s;
   }
 
  #list{
@@ -75,9 +81,7 @@ p{
    margin-left: 90px;
   }
 
-/* .ecran{
-  display: list-item;    
- }  */
+
 
  table
 {
@@ -127,3 +131,64 @@ th
     color: rgb(43, 104, 104);
 }
 
+/* Style popoup new campaign */
+
+.modal-dialog-centered2 {
+    display: flex;
+    justify-content: center;
+}
+
+#popup-campaign {
+    height: 350px;
+    width: 350px;
+}
+
+.modal-header2 {
+    height: 20%;
+}
+
+#exampleModalToggleLabel {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#choices {
+    height: 80%;
+    display:flex ;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+.p-btn {
+    width: 19vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    background-color: #FF700F;
+    font-size: 150%;
+}
+
+.p-btn:hover {
+    background-color: #FFA000;
+}
+
+.p-btn:active {
+    background-color: #FF700F;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+a:hover {
+    color: black;
+}
+
+#popupNewcampaign h1{
+    text-align: center;
+}

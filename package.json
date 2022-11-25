@@ -1,0 +1,22 @@
+{
+  "name": "2022-2023-project-2-factory-display-project-3-group",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/algosup/2022-2023-project-2-factory-display-Project-3-group.git"
+  },
+  "author": "Thomas Planchard",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/algosup/2022-2023-project-2-factory-display-Project-3-group/issues"
+  },
+  "homepage": "https://github.com/algosup/2022-2023-project-2-factory-display-Project-3-group#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "firebase": "^9.14.0"
+  }
+}
