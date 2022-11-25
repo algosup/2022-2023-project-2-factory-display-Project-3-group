@@ -188,7 +188,7 @@ The following step of this project is to create an application for the users to 
 The hardware is composed of a monitor and a little computer. <br>
 The monitor is a 50" monitor with a resolution of 3840x2160 4K. <br>
 The little computer is a micro PC with 4K Wi-Fi and 5 Gigabit Ethernet. <br>
-The total cost of the hardware is €1856 including taxes because we need 2 screens and 2 little computers <br>
+The total cost of the hardware is €1856 including taxes because we need two screens and two little computers <br>
 
 #### 12.1.2 Software
 
