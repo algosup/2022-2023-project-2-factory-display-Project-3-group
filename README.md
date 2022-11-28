@@ -14,8 +14,10 @@ The client of this project is the company [**Jacobi**](https://www.jacobi.net/fr
 
 ## Documents
 
-<!-- [Technical Specifications](Documents/Technical-Specifications.md) <br> -->
 [Hardware Choices](hardware.md) <br>
-<!-- [Functional Specifications](Documents/Functional-Specifications.md) <br> -->
+[Functional Specifications](Documents/functional//Functional.md) <br>
+[Trello](https://trello.com/b/XybHzKnD/retroplanning) <br>
+[Progress Report](Documents/progress_report/Progress_Report.md) <br>
+
+<!-- [Technical Specifications](Documents/Technical-Specifications.md) <br> -->
 <!-- [Software Architecture Design](Documents/Software-Architecture-Design.png) <br> -->
-<!-- [Trello](https://trello.com/invite/b/B07Tt8rD/78289c46ec0aa3a92d3a52d16fa3fd65/group4) -->
