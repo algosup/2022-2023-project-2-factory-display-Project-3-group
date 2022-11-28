@@ -23,3 +23,16 @@ function createList() {
 }
 
 createList("users");
+
+var element = document.querySelector("body");
+console.log(element);
+
+element.requestFullscreen()
+.then(function() {
+	// element has entered fullscreen mode successfully
+})
+.catch(function(error) {
+	// element could not enter fullscreen mode
+	// error message
+	console.log(error.message);
+});
