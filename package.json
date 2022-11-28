@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
-  "scripts": {
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/algosup/2022-2023-project-2-factory-display-Project-3-group.git"
@@ -17,6 +16,8 @@
   "homepage": "https://github.com/algosup/2022-2023-project-2-factory-display-Project-3-group#readme",
   "dependencies": {
     "bootstrap": "^5.2.3",
-    "firebase": "^9.14.0"
+    "firebase": "^9.14.0",
+    "mongoose": "^6.7.3",
+    "multer": "^1.4.5-lts.1"
   }
 }
