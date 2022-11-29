@@ -116,7 +116,7 @@ Michael has been the content creator of Jacobi since April 2022. He is 43 years 
 His job is to recruit people in the company and he will produce some content for the other's screen. <br>
 He is a power user of the application and he will use it to manage the screen in the company.<br>
 With these improvements, he will inform the workers of the company if there is a problem in the factory and he will be able to inform them of the new campaign of the company.<br>
-Also with the website she will be able to know if a screen is turned on or turned off and if the screen is connected to the Wi-Fi.
+Also with the website he will be able to know if a screen is turned on or turned off and if the screen is connected to the Wi-Fi.
 
 #### 6.1.2. Christine
 Christine has been the CEO of Jacobi since January 2022 and she is 45 years old. She is married with four children who are now adults. She loves reading during her free time. She lives in Paris, she takes the train every morning and evening. <br>
