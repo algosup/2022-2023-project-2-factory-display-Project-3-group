@@ -1,7 +1,7 @@
  // Import the functions you need from the SDKs you need
  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
- import { getDatabase, set, ref, update} from "https://www.gstatic.com/firebasejs/9.14.0/firebase-database.js";
- import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-auth.js";
+ import { getDatabase, } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-database.js";
+ import { getAuth, signOut  } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-auth.js";
 
 
 
@@ -18,7 +18,6 @@
  };
 
  const app = initializeApp(firebaseConfig);
- const database = getDatabase(app);
  const auth = getAuth();
 
 
@@ -30,7 +29,7 @@ logout.addEventListener('click',(e)=>{
 signOut(auth).then(() => {
   // Sign-out successful.
   alert('user loged out');
-  window.location = 'accueil.html';
+  window.location = 'index.html';
 }).catch((error) => {
   // An error happened.
   const errorCode = error.code;
