@@ -1,3 +1,7 @@
+body {
+    overflow-x: hidden;
+}
+
 table{
     margin-left:10%;
 }
