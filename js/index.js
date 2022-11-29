@@ -23,7 +23,7 @@
  const database = getDatabase(app);
  const auth = getAuth();
  
-   
+
 login.addEventListener('click',(e)=>{
 const email = document.getElementById('email2').value;
 const password = document.getElementById('password2').value;
@@ -38,14 +38,19 @@ const password = document.getElementById('password2').value;
        last_login: dt,
      })
 
-      alert('User loged in!');
       window.location = 'accueil.html';
    })
    .catch((error) => {
-     const errorCode = error.code;
-     const errorMessage = error.message;
-
-     alert(errorMessage);
+     const errorMessage = "Email ou mot de passe incorrect";
+     var p = document.createElement("p");
+     p.textContent = errorMessage;
+     document.getElementById("error").innerHTML = "";
+     document.getElementById("error").appendChild(p);
+     document.getElementById("error").style.color = "red";
+     document.getElementById("error").style.fontSize = "90%";
+     document.getElementById("login-box").style.height = "50%";
+     document.getElementById("email2").value = "";
+     document.getElementById("password2").value = "";
 });
 
 });
