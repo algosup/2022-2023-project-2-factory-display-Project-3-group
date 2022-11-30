@@ -28,13 +28,13 @@
 
 
 # 1. Front matter
-Factory display-Jacobi Project 3
-<br>
+Factory display - Jacobi Project 3
+
 Author: Karine Vinette 
 <br>
 | Role              | Name                                                                                                                                                                                                                                                          |
 | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Project Manager   | [Quentin CLEMENT](https://github.com/Quentin-Clement)                                                                                                                                                                                     |
+| Project Manager   | [Quentin CLEMENT](https://github.com/Quentin-Clement)                                                                                                                                    |
 | Technical Leader  | [Karine VINETTE](https://github.com/KarineVinette)                                                                                                                                                                                           |
 | Program Manager   | [Robin DEBRY](https://github.com/robin-debry)                                                                                                                                                                                           |
 | Software Engineer | [Thomas PLANCHARD](https://github.com/thomas-planchard)                                                                                                                                                                                     |
@@ -46,7 +46,7 @@ Author: Karine Vinette
 # 2. Introduction
 ## a. Overview
 
-[JACOBI](https://www.jacobi.net/fr/) wants to display informations to their employees on two different rooms to TV's or monitors.
+[JACOBI](https://www.jacobi.net/fr/) wants to display informations to their employees in two different rooms on TV's or monitors.
 
 ## b. Glossary  or Terminology
 
@@ -62,7 +62,7 @@ At the moment, the informations are shared by paper, that is not ecological and 
 ## d. Product and Technical Requirements
 
 Product requirements :
-- They want news that are displayed by TVS or monitors.They want that when they connect the tvs or the monitors, the webpage will be display directly
+- They want news that are displayed by TVS or monitors.They want that when they connect the tvs or the monitors, the webpage will be display directly.
 
 Technical requirements :
 - Following the company's need, **ALGOSUP** was required to buy a mini windows computer and a monitor. The other choice was to use a smart TV, but we think that with this solution there is a problem of security because employees can change the tv's channel.
@@ -76,13 +76,13 @@ We have to be able to add TVS easily without the help of a technician.
 # 3. Solutions
 ## a. Current or Existing Solution / Design
 
-[Cenareo](https://cenareo.com/?utm_source=adwords&utm_medium=ppc&utm_term=cenareo&utm_campaign=Branding&hsa_cam=12234004786&hsa_mt=e&hsa_ver=3&hsa_src=g&hsa_ad=538661575911&hsa_net=adwords&hsa_tgt=kwd-778007499720&hsa_acc=5673575680&hsa_grp=128722602387&hsa_kw=cenareo&gclid=CjwKCAiA7IGcBhA8EiwAFfUDsfKyn9b4i27tCc5W9TIZQNZv8Kyrg2cAzSiuPuaGNr_JGzr81WsJ0RoCT1MQAvD_BwE) is a software company that develops digital signage. Digital signage is an interactive communication platform that gives you full control over digital display networks. Our easy to use digital signage solution allows you to create, share and manage your stories on any digital display with perfect ease. <br>
+[Cenareo](https://cenareo.com/?utm_source=adwords&utm_medium=ppc&utm_term=cenareo&utm_campaign=Branding&hsa_cam=12234004786&hsa_mt=e&hsa_ver=3&hsa_src=g&hsa_ad=538661575911&hsa_net=adwords&hsa_tgt=kwd-778007499720&hsa_acc=5673575680&hsa_grp=128722602387&hsa_kw=cenareo&gclid=CjwKCAiA7IGcBhA8EiwAFfUDsfKyn9b4i27tCc5W9TIZQNZv8Kyrg2cAzSiuPuaGNr_JGzr81WsJ0RoCT1MQAvD_BwE) is a software company that develops digital signage. Digital signage is an interactive communication platform that gives you full control over digital display networks. A easy to use digital signage solution allows you to create, share and manage your stories on any digital display with perfect ease. <br>
 Their product is one exemple to our solution. The difference is that we need to create our own solution, designed just for Jacobi.
 
 ## b. Suggested or Proposed Solution / Design 
 
 **The hardware:**
-We wanted to use a mini PC Windows with a monitor.
+We want to use a mini PC Windows with a monitor.
 
 **Launch the website at the start of the computer:**
 Use Windows startup.
@@ -113,20 +113,20 @@ Test plan by Karine VINETTE :
 
 ## d. Release / Roll-out and Deployment Plan
 
-**Jacobi** wants to release the product as soon as possible. They want to diffuse their campaigns in strategics's places. They want to display informations in rooms dedicated to the rest of employees. Indeed, if the use of the product would scale, for exemple to the firm in Paris, they could display another type of campaigns. Also, if the product would be used in another country, we will change the content to english.  
+**Jacobi** wants to use the product as soon as possible. They want to diffuse their campaigns in strategics's places. They want to display informations in rooms dedicated to employees rest. Indeed, if the use of the product would scale, for exemple to the firm in Paris, they could display another type of campaigns. Also, if the product is to be used in another country, we will change the content to english.  
 
 ## e. Alternate Solutions 
 
 We can see this problem from a different perspective and propose a different approach to solve it. One of the point that we can discuss is why use WINDOWS computer instead of phones. <br>
-With a phone you can display a subdomain of the campaigns's website easily and with security. The only problem is the lifetime of the battery in our case because Jacobi wants that the diffusion would be on everytime. 
+With a phone you can display a subdomain of the campaigns's website easily and with security. The only problem is the lifetime of the battery in our case, because Jacobi wants that the diffusion would be on everytime. 
 # 4. Further Considerations
 ## a. Impact on other teams
 
- **Jacobi** communication's team could diffuse their informations to the employees in a modern way.
+ **Jacobi** communication's team will be able to distribute their informations to the employees in a modern way.
 
  ## b. Regional considerations
 
-**Jacobi** is speaking french in his firms in France.
+**Jacobi** is speaking French in his companies in France.
 ## c. Cost analysis
 
 We have been ask to respect a budget of 1000€ per device. So we did our choice considering this restriction.
@@ -135,7 +135,7 @@ We have been ask to respect a budget of 1000€ per device. So we did our choice
 
 ## d. Security considerations
 
-The main element of safety is the safety of the diffusion of the website on the screen. The hardware must be safe. We must avoid any problems related to switch the channel in a recreative goal. For the software part we need to be careful that it is not possible for a hacker to access the webpage without a login.
+The main element of safety is the diffusion of the website on the screen. The hardware must be safe. We must avoid any problems related to switch the channel in a recreative goal. For the software part we need to be careful that it is not possible for a hacker to access the webpage without a login.
 
 ## e. Privacy considerations
 
@@ -145,7 +145,7 @@ We use a mini-computer to avoid a lot of problems with the use of the screen. If
 
 ## h. Support considerations
 
-The solution including the hardware and the software has to be user friendly. For exemple, the main user has not skills in computer science, and he would have to use the application easily.
+The solution including the hardware and the software has to be user friendly. For exemple, the main user has not skills in computer science, and he will need to use the application easily.
 # 5. Work
 ## a. Prioritization
 (F0=urgent & F2=not urgent)
