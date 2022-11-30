@@ -192,3 +192,10 @@ a:hover {
 #popupNewcampaign h1{
     text-align: center;
 }
+
+#validerEcran{
+    background-color: orange;
+}
+.delete{
+    margin-top:10px;
+}

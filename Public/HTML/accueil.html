@@ -14,6 +14,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer ></script>
     <link rel="stylesheet" href="../CSS/accueil.css">
     <link rel="stylesheet" href="../CSS/navbar.css">
+    <script src="../js/searchBar.js" defer></script>
+    <script src="../js/addGroup.js" defer></script>
 	</head>
 
 
@@ -165,74 +167,44 @@
 
         </div>
         <p class="card-text">Nom*</p>
-        <input type="text" class="form-control" placeholder="Nom du groupe" aria-label="Nom du groupe">
+        <input type="text" id="nom" class="form-control" placeholder="Nom du groupe" aria-label="Nom du groupe">
         <br>
         <p class="card-text">Description</p>
-        <input type="text" class="form-control" placeholder="Description" aria-label="description">
+        <input type="text" id="description" class="form-control" placeholder="Description" aria-label="description">
         <br>
         <p class="card-text">Sous-groupes</p>
         <input type="text" class="form-control" placeholder="Nom" aria-label="Nom">
         <br>
         <p class="card-text">Écrans</p>
-        <select id="disabledSelect" class="form-select">
-        <option>Disabled select</option>
+        <select class="form-select">
+        <option>Ecran 1</option>
+        <option>Ecran 2</option>
+        <option>Ecran 3</option>
+        <br id="selectPlace">
         </select>
+        <button onclick="addSelect()">+</button>
         <br>
+        <button id="validerEcran" type="button" value="submit" class="add">Valider</button>
         </div>
+        
       </div>
+      
     </div>
     
-   <table class="groupeEcran">
+   <table class="groupeEcran test">
     <tr>
+        <th>Sélectionner</th>
         <th>Nom du groupe</th>
         <th>Nombre d'écrans</th>
-        <th>Mon statut</th>
+        <th>Description</th>
     </tr>
     <tr>
-        <td >Accueil</td>
-        <td >4</td>
-        <td >Propriétaire</td>
-    </tr>
-    <tr>
-        <td >Mur d'écrans</td>
-        <td >2</td>
-        <td >Propriétaire</td>
-    </tr>
-    <tr>
-        <td >Showroom</td>
-        <td >3</td>
-        <td >Propriétaire</td>
+        
+
     </tr>
  </table>
+ <button type="button" class="btn btn-success delete">Supprimer une ligne</button>
 </section>
-
-
-
- 
-    <script>
-      function searchFunction() {
-  // Declare variables
-  let input, filter, table, tr, td, i, txtValue;
-  input = document.getElementById("searchbar");
-  filter = input.value.toUpperCase();
-  table = document.getElementById("ecranSeul");
-  tr = table.getElementsByTagName("tr");
-
-  // Loop through all table rows, and hide those who don't match the search query
-  for (i = 0; i < tr.length; i++) {
-    td = tr[i].getElementsByTagName("td")[1];
-    if (td) {
-      txtValue = td.textContent || td.innerText;
-      if (txtValue.toUpperCase().indexOf(filter) > -1) {
-        tr[i].style.display = "";
-      } else {
-        tr[i].style.display = "none";
-      }
-    }
-  }
-}
-
-    </script>
 
     <script src="../js/logout.js" type="module"></script>
     <script src="../js/protect.js" type="module"></script>
