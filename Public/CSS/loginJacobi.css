@@ -2,8 +2,14 @@ body{
     background: linear-gradient(90.55deg, #F9D9C2 0.46%, #CCC9C9 99.51%, #797979 99.52%);
     height: 100vh;
     width: 100vw;
+    overflow-y: hidden;
+}
 
-
+section {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+  width: 100vw;
 }
 
 @media (max-width: 945px) {
@@ -36,10 +42,10 @@ h1{
 
 
 #logo2{
-height: 60vh;
-margin-left: 50%;
-z-index: 1;
-margin-top: -27%;
+   height: 60vh;
+   margin-top: 7%;
+   margin-right: 12%;
+   z-index: 1;
 }
 
 
@@ -53,7 +59,7 @@ margin-top: -27%;
     position: relative;
     margin-left: 8%;
     margin-top: 12% ;
-    width: 25%;
+    width: 205%;
     height: 45%;
     background: rgb(255, 255, 255);
     border-radius: 2px;
@@ -64,8 +70,8 @@ margin-top: -27%;
     position: relative;
     margin-left: 8%;
     margin-top: 7% ;
-    width: 25%;
-    height: 60%;
+    width: 22%;
+    height: 410px;
     background: rgb(255, 255, 255);
     border-radius: 2px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
@@ -107,7 +113,7 @@ margin-top: -27%;
   }
   
   input[type="submit"] {
-    margin-top: 28px;
+    margin-top: 5%;
     width: 120px;
     height: 32px;
     background: #FF700F;

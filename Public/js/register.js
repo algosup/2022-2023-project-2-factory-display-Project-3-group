@@ -38,15 +38,27 @@ signUp.addEventListener('click',(e) => {
             familyname: 'familyname',
             email: 'email'
         })
-    
-        alert('user created!');
+        const successMessage = "Votre compte a bien été créé avec succès";
+        var p = document.createElement("p");
+        p.textContent = successMessage;
+        document.getElementById("success").innerHTML = "";
+        document.getElementById("success").appendChild(p);
+        document.getElementById("success").style.fontSize = "90%";
+        document.getElementById("signup-box").style.height = "450px";
+        document.getElementById("signUp").style.marginTop = "0px";
+        // document.getElementById("email2").value = "";
+        // document.getElementById("password2").value = "";
         // ...
+
+        setTimeout(
+          function() {
+            window.location = 'accueil.html';
+          }, 5000);
       })
+
       .catch((error) => {
         const errorCode = error.code;
         const errorMessage = error.message;
-    
-        alert(errorMessage);
       // ..
       });
     
