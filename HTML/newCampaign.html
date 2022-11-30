@@ -3,68 +3,30 @@
   <head>
   	<title>Accueil</title>
     <meta charset="utf-8">
-<<<<<<< HEAD
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Nouvelle campagne</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="CSS/newCampaign.css">
-    <link rel="stylesheet" href="CSS/navbar.css">
+    <link rel="stylesheet" href="/CSS/newCampaign.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
     <link rel="shortcut icon"type="image/x-icon" href="/img/jacobi.ico">
-=======
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
->>>>>>> 191226c3ebbb13b53bb08041add216d57f5984ac
 
 	 <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
 	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
    <link rel="shortcut icon"type="image/x-icon" href="/img/jacobi.ico">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous" defer ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer ></script>
-    <link rel="stylesheet" href="/CSS/newCampaign.css">
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="/CSS/navbar.css">
+    <script src="/layouts/header.js" defer></script>
 	</head>
 
 
 	<body>
-      <header>
-    <nav class="navbar navbar-expand-lg bg-light">
-      <a class="navbar-brand" href="accueil.html">
-        <img class="logo" src="/img/JacobiLogo.png" width="80" height="40" alt="">
-      </a>
-      <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav m-auto">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="accueil.html">Accueil</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="campaign.html">Campagne</a>
-              <li class="nav-item">
-                <a class="nav-link" href="screenInfo.html">Ecrans</a>
-              </li>
-              </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Mon Espace
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="../account/my_account.html">Mon compte</a></li>
-                <li><a class="dropdown-item" href="newAccount.html">Créer un compte</a></li>
-                <li><a class="dropdown-item" href="../account/settings.html">Paramètres</a></li>
-                <li><a class="dropdown-item" id="logout">Déconnexion</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <hr>
-  </header>
+      <header></header>
       <h3 class="orange">Formulaire Aperçus</h3><br>
 
 
@@ -167,32 +129,9 @@
 
       <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
    
-    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-firestore.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-storage.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-database.js"></script>
+    
 
-<script type="module">
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.1/firebase-app.js";
-    import { getAuth } from "https://www.gstatic.com/firebasejs/9.1.1/firebase-auth.js";
-    import { getFirestore } from "https://www.gstatic.com/firebasejs/9.1.1/firebase-firestore.js";
-    import { getStorage } from "https://www.gstatic.com/firebasejs/9.1.1/firebase-storage.js";
-    import { getDatabase } from "https://www.gstatic.com/firebasejs/9.1.1/firebase-database.js";
-
-  
-    var firebaseConfig = {
-      apiKey: "AIzaSyARkSAA_0zy7IiIOYuHG_VrOayh5l3SBW0",
-      authDomain: "jacobi1.firebaseapp.com",
-      projectId: "jacobi1",
-      storageBucket: "jacobi1.appspot.com",
-      messagingSenderId: "741399378229",
-      appId: "1:741399378229:web:1bbdb9c858d570b9dc747c",
-      databaseURL: "https://jacobi1-default-rtdb.europe-west1.firebasedatabase.app"
-    };
-  </script>
 
     <script type="module" src="js/newCampaign.js"></script>
 

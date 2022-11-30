@@ -17,7 +17,9 @@ hr {
 .navbar-brand{
     width: min-content;
     height: min-content;
-    padding-top: 0px;
+    padding-top: 10px;
+    padding-left: 10px;
+
 }
 .navbar-nav li a{
     color: black;
