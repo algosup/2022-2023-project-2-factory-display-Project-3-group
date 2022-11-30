@@ -17,6 +17,7 @@
   "dependencies": {
     "bootstrap": "^5.2.3",
     "firebase": "^9.14.0",
+    "fs": "^0.0.1-security",
     "mongoose": "^6.7.3",
     "multer": "^1.4.5-lts.1"
   }
