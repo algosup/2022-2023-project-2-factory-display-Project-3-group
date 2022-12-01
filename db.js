@@ -1,20 +1,24 @@
 import mangoose from 'mongoose';
-
-await mangoose.connect('mongodb+srv://admin_project:dojWnMcFPkkIynfu@factorydisplay.nlhigvx.mongodb.net/test', {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-},
-()=>console.log(mangoose.connection));
+import { Router } from 'express';
 
 const campaignSchema = new mangoose.Schema({
-    id : Number,
-    title : String,
+    title :{
+        type: String,
+        required: true,
+    },
     img:{
         data: Buffer,
-        type : String
+        type : String,
+        required: true,
+    }, 
+    author :{
+        type: String,
+        required: true,
     },
-    author : String,
-    screen : String,
+    screen : {
+        type: String,
+        required: true,
+    },
     screenGroup: String,
     Date: { type: Date, default: Date.now }
 });
@@ -22,3 +26,21 @@ const campaignSchema = new mangoose.Schema({
 
 
 module.exports = new mangoose.model('Campaign', campaignSchema);
+
+
+
+
+
+function addCampaign(title , img , author , screen , screenGroup, Date){
+    const newCampaign = new Campaign({   
+        title : title,
+        img:{
+            data: img,
+            type : img
+        },
+        author : author,
+        screen : screen,
+        screenGroup: screenGroup,
+        Date: Date});
+    await newCampaign.save();
+}   
