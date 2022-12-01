@@ -91,6 +91,9 @@ Use Windows startup.
 **Login page:**
 Create a signin and signup with Firebase.
 
+**Persistance of the login:**<br>
+
+
 **Hosting with Microsoft Azure:**
 Connecting the app with DNS and add subdomains to display the campaigns on several screens.
 
@@ -99,7 +102,6 @@ CRUD : Create, Read, Update and Delete the data.
 
 **Programming the campaigns in time:**<br>
 
-**Persistance of the login:**<br>
 
 **Automatic refresh page:**
 `setTimeout(() => {
@@ -108,7 +110,7 @@ CRUD : Create, Read, Update and Delete the data.
 
 
 ## c. Test Plan
-Test plan by Karine VINETTE :
+Test plan :
 
 
 ## d. Release / Roll-out and Deployment Plan
@@ -185,6 +187,6 @@ Preparation of the presentation
 ## b. Acknowledgement
 
 Mrs. Karen BLANQUE (HR Assistant),
- Mr. Pierre PAGE (HR Manager),
-  Mr. Nicolas YVELIN (Factory Manager),
-   Mr. Samuel NEVES (Maintenance Shop Manager)
+Mr. Pierre PAGE (HR Manager),
+Mr. Nicolas YVELIN (Factory Manager),
+Mr. Samuel NEVES (Maintenance Shop Manager)
