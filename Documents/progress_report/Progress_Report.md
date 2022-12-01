@@ -15,6 +15,7 @@ Week | Date | Title | Stakeholders | Description |
 | | Friday 11/25/2022 | Azure Set Up V1 | Karine | The Azure set up has been done.
 | | Friday 11/25/2022 | "Screen Info" Page | Quentin | The "Screen Info" page has been done.
 | | Friday 11/25/2022 | Functional Specifications | Robin | The functional specifications have been done but will need to be check with the customer.
-| <p style="text-decoration: underline">Week 4</p> |  |  |  | 
-
+| <p style="text-decoration: underline">Week 4</p> | Monday 11/28/2022 | "Sign Up" Page | Quentin | We decided to put the sign up on an other page than the login because only the admin will be able to create an account.
+| | Tuesday 11/29/2022 | Website Security | Thomas | It's now impossible to access a page without being logged in.
+| | Tuesday 11/29/2022 | "Login" and "Sign Up" Pages V2 | Quentin | These 2 pages have been updated.
 
