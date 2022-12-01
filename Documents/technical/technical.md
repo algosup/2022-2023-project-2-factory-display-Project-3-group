@@ -52,7 +52,7 @@ Author: Karine Vinette
 
 | Terms                        | Definition             |
 | ---------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Wigdet| A widget, active tile, interactive tile, widget, or mini-software is a tool available on an operating system, webpage, or blog. Interactive widgets usually provide information or entertainment.|
+| Wigdet| A widget, active tile, interactive tile, or mini-software is a tool available on an operating system, webpage, or blog. Interactive widgets usually provide information or entertainment.|
 | Hardware| In the field of IT, hardware refers to the physical part of devices, telecommunications devices, storage, and peripherals in general. |
 | Software| The term software is used to describe software that enables your computer to operate and handles data processing. Several software are installed on your device to give commands, so that specific tasks are performed according to their uses.|
 
