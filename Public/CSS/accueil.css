@@ -194,8 +194,51 @@ a:hover {
 }
 
 #validerEcran{
-    background-color: orange;
+    display: inline-block;
+    background-color: #FF700F;
+    border-radius: 10px;
+    border: 4px double #cccccc;
+    color: #eeeeee;
+    text-align: center;
+    font-size: 14px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-left: 165px;
+    
 }
 .delete{
     margin-top:10px;
+}
+
+#add{
+    display: inline-block;
+    background-color: #FF700F;
+    border-radius: 10px;
+    border: 4px double #cccccc;
+    color: #eeeeee;
+    text-align: center;
+    font-size: 14px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+#remove{
+    display: inline-block;
+        background-color: #FF700F;
+        border-radius: 10px;
+        border: 4px double #cccccc;
+        color: #eeeeee;
+        text-align: center;
+        font-size: 14px;
+        width: 150px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin-left: 175px;
+}
+a:hover{
+    color:blue;
+    text-decoration: underline;
+
 }

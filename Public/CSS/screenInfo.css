@@ -152,3 +152,15 @@ ul {
 img {
     margin-top: 3%;
 }
+
+#form 
+{
+    /* display form center*/
+    margin: 0 auto;
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 3%;
+    background-color: #f1f1f1;
+    font-size: 20px;
+
+}

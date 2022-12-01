@@ -1,14 +1,14 @@
 $(document).ready(function() {
-    $(".add").click(function() {
+    $(".addGroup").click(function() {
         var nom = $("#nom").val();
         var description = $("#description").val();
         var ligne = "<tr><td><input type='checkbox' name='select'></td><td>" + nom + "</td><td>"+ count +"</td><td>" + description + "</td></tr>";
-        $("table.test").append(ligne);
+        $("table.testGroup").append(ligne);
     });
     $(".delete").click(function() {
-        $("table.test").find('input[name="select"]').each(function() {
+        $("table.testGroup").find('input[name="select"]').each(function() {
             if ($(this).is(":checked")) {
-                $(this).parents("table.test tr").remove();
+                $(this).parents("table.testGroup tr").remove();
             }
         });
     });
@@ -27,6 +27,10 @@ function addSelect(){
     // add the select to the other select
     document.getElementById('essai').append(select);
 }
+function removeSelect(){
+    // remove the last select
+    document.getElementById('essai').lastChild.remove();
+}
 
 //count how many times the button is clicked
 var count = 1;
@@ -34,6 +38,12 @@ var count = 1;
 document.getElementById("add").addEventListener("click", function() {
     //increment the count
     count++;
+});
+document.getElementById("remove").addEventListener("click", function() {
+    //increment the count
+    if(count > 1){ 
+    count--;
+    }
 });
 
 

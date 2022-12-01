@@ -17,6 +17,7 @@
     <script src="../js/layout/header.js" defer></script>
     <script src="../js/searchBar.js" defer></script>
     <script src="../js/addGroup.js" defer></script>
+    <script src="../js/addScreen.js" defer></script>
 	</head>
 
 
@@ -56,68 +57,21 @@
         name="search" placeholder="Recherche écrans..">
       
     <br><br>  
-    <table id="ecranSeul">
+    <table id="ecranSeul" class="testEcran">
       <tr>
-          <th>Connexion</th>
+          <th>Selectionner</th>
           <th>Nom</th>
           <th>Adresse</th>
       </tr>
       <tr>
-          <td class="ecran">Connectée depuis 12 heures</td>
-          <td class="ecran">Meeting room</td>
+          <td><input type='checkbox' name='select'></td>
+          <td class="ecran"><a href="screenInfo.html">Meeting</a></td>
           <td class="ecran">Vierzon</td>
       </tr>
       <tr>
-          <td class="ecran">Connectée depuis 1 jours</td>
-          <td class="ecran">Factory</td>
-          <td class="ecran">Paris</td>
-      </tr>
-      <tr>
-          <td class="ecran">Connectée depuis 2 jours</td>
-          <td class="ecran">Factory 2</td>
-          <td class="ecran">Paris</td>
-      </tr>
-      <tr>
-          <td class="ecran">Connectée depuis 15 secondes</td>
-          <td class="ecran">Office 2</td>
-          <td class="ecran">Vierzon</td>
-      </tr>
-      <tr>
-          <td class="ecran">Connectée depuis 30 min</td>
-          <td class="ecran">Office 3</td>
-          <td class="ecran">Bruges</td>
-      </tr>
-      <tr>
-          <td class="ecran">Connectée depuis 3 min</td>
-          <td class="ecran">Factory 3</td>
-          <td class="ecran">Lyon</td>
-      </tr>
-      <tr>
-          <td class="ecran">Connectée depuis 3 heures</td>
-          <td class="ecran">Office</td>
-          <td class="ecran">Saint-étienne</td>
-      </tr>
-      <tr>
-          <td class="ecran">Connectée depuis 2 jours</td>
-          <td class="ecran">Accueil</td>
-          <td class="ecran">Barcelone<td>
-      </tr>
-      <tr>
-          <td class="ecran">Connectée depuis 1 semaine</td>
-          <td class="ecran">Meeting room</td>
-          <td class="ecran">Paris</td>
-      </tr>
-      <tr>
-          <td class="ecran">Connectée depuis 4 jours</td>
-          <td class="ecran">Factory</td>
-          <td class="ecran">Lorient</td>
-      </tr>
-      <tr>
-          <td class="ecran">Connectée depuis 2 jours</td>
-          <td class="ecran">Meeting room</td>
-          <td class="ecran">Brest<td>
       </tr>
    </table>
+   <button type="button" class="btn btn-success delete">Supprimer une ligne</button>
 
    <!-- pop up groupe d'ecrans -->
    <h5>Mes <b> groupe d'écrans</b></h5>
@@ -149,16 +103,19 @@
         <br>
         </select>
         <div id="essai"></div>
+        <div id="bouton">
         <button id="add" onclick="addSelect()">+</button>
+        <button id="remove" onclick="removeSelect()">-</button>
+      </div>
         <br>
-        <button id="validerEcran" type="button" value="submit" class="add">Valider</button>
+        <button id="validerEcran" type="button" value="submit" class="addGroup">Valider</button>
         </div>
         
       </div>
       
     </div>
     
-   <table class="groupeEcran test">
+   <table class="groupeEcran testGroup">
     <tr>
         <th>Sélectionner</th>
         <th>Nom du groupe</th>
