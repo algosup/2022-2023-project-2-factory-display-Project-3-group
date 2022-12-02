@@ -1,20 +1,21 @@
 <!doctype html>
 <html lang="en">
   <head>
-  	<title>Accueil</title>
+  	<title>newCampaign</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nouvelle campagne</title>
 	 <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
 	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
    <link rel="shortcut icon"type="image/x-icon" href="../img/jacobi.ico">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous" defer ></script>
+    <link rel="shortcut icon"type="image/x-icon" href="../img/jacobi.ico">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer ></script>
-    <link rel="stylesheet" href="../CSS/newCampaign.css">
-    <link rel="stylesheet" href="../CSS/navbar.css">
-    <script src="../js/addVideo.js" defer ></script>
+    <link rel="stylesheet" href="../css/newCampaign.css">
+    <link rel="stylesheet" href="../css/navbar.css">
     <script src="../js/layout/header.js" defer></script>
 	</head>
 
@@ -58,70 +59,33 @@
               <br>
             <p class="card-text">Fin de diffusion*</p>
             <input type="date" class="form-control" placeholder="date" aria-label="Date">
-             </div><br>
+            <input type="time" class="form-control" placeholder="time" aria-label="Time">
+          </div><br>
           <button id="valider" type="button" class="btn-btn-info">Valider</button>
       </div>
-      <div class="card" style="width: 30rem;">
-       
-        <iframe id="declinedframe" class="embed-responsive-item" src="" height="50" width="100%" ></iframe>
+
+
+
+
+      <div class="card" style="width: 35rem;">
+        <div id="apercu"  class="card-img-top" alt="..."></div>
+        <label for="Select File">Select File</label>
+        <input type="file" class="form-control"  name="image">
+        <div class="form-group">
+          <button class="btn-block btn btn-danger">
+            Upload File
+          </button>
+        </div>
         
 
-        <video controls id="video-tag" loop muted autoplay="autoplay">
-
-            <source id="video-source" src="splashVideo">
-            
-        </video>
-        
-    
-      <!-- <br><br><progress value="0" max="100" id="uploader">0%</progress> -->
-      <!-- <input type="file" value="upload" id="fileButton" /> -->
-      <input type="file" accept="video/*" id="input-tag"/>
-    </div>
-      <!-- <script>
-        function DownloadFile() {
-        file = input.files[0];
-        fr = new FileReader();
-        fr.readAsDataURL(file);
-
-        var blob = new Blob([file], { type: "application/mp4" });
-
-        var objectURL = window.URL.createObjectURL(blob);
-        console.log(objectURL);
-
-        if (navigator.appVersion.toString().indexOf('.NET') > 0) {
-            window.navigator.msSaveOrOpenBlob(blob, 'myFileName.mp4');
-        } else {
-            var link = document.createElement('a');
-            link.href = objectURL;
-            link.download = "myFileName.mp4";
-            document.body.appendChild(link);
-            link.click();
-            link.remove();
-        }
        
-       
-     }
-     function Apercu() {
-        var img = document.createElement("img");
-        img.src = "img/video.jpeg";
-        var div = document.getElementById("apercu");
-        img.style.height = '300px';
-        img.style.width = '500px';
-        div.appendChild(img);
-        }
-      </script>
-      
-    <script>
-       $('#changeframe').click(function () {
-          $('#declinedframe').attr('src', '/ecran1/SMART-SIGNAGE.pdf');
-      });
-    </script> -->
-     <input type="time" class="form-control" placeholder="time" aria-label="Time">
-       
+     
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="../js/createCampaign.js" type="module" ></script>
+    <script src="../js/protect.js" type="module"></script>
 
    
-    <script src="../js/protect.js" type="module"></script>
-      
     
 
   </body>
