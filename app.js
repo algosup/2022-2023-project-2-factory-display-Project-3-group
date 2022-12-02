@@ -1,39 +1,34 @@
-import multer from 'multer';
 import express from 'express';
 import mangoose from 'mongoose';
-import bodyParser from 'body-parser';
-import RouteProduct from './router/product';
+import path from 'path';
 
-var configData = require("./config/connection");
-var connectionInfo = await configData.getConnectionInfo();
-mongoose.connect(connectionInfo.DATABASE_URL);
 
-/* mangoose.connect('mongodb+srv://admin_project:dojWnMcFPkkIynfu@factorydisplay.nlhigvx.mongodb.net/test', {
+
+mangoose.connect('mongodb://jacobi-test-server:4SWaWGVEAP8lIl1j707x8cv1kIaN6StERsBHBeEYasnfW20lnQgBYKGAH96ooau7u0KLp1S73oVhACDb4mMFRw==@jacobi-test-server.mongo.cosmos.azure.com:10255/?ssl=true&replicaSet=globaldb&retrywrites=false&maxIdleTimeMS=120000&appName=@jacobi-test-server', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 },
-()=>console.log(mangoose.connection)); */
+()=>console.log('connected to db')); 
+
 
 const app = express();
-
-app.listen("3000", () => console.log('Server started on port 5503'));
-
-app.use(bodyParser.json());
-app.use('/api/products', RouteProduct);
-
-module.exports = app;
+app.use(express.static('Public'));
 
 
 
+    app.get('/', (req, res) => {
+        // res.send('Hello World!')
+        const htmlPath = path.resolve('Public/HTML/index.html');
+        res.sendFile
+        (htmlPath);
+      });
 
-// const storage = multer.diskStorage({
-//     destination: function(req, file, cb){
-//         cb(null, './public/img/campaigns');
-//     },
-//     filename: function(req, file, cb){
-//         cb(null, file.fieldname+'-'+Date.now()+'-'+file.originalname);
+app.listen(3000, () => {
+    console.log('Server is running on port 3000');
+    }
+);
 
-//     },
-// });
 
-// const upload = multer({storage: storage}).single('img');
+
+
+
