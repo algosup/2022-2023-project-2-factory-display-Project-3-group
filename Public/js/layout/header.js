@@ -3,7 +3,7 @@
 printHeader = document.querySelector("header");
 printHeader.innerHTML = `<nav class="navbar navbar-expand-lg bg-light">
 <a class="navbar-brand" href="accueil.html">
-  <img class="logo" src="../img/JacobiLogo.png" width="80" height="40" alt="">
+  <img class="logo" src="img/JacobiLogo.png" width="80" height="40" alt="">
 </a>
 <div class="container-fluid">
   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">

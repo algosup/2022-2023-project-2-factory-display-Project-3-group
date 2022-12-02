@@ -1,6 +1,0 @@
-
-
-
-
-exports.createProduct =  (req, res) => {
-}

@@ -1,5 +1,11 @@
 import mangoose from 'mongoose';
-import { Router } from 'express';
+
+mangoose.connect('mongodb+srv://admin_project:dojWnMcFPkkIynfu@factorydisplay.nlhigvx.mongodb.net/test', {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+},
+()=>console.log(mangoose.connection));
+
 
 const campaignSchema = new mangoose.Schema({
     title :{
@@ -7,8 +13,7 @@ const campaignSchema = new mangoose.Schema({
         required: true,
     },
     img:{
-        data: Buffer,
-        type : String,
+        type:Array, 
         required: true,
     }, 
     author :{
