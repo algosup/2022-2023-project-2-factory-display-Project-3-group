@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nouveau Compte</title>
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/navbar.css">
+    <link rel="stylesheet" href="CSS/loginJacobi.css">
+    <script src="js/layout/header.js" defer></script>
+</head>
+<body>
+  <header>
+  </header>
+  <section>
+     <div id="signup-box">
+      <div class="left">
+        <h1>NOUVEAU COMPTE</h1>
+        <input type="text" id="name" name="name" placeholder="Prénom" />
+        <input type="text" id="familyname" name="familyname" placeholder="Nom" />
+        <input type="text" id="email" name="email" placeholder="E-mail" pattern="^[a-zA-Z0-9]+@jacobi\.fr$" required/>
+        
+        <input type="password" id="password" name="password" placeholder="Mot de passe" />
+        <div class="checkbox-div">
+          <input type="checkbox" id="checkbox1" onclick="myFunction()"> 
+          <p class="showPassword">Show Password</p>
+        </div>
+        <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirmer mot de passe" />
+        <div class="checkbox-div">
+          <input type="checkbox" id="checkbox2" onclick="myFunction()">
+          <p class="showPassword">Show Password</p>
+        </div>
+        <div id="success"></div>
+        <input type="submit" id='signUp' name="signup_submit" value="Sign up" />
+    
+      </div>
+  
+    </div>
+  
+    </div>
+
+    <img id= "logo2" src="img/logo2.png" alt="logo2">    
+  </section>
+        <script src="js/register.js" type="module"></script>
+        <script src="js/logout.js" type="module"></script>
+        <script src="js/protect.js" type="module"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script>
+          function myFunction() {
+    var x = document.getElementById("password");
+    if (x.type === "password") {
+      x.type = "text";
+    } else {
+      x.type = "password";
+    }
+  }
+        </script>
+</body>
+</html>
