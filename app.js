@@ -4,11 +4,15 @@ import mangoose from 'mongoose';
 import bodyParser from 'body-parser';
 import RouteProduct from './router/product';
 
-mangoose.connect('mongodb+srv://admin_project:dojWnMcFPkkIynfu@factorydisplay.nlhigvx.mongodb.net/test', {
+var configData = require("./config/connection");
+var connectionInfo = await configData.getConnectionInfo();
+mongoose.connect(connectionInfo.DATABASE_URL);
+
+/* mangoose.connect('mongodb+srv://admin_project:dojWnMcFPkkIynfu@factorydisplay.nlhigvx.mongodb.net/test', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 },
-()=>console.log(mangoose.connection));
+()=>console.log(mangoose.connection)); */
 
 const app = express();
 
