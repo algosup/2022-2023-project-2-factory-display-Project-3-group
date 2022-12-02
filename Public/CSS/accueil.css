@@ -69,6 +69,11 @@ p{
     margin-left:1vh ;
  }
 
+ #NewScreen input[type=text] {
+    width: 40% !important;
+    margin-left:20vh ;
+ }
+
   /* When the input field gets focus,
        change its width to 100% */
   input[type=text]:focus {
@@ -125,6 +130,10 @@ th
 .card-body {
     height: 500px;
     width: 500px;
+}
+
+.card-text{
+    margin-left: 170px;
 }
 
 #title{
@@ -185,10 +194,6 @@ a {
     text-align: center;
 }
 
-a:hover {
-    color: black;
-}
-
 #popupNewcampaign h1{
     text-align: center;
 }
@@ -239,6 +244,13 @@ a:hover {
 }
 a:hover{
     color:blue;
-    text-decoration: underline;
 
+}
+
+#nom
+{
+    margin-left: 140px;
+}
+#adresse{
+    margin-left: 140px;
 }

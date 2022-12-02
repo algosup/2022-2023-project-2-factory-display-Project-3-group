@@ -53,10 +53,33 @@
 
 
     <h5>Mes <b>écrans</b></h5>
+    <a class="btn btn-success" data-bs-toggle="modal" href="#NewScreen" role="button">+ Ajouter écran</a>
+
+    <div class="modal fade" id="NewScreen" aria-hidden="true" aria-labelledby="NewScreenGroup" tabindex="-1">
+     <div class="modal-dialog modal-dialog-centered">
+       <div class="modal-content popup">
+         <div class="modal-header">
+           <h1 class="modal-title fs-5" id="title">Créer un nouvel ecran</h1>
+           <span class="deleteMeetingClose" data-bs-toggle="modal">&times;</span>
+         </div>
+         <p class="card-text">Nom*</p>
+         <input type="text" id="nom" class="form-control" placeholder="Nom de l'écran" aria-label="Nom de l'écran">
+         <br>
+         <p class="card-text">Localisation*</p>
+         <input type="text" id="adresse" class="form-control" placeholder="Adresse" aria-label="adresse">
+         <div id="bouton">
+       </div>
+         <br>
+         <button id="validerEcran" type="button" value="submit" class="addScreen">Valider</button>
+         </div>
+       </div>
+       
+     </div>
     <input id="searchbar" onkeyup=" searchFunction() " type="text"
         name="search" placeholder="Recherche écrans..">
       
     <br><br>  
+    
     <table id="ecranSeul" class="testEcran">
       <tr>
           <th>Selectionner</th>
@@ -64,9 +87,6 @@
           <th>Adresse</th>
       </tr>
       <tr>
-          <td><input type='checkbox' name='select'></td>
-          <td class="ecran"><a href="screenInfo.html">Meeting</a></td>
-          <td class="ecran">Vierzon</td>
       </tr>
       <tr>
       </tr>
@@ -86,7 +106,7 @@
 
         </div>
         <p class="card-text">Nom*</p>
-        <input type="text" id="nom" class="form-control" placeholder="Nom du groupe" aria-label="Nom du groupe">
+        <input type="text" id="nomGroup" class="form-control" placeholder="Nom du groupe" aria-label="Nom du groupe">
         <br>
         <p class="card-text">Description</p>
         <input type="text" id="description" class="form-control" placeholder="Description" aria-label="description">
@@ -122,8 +142,7 @@
         <th>Nombre d'écrans</th>
         <th>Description</th>
     </tr>
-    <tr>
-    </tr>
+    
  </table>
  <button type="button" class="btn btn-success delete">Supprimer une ligne</button>
 </section>

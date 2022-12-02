@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $(".addGroup").click(function() {
-        var nom = $("#nom").val();
+        var nom = $("#nomGroup").val();
         var description = $("#description").val();
         var ligne = "<tr><td><input type='checkbox' name='select'></td><td>" + nom + "</td><td>"+ count +"</td><td>" + description + "</td></tr>";
         $("table.testGroup").append(ligne);
