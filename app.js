@@ -18,7 +18,7 @@ mangoose.connect('mongodb://jacobi-test-server:4SWaWGVEAP8lIl1j707x8cv1kIaN6StER
 
 app. engine('html', cons.swig)
 // view engine setup
- app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'html'); 
 
 app.use(logger('dev'));
