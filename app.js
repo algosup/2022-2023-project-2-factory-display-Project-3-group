@@ -4,10 +4,7 @@ const app = express();
 const port = 3000;
 
 app.use(express.json());
-app.use(express.static('Public'));
-
-
-
+app.use(express.static('./Public'));
 
 
 
