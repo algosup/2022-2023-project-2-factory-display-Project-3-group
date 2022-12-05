@@ -1,6 +1,6 @@
 import mangoose from 'mongoose';
 
-mangoose.connect('mongodb+srv://admin_project:dojWnMcFPkkIynfu@factorydisplay.nlhigvx.mongodb.net/test', {
+mangoose.connect('mongodb+srv://admin_project:dojWnMcFPkkIynfu@factorydisplay.nlhigvx.mongodb.net/jacobiFacotry', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 },
@@ -29,23 +29,32 @@ const campaignSchema = new mangoose.Schema({
 });
 
 
+const testSchema = new mangoose.Schema({
+    title : String,
+    image: Array
+});
 
-module.exports = new mangoose.model('Campaign', campaignSchema);
+
+export const Test = mangoose.model('jacobiFactory', testSchema, 'test');
+
+
+export const Campaign =  mangoose.model('Campaign', campaignSchema);
 
 
 
 
 
-function addCampaign(title , img , author , screen , screenGroup, Date){
-    const newCampaign = new Campaign({   
-        title : title,
-        img:{
-            data: img,
-            type : img
-        },
-        author : author,
-        screen : screen,
-        screenGroup: screenGroup,
-        Date: Date});
-    await newCampaign.save();
-}   
+
+// function addCampaign(title , img , author , screen , screenGroup, Date){
+//     const newCampaign = new Campaign({   
+//         title : title,
+//         img:{
+//             data: img,
+//             type : img
+//         },
+//         author : author,
+//         screen : screen,
+//         screenGroup: screenGroup,
+//         Date: Date});
+//     await newCampaign.save();
+// }   
