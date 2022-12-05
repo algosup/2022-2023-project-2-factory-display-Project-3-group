@@ -43,7 +43,9 @@ Author: Karine Vinette
 - Created on: 2022-11-25
 <br>
 - Bug Tracker by Karine Vinette : https://docs.google.com/document/d/1VXgCwnPgpMuJ61_PvMg_wf2PeF6v-9OH_zd8SrqFB24/edit
+
 # 2. Introduction
+
 ## a. Overview
 
 [JACOBI](https://www.jacobi.net/fr/) wants to display informations to their employees in two different rooms on TV's or monitors.
