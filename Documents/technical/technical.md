@@ -182,8 +182,8 @@ Preparation of the presentation
 
 
 ## a. References
-[MongoDb](https://www.mongodb.com/fr-fr)
-[Azure](https://azure.microsoft.com/fr-fr/)
+[MongoDb](https://www.mongodb.com/fr-fr)<br>
+[Azure](https://azure.microsoft.com/fr-fr/)<br>
 [Nodejs](https://nodejs.org/en/)
 
 ## b. Acknowledgement
