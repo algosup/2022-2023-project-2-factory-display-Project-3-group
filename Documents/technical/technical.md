@@ -41,8 +41,6 @@ Author: Karine Vinette
 | Q&A               | Team's work |
 
 - Created on: 2022-11-25
-<br>
-- Bug Tracker by Karine Vinette : https://docs.google.com/document/d/1VXgCwnPgpMuJ61_PvMg_wf2PeF6v-9OH_zd8SrqFB24/edit
 
 # 2. Introduction
 
@@ -64,7 +62,7 @@ At the moment, the informations are shared by paper, that is not ecological and 
 ## d. Product and Technical Requirements
 
 Product requirements :
-- They want news that are displayed by TVS or monitors.They want that when they connect the tvs or the monitors, the webpage will be display directly.
+- They want news that are displayed by TVS or monitors. They want that when they connect the tvs or the monitors, the webpage will be display directly.
 
 Technical requirements :
 - Following the company's need, **ALGOSUP** was required to buy a mini windows computer and a monitor. The other choice was to use a smart TV, but we think that with this solution there is a problem of security because employees can change the tv's channel.
@@ -111,15 +109,11 @@ CRUD : Create, Read, Update and Delete the data.
 }, 3000);`
 
 
-## c. Test Plan
-Test plan :
-
-
-## d. Release / Roll-out and Deployment Plan
+## c. Release / Roll-out and Deployment Plan
 
 **Jacobi** wants to use the product as soon as possible. They want to diffuse their campaigns in strategics's places. They want to display informations in rooms dedicated to employees rest. Indeed, if the use of the product would scale, for exemple to the firm in Paris, they could display another type of campaigns. Also, if the product is to be used in another country, we will change the content to english.  
 
-## e. Alternate Solutions 
+## d. Alternate Solutions 
 
 We can see this problem from a different perspective and propose a different approach to solve it. One of the point that we can discuss is why use WINDOWS computer instead of phones. <br>
 With a phone you can display a subdomain of the campaigns's website easily and with security. The only problem is the lifetime of the battery in our case, because Jacobi wants that the diffusion would be on everytime. 
