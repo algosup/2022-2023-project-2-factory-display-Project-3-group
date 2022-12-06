@@ -1,27 +1,27 @@
 <!doctype html>
 <html lang="en">
   <head>
-  	<title>newCampaign</title>
+  	<title>Accueil</title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Nouvelle campagne</title>
 	 <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
 	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
    <link rel="stylesheet" href="CSS/bootstrap.min.css">
-
    <link rel="shortcut icon"type="image/x-icon" href="img/jacobi.ico">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous" defer ></script>
-    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer ></script>
     <link rel="stylesheet" href="CSS/newCampaign.css">
     <link rel="stylesheet" href="CSS/navbar.css">
+    <link rel="stylesheet" href="CSS/addWidget.css">
+    <script src="js/addVideo.js" defer ></script>
     <script src="js/layout/header.js" defer></script>
+    <script src="js/addWidget.js" defer></script>
 	</head>
 
 
-	<body>
+	<body onload=showDate();>
     <header></header>
       <h3 class="orange">Formulaire Aperçus</h3><br>
 
@@ -30,8 +30,7 @@
         <div class="card-body">
           <h5 class="card-title">Informations sur la campagne</h5><br>
           <p class="card-text">Nom de la campagne*</p>
-          <form method="post" action="/api/addname">
-          <input id="title" name = "title" type="text" class="form-control" placeholder="Nom de la campagne" aria-label="Nom de la campagne" required>
+          <input id="title" type="text" class="form-control" placeholder="Nom de la campagne" aria-label="Nom de la campagne" required>
         </div>
         <div class="card-body">
            
@@ -61,34 +60,19 @@
               <br>
             <p class="card-text">Fin de diffusion*</p>
             <input type="date" class="form-control" placeholder="date" aria-label="Date">
-            <input type="time" class="form-control" placeholder="time" aria-label="Time">
-          </div><br>
-          <button id="valider" type="submit" class="btn-btn-info">Valider</button>
+             </div><br>
+          <button id="valider" type="button" class="btn-btn-info">Valider</button>
       </div>
-
-
-
-
-      <div class="card" style="width: 35rem;">
-        <div id="apercu"  class="card-img-top" alt="..."></div>
-        <label for="Select File">Select File</label>
-        <input type="file" class="form-control"  name="image">
-        <div class="form-group">
-          <button class="btn-block btn btn-danger">
-            Upload File
-          </button>
-        </div>
-        </form>
-
-       
-     
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-    <script src="js/createCampaign.js" type="module" ></script>
-    <script src="js/protect.js" type="module"></script>
-    <script src="js/api.js" type="module"></script>
-
+      <div onload=showDate(); id="apercu" class="card container" style="width: 52rem;">
+        
+        <span id='horloge' style="background-color:black;color:orange;font-size:60px;"></span>
+        <iframe src="https://fr.euronews.com/embed/timeline" id="news" scrolling="no" frameborder="1" style="border:none; min-height:400px; width:30%; height:20%;"></iframe>
+        <a id="meteo" target="_blank" href="https://hotelmix.fr/weather/vierzon-4824"><img id="meteoWidget" src="https://w.bookcdn.com/weather/picture/4_4824_1_3_137AE9_160_ffffff_333333_08488D_1_ffffff_333333_0_6.png?scode=&domid=581&anc_id=13091"  alt="booked.net"/></a>
+      </div>
    
+      
+    <script src="js/protect.js" type="module"></script>
+      
     
 
   </body>
