@@ -66,6 +66,10 @@ Author: Karine Vinette
 | Json| In the field of IT,  |
 | Mongoose| In the field of IT,  |
 | Routes| In the field of IT,  |
+| Javascript| In the field of IT,  |
+| NodeJs| In the field of IT,  |
+| Express| In the field of IT,  |
+| Static website| In the field of IT,  |
 
 
 ## c. Context or Background
@@ -99,6 +103,16 @@ We want to use a mini PC Windows with a monitor.
 Use Windows startup.
 [Tutorial](https://support.microsoft.com/en-us/windows/add-an-app-to-run-automatically-at-startup-in-windows-10-150da165-dcd9-7230-517b-cf3c295d89dd)
 
+**Software:**
+We have to make an intranet for **JACOBI**.
+How to do it.
+To display a website on the browser, we have to use web's technologies like Javascript or Nodejs if we want a compiled language more powerful.<br>
+We will use the framework **Express** from NodeJs.<br>
+We will use a database to store the campaigns on the cloud to be accessible from all pages of the app.<br>
+We choose MongoDb because it is easy to use.<br>
+We need a system of authentification to secure the access of the campaign's creation. We will use firebase authentification because it is easy to use and powerfull. MongoDb doesn't provide a specific tool of authentification. We could have used Firebase database but it is not user friendly. We have to host the website on the cloud to be accessible from whatever browser, we choose to use Azure because it is the advice of **ALGOSUP**, we could have choose firebase hosting but it is for static website and ours is dynamic because we use NodeJS.<br>
+For the display each screen is related to a subdomain, when we type the subdomain address in the browser, the routage of the software is redirecting the app to a specific html page which is dedicated to display the informations that we want.
+
 **Login page:**
 Create a signin and signup with Firebase.
 
@@ -110,6 +124,9 @@ Connecting the app with DNS and add subdomains to display the campaigns on sever
 
 **Managing the data with MongoDB:**
 CRUD : Create, Read, Update and Delete the data.
+In newCampaign.html, we take the informations of the campaign that the company wants to display.
+In campaign.html, we display the list of campaigns that are stored in our database.
+In these campaigns, we are storing videos, images and pdfs.
 
 **Programming the campaigns in time:**<br>
 
