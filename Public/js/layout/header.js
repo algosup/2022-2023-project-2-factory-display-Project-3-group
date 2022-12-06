@@ -27,7 +27,6 @@ printHeader.innerHTML = `<nav class="navbar navbar-expand-lg bg-light">
         <ul class="dropdown-menu">
           <li><a class="dropdown-item" href="../account/my_account.html">Mon compte</a></li>
           <li><a class="dropdown-item" href="newAccount.html">Créer un compte</a></li>
-          <li><a class="dropdown-item" href="../account/settings.html">Paramètres</a></li>
           <li><a class="dropdown-item" id="logout">Déconnexion</a></li>
         </ul>
       </li>

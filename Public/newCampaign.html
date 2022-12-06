@@ -5,7 +5,7 @@
     <meta charset="utf-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Nouvelle campagne</title>
+    <title>Crée une campagne</title>
 	 <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
 	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -30,7 +30,7 @@
         <div class="card-body">
           <h5 class="card-title">Informations sur la campagne</h5><br>
           <p class="card-text">Nom de la campagne*</p>
-          <form method="post" action="/api/addname">
+          <form method="post" action="/api/newCampaign">
           <input id="title" name = "title" type="text" class="form-control" placeholder="Nom de la campagne" aria-label="Nom de la campagne" required>
         </div>
         <div class="card-body">
@@ -42,7 +42,7 @@
                 <option >Disabled select</option>
               </select><br>
             <p class="card-text">Ecran*</p>
-            <select id="disabledSelect" class="form-select">
+            <select id="disabledSelect" class="form-select" name="screen">
                 <option>Ecran1</option>
                 <option>Ecran2</option>
                 <option>Ecran1 & Ecran2</option>
@@ -56,11 +56,11 @@
                 <option>Disabled select</option>
               </select><br>
             <p class="card-text">Début de diffusion*</p>
-            <input type="date" class="form-control" placeholder="date" aria-label="Date">
+            <input type="date" class="form-control" name="startDate" placeholder="date" aria-label="Date">
             <input type="time" class="form-control" placeholder="time" aria-label="Time">
               <br>
             <p class="card-text">Fin de diffusion*</p>
-            <input type="date" class="form-control" placeholder="date" aria-label="Date">
+            <input type="date" class="form-control" name="endDate" placeholder="date" aria-label="Date">
             <input type="time" class="form-control" placeholder="time" aria-label="Time">
           </div><br>
           <button id="valider" type="submit" class="btn-btn-info">Valider</button>

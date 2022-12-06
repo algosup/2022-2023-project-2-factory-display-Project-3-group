@@ -12,22 +12,24 @@ const campaignSchema = new mangoose.Schema({
         type: String,
         required: true,
     },
-    img:{
-        type:Array, 
-        required: true,
-    }, 
-    author :{
-        type: String,
-        required: true,
-    },
+    // img:{
+    //     type:Array, 
+    //     required: true,
+    // }, 
+    // author :{
+    //     type: String,
+    //     required: true,
+    // },
     screen : {
         type: String,
         required: true,
     },
-    screenGroup: String,
-    Date: { type: Date, default: Date.now }
+    // screenGroup: String,
+    startDate: { type: Date, default: Date.now },
+    endDate: { type: Date, default: Date.now},
+    
 });
-
+ 
 
 const testSchema = new mangoose.Schema({
     title : String,
