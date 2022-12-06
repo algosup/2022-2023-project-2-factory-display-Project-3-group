@@ -12,10 +12,10 @@ const campaignSchema = new mangoose.Schema({
         type: String,
         required: true,
     },
-    // img:{
-    //     type:Array, 
-    //     required: true,
-    // }, 
+    img:{
+        data:Buffer, 
+        contentType: String,
+    }, 
     // author :{
     //     type: String,
     //     required: true,
