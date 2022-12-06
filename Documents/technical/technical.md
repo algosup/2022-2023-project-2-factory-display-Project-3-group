@@ -72,6 +72,8 @@ Author: Karine Vinette
 | Static website| In the field of IT,  |
 | Windows| In the field of IT,  |
 | Linux| In the field of IT,  |
+| Raspberry Pi| In the field of IT,  |
+
 
 
 
