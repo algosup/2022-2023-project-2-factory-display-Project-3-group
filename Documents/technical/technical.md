@@ -55,6 +55,17 @@ Author: Karine Vinette
 | Wigdet| A widget, active tile, interactive tile, or mini-software is a tool available on an operating system, webpage, or blog. Interactive widgets usually provide information or entertainment.|
 | Hardware| In the field of IT, hardware refers to the physical part of devices, telecommunications devices, storage, and peripherals in general. |
 | Software| The term software is used to describe software that enables your computer to operate and handles data processing. Several software are installed on your device to give commands, so that specific tasks are performed according to their uses.|
+| Database| In the field of IT, |
+| MongoDb| In the field of IT,  |
+| Authentification| In the field of IT,  |
+| Firebase| In the field of IT,  |
+| Hosting| In the field of IT,  |
+| Azure| In the field of IT,  |
+| DNS| In the field of IT,  |
+| Subdomains| In the field of IT,  |
+| Json| In the field of IT,  |
+| Mongoose| In the field of IT,  |
+| Routes| In the field of IT,  |
 
 
 ## c. Context or Background
