@@ -70,6 +70,9 @@ Author: Karine Vinette
 | NodeJs| In the field of IT,  |
 | Express| In the field of IT,  |
 | Static website| In the field of IT,  |
+| Windows| In the field of IT,  |
+| Linux| In the field of IT,  |
+
 
 
 ## c. Context or Background
@@ -97,13 +100,18 @@ Their product is one exemple to our solution. The difference is that we need to 
 ## b. Suggested or Proposed Solution / Design 
 
 **The hardware:**
-We want to use a mini PC Windows with a monitor.
+We want to use a mini PC Windows with a monitor. It has an easy automatic setup system.
+Why Windows ?<br>
+The Windows software is simply best because of how it has evolved with time. Its security system is state-of-the-art, its user interface allows convenient usage irrespective of the device that you are using it on. The only thing that will pinch some is its price.<br>
+In second choice, we can use a Linux technology, it wasn't our first choice because their leader product Raspberry Pi is not available for the moment, but we can use RogPi, a similar product.
+Linux offers great speed and security, on the other hand, Windows offers great ease of use, so that even non-tech-savvy people can work easily on personal computers. Linux is employed by many corporate organizations as servers and OS for security purpose while Windows is mostly employed by business users and gamers.
+If the company asks us, we can make a technology change.
 
 **Launch the website at the start of the computer:**
 Use Windows startup.
 [Tutorial](https://support.microsoft.com/en-us/windows/add-an-app-to-run-automatically-at-startup-in-windows-10-150da165-dcd9-7230-517b-cf3c295d89dd)
 
-**Software:**
+**Software:**<br>
 We have to make an intranet for **JACOBI**.
 How to do it.
 To display a website on the browser, we have to use web's technologies like Javascript or Nodejs if we want a compiled language more powerful.<br>
