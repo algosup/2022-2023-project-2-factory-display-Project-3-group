@@ -113,13 +113,13 @@ If the company asks us, we can make a technology change.
 Use Windows startup.
 [Tutorial](https://support.microsoft.com/en-us/windows/add-an-app-to-run-automatically-at-startup-in-windows-10-150da165-dcd9-7230-517b-cf3c295d89dd)
 
-**Software:**<br>
+**Software:**
 We have to make an intranet for **JACOBI**.
-How to do it.
+How to do it ?
 To display a website on the browser, we have to use web's technologies like Javascript or Nodejs if we want a compiled language more powerful.<br>
 We will use the framework **Express** from NodeJs.<br>
 We will use a database to store the campaigns on the cloud to be accessible from all pages of the app.<br>
-We choose MongoDb because it is easy to use.<br>
+We chose MongoDb because it is easy to use.<br>
 We need a system of authentification to secure the access of the campaign's creation. We will use firebase authentification because it is easy to use and powerfull. MongoDb doesn't provide a specific tool of authentification. We could have used Firebase database but it is not user friendly. We have to host the website on the cloud to be accessible from whatever browser, we choose to use Azure because it is the advice of **ALGOSUP**, we could have choose firebase hosting but it is for static website and ours is dynamic because we use NodeJS.<br>
 For the display each screen is related to a subdomain, when we type the subdomain address in the browser, the routage of the software is redirecting the app to a specific html page which is dedicated to display the informations that we want.
 
@@ -246,7 +246,7 @@ Preparation of the presentation
 [MongoDb](https://www.mongodb.com/fr-fr)<br>
 [Azure](https://azure.microsoft.com/fr-fr/)<br>
 [Nodejs](https://nodejs.org/en/)<br>
-[Firebase](https://firebase.google.com/docs?gclid=Cj0KCQiA1sucBhDgARIsAFoytUs0kb6ml7KcDkJ_p-h5__D7r-OKUsoSV6-6u5iU6a4q2ErNPgEIkXcaAq3jEALw_wcB&gclsrc=aw.ds)
+[Firebase Documentation](https://firebase.google.com/docs?gclid=Cj0KCQiA1sucBhDgARIsAFoytUs0kb6ml7KcDkJ_p-h5__D7r-OKUsoSV6-6u5iU6a4q2ErNPgEIkXcaAq3jEALw_wcB&gclsrc=aw.ds)
 
 ## b. Acknowledgement
 
