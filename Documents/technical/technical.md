@@ -124,13 +124,15 @@ We need a system of authentification to secure the access of the campaign's crea
 For the display each screen is related to a subdomain, when we type the subdomain address in the browser, the routage of the software is redirecting the app to a specific html page which is dedicated to display the informations that we want.
 
 **Login page:**
-Create a signin and signup with Firebase.
+We create a signin and signup with **Firebase** authentification.
 
 **Persistance of the login:**<br>
+We used the solution provided by **Firebase** to keep the user logged when he navigates into the website.
 
 
 **Hosting with Microsoft Azure:**
 Connecting the app with DNS and add subdomains to display the campaigns on several screens.
+We chose Microsoft Azure because it is an advice from ALGOSUP and we needed an hosting for a dynamic website. However, the custom domain from **AZURE** wasn't user friendly, so we bought a custom domain from **IONOS** (1€excl.tax/year the first year) that **JACOBI** will be able to buy if they want to keep it.
 
 **Managing the data with MongoDB:**
 CRUD : Create, Read, Update and Delete the data.
@@ -139,7 +141,31 @@ In campaign.html, we display the list of campaigns that are stored in our databa
 In these campaigns, we are storing videos, images and pdfs.
 
 **Programming the campaigns in time:**<br>
+```
+isToday(new Date('2022-11-21')); // false
 
+function isToday(date) {
+  const today = new Date();
+  document.getElementById("a").style.display = "none";
+
+  // 👇️ Today's date
+  console.log(today);
+  console.log(date);
+
+
+  if (today.toDateString() === date.toDateString()) {
+  
+  document.getElementById("a").style.display = "block";
+  console.log("ok block");
+  }
+
+  return false;
+}
+
+/* console.log(isToday(new Date())); // 👉️ true
+console.log(isToday(new Date('2022-01-21')));
+
+```
 
 **Automatic refresh page:**
 `setTimeout(() => {
@@ -216,7 +242,8 @@ Preparation of the presentation
 ## a. References
 [MongoDb](https://www.mongodb.com/fr-fr)<br>
 [Azure](https://azure.microsoft.com/fr-fr/)<br>
-[Nodejs](https://nodejs.org/en/)
+[Nodejs](https://nodejs.org/en/)<br>
+[Firebase](https://firebase.google.com/docs?gclid=Cj0KCQiA1sucBhDgARIsAFoytUs0kb6ml7KcDkJ_p-h5__D7r-OKUsoSV6-6u5iU6a4q2ErNPgEIkXcaAq3jEALw_wcB&gclsrc=aw.ds)
 
 ## b. Acknowledgement
 
