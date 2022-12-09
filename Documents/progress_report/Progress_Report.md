@@ -6,16 +6,23 @@ Week | Date | Title | Stakeholders | Description |
 | | Tuesday 11/08/2022 | Mockup | Thomas | The mockup has been done using the graphic chart of https://www.jacobi.net/fr/.
 | | Saturday 11/12/2022 | "Welcome" Page | Thomas/Robin | The "Welcome" page has been done.
 | <p style="text-decoration: underline">Week 2</p> | Monday 11/14/2022 | Meeting with the customer | Everyone |
-| | Monday 11/14/2022 | Hardware Choices | Karine | Following the meeting with the customer, we chose the hardware best suited to the specifications while remaining within the budget set by Jacobi.
+| |  | Hardware Choices | Karine | Following the meeting with the customer, we chose the hardware best suited to the specifications while remaining within the budget set by Jacobi.
 | | Tuesday 11/15/2022 | "Set Up Campaign" Page | Karine/Thomas | The "Set Up Campaign" page has been done.
-| | Tuesday 11/15/2022 | "Import New Campaign" Pop Up | Quentin | The "Import New Campaign" pop up has been done.
+| |  | "Import New Campaign" Pop Up | Quentin | The "Import New Campaign" pop up has been done.
 | <p style="text-decoration: underline">Week 3</p> | Monday 11/21/2022 | Firebase Host V1 | Karine | The first version of the Firebase host has been done.
-| | Monday 11/21/2022 | Firebase Abandon | Everyone | According to searches and advices, we decided to abandon the use of Firebase.
-| | Monday 11/21/2022 | Functional Meeting | Robin | A meeting with Franck has been made to discuss about changes to apply to the specifications to improve it.
+| |  | Firebase Abandon | Everyone | According to searches and advices, we decided to abandon the use of Firebase.
+| |  | Functional Meeting | Robin | A meeting with Franck has been made to discuss about changes to apply to the specifications to improve it.
 | | Friday 11/25/2022 | Azure Set Up V1 | Karine | The Azure set up has been done.
-| | Friday 11/25/2022 | "Screen Info" Page | Quentin | The "Screen Info" page has been done.
-| | Friday 11/25/2022 | Functional Specifications | Robin | The functional specifications have been done but will need to be check with the customer.
+| |  | "Screen Info" Page | Quentin | The "Screen Info" page has been done.
+| |  | Functional Specifications | Robin | The functional specifications have been done but will need to be check with the customer.
 | <p style="text-decoration: underline">Week 4</p> | Monday 11/28/2022 | "Sign Up" Page | Quentin | We decided to put the sign up on an other page than the login because only the admin will be able to create an account.
 | | Tuesday 11/29/2022 | Website Security | Thomas | It's now impossible to access a page without being logged in.
-| | Tuesday 11/29/2022 | "Login" and "Sign Up" Pages V2 | Quentin | These 2 pages have been updated.
+| |  | "Login" and "Sign Up" Pages V2 | Quentin | These 2 pages have been updated.
+| |  | Hardware problem | Everyone | The hardware has been refused.
+| | Thursday 12/01/2022 | "Accueil" Page V2 | Robin | The "Accueil" page has been improved and a "addScreen" page has been add.
+| | Friday 12/02/2022 | MongoDB SetUp | Thomas | The database has been set up on MongoDB.
+| |  | Azure SetUp | Quentin | The host has been set up on Azure.
+| <p style="text-decoration: underline">Week 5</p> | Tuesday 12/06/2022 | Technical Meeting | Karine | A meeting with Franck has been made to discuss about changes to apply to the specifications to improve it.
+| |  | "addWidget" Page | Robin | A page to addWidget has been add.
+| |  | "apiCampaign" Page | Thomas | The "apiCampaign" page has been add.
 
