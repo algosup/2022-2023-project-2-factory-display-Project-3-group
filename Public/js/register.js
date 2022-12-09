@@ -96,12 +96,3 @@ signUp.addEventListener('click',(e) => {
       signup.style.marginTop = "0px";
     };
   });
-
-  function myFunction() {
-    var x = document.getElementById("password");
-    if (x.type === "password") {
-      x.type = "text";
-    } else {
-      x.type = "password";
-    }
-  }

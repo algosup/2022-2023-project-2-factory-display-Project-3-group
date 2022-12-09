@@ -47,7 +47,7 @@ const password = document.getElementById('password2').value;
      document.getElementById("error").innerHTML = "";
      document.getElementById("error").appendChild(p);
      document.getElementById("error").style.color = "red";
-     document.getElementById("login-box").style.height = "100%";
+     document.getElementById("login-box").style.height = "95%";
      document.getElementById("email2").value = "";
      document.getElementById("password2").value = "";
 });

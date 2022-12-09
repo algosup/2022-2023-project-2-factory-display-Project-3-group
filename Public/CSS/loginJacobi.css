@@ -60,7 +60,7 @@ h1{
     margin-left: 8%;
     margin-top: 12% ;
     width: 22%;
-    height: 90%;
+    height: 85%;
     background: rgb(255, 255, 255);
     border-radius: 2px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
@@ -198,6 +198,7 @@ h1{
     font-weight: 400;
     font-size: 28px;
     transition: 0.2s ease;
+    accent-color: #FF700F;
   }
 
   .checkbox-div {
@@ -212,4 +213,7 @@ h1{
     margin-bottom: 0%;
     margin-left: 2%;
   }
- 
+
+  #password, #password2, #confirm-password {
+    margin-bottom: 0% !important;
+  }

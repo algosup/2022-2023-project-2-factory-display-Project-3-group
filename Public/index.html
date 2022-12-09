@@ -22,7 +22,10 @@
         <div id="error"></div>
         <input type="text" id="email2" name="email" placeholder="E-mail" />
         <input type="password" id="password2" name="password" placeholder="Mot de passe" />
-        
+        <div class="checkbox-div">
+          <input type="checkbox" id="checkbox1" onclick="checkPassword()"> 
+          <p class="showPassword">Show Password</p>
+        </div>
         <input type="submit" id='login' name="login" value="Login" />
       </div>
     
@@ -32,14 +35,17 @@
     
       <img id= "logo2" src="img/logo2.png" alt="logo2">
   </section>
-  
-
-
-
-
+  <script>
+    function checkPassword() {
+            var x = document.getElementById("password2");
+            if (x.type === "password") {
+              x.type = "text";
+              
+            } else {
+              x.type = "password";
+            }
+          }
+  </script>
   <script src="js/index.js" type="module"></script>
-
-
-  
 </body>
 </html>

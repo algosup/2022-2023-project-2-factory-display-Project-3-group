@@ -25,12 +25,12 @@
         
         <input type="password" id="password" name="password" placeholder="Mot de passe" />
         <div class="checkbox-div">
-          <input type="checkbox" id="checkbox1" onclick="myFunction()"> 
+          <input type="checkbox" id="checkbox1" onclick="checkPassword()"> 
           <p class="showPassword">Show Password</p>
         </div>
         <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirmer mot de passe" />
         <div class="checkbox-div">
-          <input type="checkbox" id="checkbox2" onclick="myFunction()">
+          <input type="checkbox" id="checkbox2" onclick="checkConfirmPassword()">
           <p class="showPassword">Show Password</p>
         </div>
         <div id="success"></div>
@@ -49,14 +49,24 @@
         <script src="js/protect.js" type="module"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <script>
-          function myFunction() {
-    var x = document.getElementById("password");
-    if (x.type === "password") {
-      x.type = "text";
-    } else {
-      x.type = "password";
-    }
-  }
+          function checkPassword() {
+            var x = document.getElementById("password");
+            if (x.type === "password") {
+              x.type = "text";
+              
+            } else {
+              x.type = "password";
+            }
+          }
+
+          function checkConfirmPassword() {
+            var x = document.getElementById("confirm-password");
+            if (x.type === "password") {
+              x.type = "text";
+            } else {
+              x.type = "password";
+            }
+          }
         </script>
 </body>
 </html>
