@@ -1,5 +1,3 @@
-The author of this Product Requirement Document  is **Robin Debry**
-<br>
 <h1 style="text-align: center">Project 1 smart signage project 4 group - Product Requirement Document</h1>
 
 <details> 
@@ -26,7 +24,7 @@ They contacted us to create this project to improve the communication between th
 
 ## 2. Opportunity Statement
 
-The problem encountered by the Jacobi group is that they have a lot of communication. It's important to solve this problem because it's a big problem for the Jacobi group. They want to improve the communication of the factory to be more efficient.
+The problem encountered by the Jacobi group is that they have a lot of communication between the employees. It's important to solve this problem because it's a big problem for the Jacobi group. They want to improve the communication of the factory to be more efficient.
 
 ## 3. Audience
 

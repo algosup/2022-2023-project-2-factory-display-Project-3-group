@@ -1,5 +1,3 @@
-The author of this functional specification is **Robin Debry**
-<br>
 <h1 style="text-align: center">Project 1 smart signage project 4 group - Functional Specifications</h1>
 
 <details> 
