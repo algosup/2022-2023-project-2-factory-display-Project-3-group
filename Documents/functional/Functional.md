@@ -10,8 +10,15 @@ The author of this functional specification is **Robin Debry**
 - [3. Stakeholders](#3-stakeholders)
   - [3.1. The sponsor](#31-the-sponsor)
   - [3.2. The engineering team](#32-the-engineering-team)
-- [4. Monitoring screens in the factory](#4-monitoring-screens-in-the-factory)
-- [5. Remote control of the screen in the factory](#5-remote-control-of-the-screen-in-the-factory)
+- [4. Functional Requirement](#4-functional-requirement)
+  - [4.1. Account creation and login](#41-account-creation-and-login)
+  - [4.2. Add a screen](#42-add-a-screen)
+  - [4.3. Add a group of screens](#43-add-a-group-of-screens)
+  - [4.4. Add a campaign](#44-add-a-campaign)
+  - [4.5. Add a Widget](#45-add-a-widget)
+  - [4.6. Add a video](#46-add-a-video)
+  - [4.7. Add a file](#47-add-a-file)
+  - [4.8. Display on the screen the campaign](#48-display-on-the-screen-the-campaign)
 - [6. Personas:](#6-personas)
   - [6.1 Content Producer](#61-content-producer)
     - [6.1.1. Michael](#611-michael)
@@ -81,28 +88,94 @@ The second stakeholder type is the engineering team who will directly work on th
 * Thomas PLANCHARD as the software engineer.
 * Karine VINETTE as the tech lead.
 
-## 4. Monitoring screens in the factory
+## 4. Functional Requirement
 
-The most important part for Jacobi is the communication between the factory and the people who work there. It's because they need a website to display some information on a screen to inform all of the employees. <br>
-The importance of the screens in the company is to inform the employees about the news of the company.<br>
-The screens are used to display the news of the company, the weather, the time, the news of the world, the news of the factory, the news of the employees, the news of the canteen, the news of the meeting room, the news of the reception and the news of the locker room. Also, you will have information if someone visits the factory and it will be displayed for the good room <br>
-The monitoring of the screen is the main point of the development of this project. <br>
-The user will use an application connected to the other screens with a Wi-Fi connection. <br>
-because of the GDPR, the user will have to log in to the application to be able to see the content of the screen. Also, the user can stay connected to the application without reconnecting every time he wants to see or change the content of the screen. <br>
-He should be able to see if the screen is on if it is off, the actual connection of the screen (with Wi-Fi bar) and the time since the screen is connected (in hours and minutes). <br>
-This function will be an informative one, it has the role of informing the user of the status of the screen in real-time.
+### 4.1. Account creation and login
 
-## 5. Remote control of the screen in the factory
+We will have to create an account for the Jacobi employees. <br>
 
-The importance of the remote control of the screen is to be able to change the content of the screen without having to go to the screen. <br>
-Also, the user will be able to change the content of the screen without having to log in every time the application. <br>
-The user will be able to schedule the content of the screen for a precise day and a precise hour <br>
+To do this, we will have to create a form with the following fields:
+- First name
+- Last name 
+- Email
+- Password
+- Confirm password
+  
+For the Email the employee need to put a Jacobi email adress. <br>
 
-The remote control of the screen is the second parameter to consider during this project. <br>
-The user will be able to manage the other screens via an application. The user will be able to change the campaign he wants on the screen and choose for which screen he wants to apply this campaign(one screen or multiple screens).<br>
-The user will also be able to configure an automatic on/off time that he will be able to change at any time with some precise hours.
+To do that we need to:
+- Add in database the account create.
+- Check in the database if the account exist in the database.
+- Display error message if the login or the password is wrong or doesn’t exist.
+- Redirect correctly in the welcome page when the login and password are correct.
 
-This will be the interactive features between the screen and the user.
+### 4.2. Add a screen
+
+The user will be able to add a screen to the database and to the website. <br>
+
+To do that we need to:
+- Add in database the screen create.
+- Add in the website the screen create.
+- Add the information of the screen in the database and in the website.
+- Display error message if the screen already exist in the database.
+- Redirect correctly in the welcome page when the screen is added.
+
+### 4.3. Add a group of screens
+
+The user will be able to add a group of screens to the database and to the website. <br>
+
+To do that we need to:
+- Add in database the group of screens create.
+- Add the information of the group of screens in the database and in the website.
+- Add the numbers of screens in the database and in the website.
+
+### 4.4. Add a campaign
+
+The user will be able to add a campaign to the database and to the website. <br>
+
+To do that we need to:
+- Add in database and in the website the campaign create.
+- Add in the database and in the website the information of the campaign.
+- Select if you want to display the campaign on an unique screen or on a group of screens.
+- Select if you want to display the campaign on a unique hour or day or on a period of time.
+- Select if you want to display a Widget, a video or a file(PDF,PNG).
+- Select where you want to display the campaign.
+
+
+### 4.5. Add a Widget
+
+The user will be able to add a Widget to the screen <br>
+
+To do that we need to:
+- Select add a Widget.
+- Create the campaign with the Widget.
+- The image of the preview with the widget will be add in the database.
+
+### 4.6. Add a video
+
+The user will be able to add a video to the screen <br>
+
+To do that we need to:
+- Select add a video.
+- Create the campaign with the video.
+- The image of the preview with the video will be add in the database.
+
+### 4.7. Add a file
+
+The user will be able to add a file to the screen <br>
+
+To do that we need to:
+- Select add a file.
+- Create the campaign with the file.
+- The image of the preview with the file will be add in the database.
+
+### 4.8. Display on the screen the campaign
+
+The user will be able to display on the screen the campaign <br>
+
+To do that we need to:
+- Create your campaign.
+- When your campaign is created, at the date select by the user the campaign it's display on the screen.
 
 ## 6. Personas:
 
