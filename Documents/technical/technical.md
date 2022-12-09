@@ -124,15 +124,15 @@ We need a system of authentification to secure the access of the campaign's crea
 For the display each screen is related to a subdomain, when we type the subdomain address in the browser, the routage of the software is redirecting the app to a specific html page which is dedicated to display the informations that we want.
 
 **Login page:**
-We create a signin and signup with **Firebase** authentification.
+We create a signin and signup with **Firebase** authentification because it is simple and secure.
 
-**Persistance of the login:**<br>
+**Persistance of the login:**
 We used the solution provided by **Firebase** to keep the user logged when he navigates into the website.
 
 
 **Hosting with Microsoft Azure:**
 Connecting the app with DNS and add subdomains to display the campaigns on several screens.
-We chose Microsoft Azure because it is an advice from ALGOSUP and we needed an hosting for a dynamic website. However, the custom domain from **AZURE** wasn't user friendly, so we bought a custom domain from **IONOS** (1€excl.tax/year the first year) that **JACOBI** will be able to buy if they want to keep it.
+We chose Microsoft Azure because it is an advice from ALGOSUP and we needed an hosting for a dynamic website. However, the custom domain from **AZURE** wasn't user friendly, so we bought a custom domain from **IONOS** (1€excl.tax/year the first year) that **JACOBI** will be able to buy if they want to keep it. The addresses are webjacobi.fr and jacobi-test.azurewebsites.net.
 
 **Managing the data with MongoDB:**
 CRUD : Create, Read, Update and Delete the data.
@@ -171,6 +171,9 @@ console.log(isToday(new Date('2022-01-21')));
 `setTimeout(() => {
   document.location.reload();
 }, 3000);`
+
+**Connecting to subdomain**
+At the beginning we wanted to have ecran1.webjacobi.fr to host the first screen but with Azure we need to have a paid plan for mapping a URL path to a directory. So, our solution is to display webjacobi.fr/ecran1, that is simple.
 
 
 ## c. Release / Roll-out and Deployment Plan
