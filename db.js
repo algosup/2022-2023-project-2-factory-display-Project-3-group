@@ -36,11 +36,24 @@ const testSchema = new mangoose.Schema({
     image: Array
 });
 
+const screenSchema = new mangoose.Schema({
+    name :{
+        type: String,
+        required: true,
+    },
+    description :{
+        type: String,
+        required: true,
+    },
+});
+
 
 export const Test = mangoose.model('jacobiFactory', testSchema, 'test');
 
 
 export const Campaign =  mangoose.model('Campaign', campaignSchema);
+
+export const Screen =  mangoose.model('Screen', screenSchema);
 
 
 

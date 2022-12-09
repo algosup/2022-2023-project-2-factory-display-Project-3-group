@@ -17,7 +17,7 @@
     <script src="js/layout/header.js" defer></script>
     <script src="js/searchBar.js" defer></script>
     <script src="js/addGroup.js" defer></script>
-    <script src="js/addScreen.js" defer></script>
+    <script src="js/apiScreen.js" defer></script>
 	</head>
 
 
@@ -54,7 +54,7 @@
 
     <h5>Mes <b>écrans</b></h5>
     <a class="btn btn-success" data-bs-toggle="modal" href="#NewScreen" role="button">+ Ajouter écran</a>
-
+    <form method="post" action="/api/NewScreen">
     <div class="modal fade" id="NewScreen" aria-hidden="true" aria-labelledby="NewScreenGroup" tabindex="-1">
      <div class="modal-dialog modal-dialog-centered">
        <div class="modal-content popup">
@@ -73,7 +73,7 @@
          <button id="validerEcran" type="button" value="submit" class="addScreen">Valider</button>
          </div>
        </div>
-       
+      </form>
      </div>
     <input id="searchbar" onkeyup=" searchFunction() " type="text"
         name="search" placeholder="Recherche écrans..">
@@ -146,6 +146,7 @@
 
     <script src="js/logout.js" type="module"></script>
     <script src="js/protect.js" type="module"></script>
+    <script src="js/apiScreen.js" type="module"></script>
       
 	</body>
 </html>

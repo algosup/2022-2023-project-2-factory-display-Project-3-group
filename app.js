@@ -1,6 +1,6 @@
 import express from 'express';
 import './db.js';
-import { Campaign, Test } from './db.js';
+import { Campaign, Screen, Test } from './db.js';
 import multer from 'multer';
 import fs from 'fs';
 import path from 'path';
@@ -65,6 +65,31 @@ app.post('/api/newCampaign/test', upload.single('image'), (req, res, next) => {
 
 app.get("/api/getCampaign", (req, res) => {
     Campaign.find({}, (err, result) => {
+        if (err) {
+            res.status(400).send("unable to load data");
+        } else {
+            return res.json(result);
+        }
+    });
+});
+
+
+
+app.post("/api/getScreen", (req, res) => {
+    const myData = new Screen(req.body);
+    myData.save()
+    .then(item => {
+    res.send("Screen created");
+    })
+    .catch(err => {
+    res.status(400).send("unable to save to database");
+    });
+   });
+
+
+
+app.get("/api/getScreen", (req, res) => {
+    Screen.find({}, (err, result) => {
         if (err) {
             res.status(400).send("unable to load data");
         } else {
