@@ -9,8 +9,8 @@
 - [3. Solutions](#3-solutions)
   - [a. Current or Existing Solution / Design](#a-current-or-existing-solution--design)
   - [b. Suggested or Proposed Solution / Design](#b-suggested-or-proposed-solution--design)
-  - [c. Release / Roll-out and Deployment Plan](#d-release--roll-out-and-deployment-plan)
-  - [d. Alternate Solutions](#e-alternate-solutions)
+  - [c. Release / Roll-out and Deployment Plan](#c-release--roll-out-and-deployment-plan)
+  - [d. Alternate Solutions](#d-alternate-solutions)
 - [4. Further Considerations](#4-further-considerations)
   - [a. Impact on other teams](#a-impact-on-other-teams)
   - [b. Regional considerations](#b-regional-considerations)
@@ -54,24 +54,25 @@ Author: Karine Vinette
 | Wigdet| A widget, active tile, interactive tile, or mini-software is a tool available on an operating system, webpage, or blog. Interactive widgets usually provide information or entertainment.|
 | Hardware| In the field of IT, hardware refers to the physical part of devices, telecommunications devices, storage, and peripherals in general. |
 | Software| The term software is used to describe software that enables your computer to operate and handles data processing. Several software are installed on your device to give commands, so that specific tasks are performed according to their uses.|
-| Database| In the field of IT, |
-| MongoDb| In the field of IT,  |
-| Authentification| In the field of IT,  |
-| Firebase| In the field of IT,  |
-| Hosting| In the field of IT,  |
-| Azure| In the field of IT,  |
-| DNS| In the field of IT,  |
-| Subdomains| In the field of IT,  |
-| Json| In the field of IT,  |
-| Mongoose| In the field of IT,  |
-| Routes| In the field of IT,  |
-| Javascript| In the field of IT,  |
-| NodeJs| In the field of IT,  |
-| Express| In the field of IT,  |
-| Static website| In the field of IT,  |
-| Windows| In the field of IT,  |
-| Linux| In the field of IT,  |
-| Raspberry Pi| In the field of IT,  |
+| Database| A database is information that is set up for easy access, management and updating. Computer databases typically store aggregations of data records or files that contain information, such as sales transactions, customer data, financials and product information. |
+| MongoDb| MongoDB is an open source NoSQL database management program. NoSQL is used as an alternative to traditional relational databases. NoSQL databases are quite useful for working with large sets of distributed data. MongoDB is a tool that can manage document-oriented information, store or retrieve information. |
+| Authentification| In authentication, the user or computer has to prove its identity to the server or client. Usually, authentication by a server entails the use of a user name and password.  |
+| Firebase| Firebase is a set of hosting services for any type of application. It offers to host in NoSQL and in real time databases, content, social authentication, and notifications, or even services, such as a real-time communication server.  |
+| Hosting| Hosting (also known as Web site hosting, Web hosting, and Webhosting) is the business of housing, serving, and maintaining files for one or more Web sites. More important than the computer space that is provided for Web site files is the fast connection to the Internet.  |
+| Azure| Azure is a cloud computing platform and an online portal that allows you to access and manage cloud services and resources provided by Microsoft. These services and resources include storing your data and transforming it, depending on your requirements.  |
+| DNS| The Domain Name System (DNS) is the phonebook of the Internet. Humans access information online through domain names, like nytimes.com or espn.com. Web browsers interact through Internet Protocol (IP) addresses. DNS translates domain names to IP addresses so browsers can load Internet resources.  |
+| Subdomains| A subdomain name is a piece of additional information added to the beginning of a website's domain name. It allows websites to separate and organize content for a specific function — such as a blog or an online store — from the rest of your website.  |
+| Json| This type of file provides a human-readable format for storing and manipulating data when developers build software. It was initially designed based on Javascript object notation but has since grown in popularity, so many different languages are compatible with JSON data  |
+| Mongoose| Mongoose is a Node. js-based Object Data Modeling (ODM) library for MongoDB. It is akin to an Object Relational Mapper (ORM) such as SQLAlchemy for traditional SQL databases. The problem that Mongoose aims to solve is allowing developers to enforce a specific schema at the application layer.  |
+| Routes| The route is a section of Express code that associates an HTTP verb (GET, POST, PUT, DELETE, etc.), an URL path/pattern, and a function that is called to handle that pattern.   |
+| Javascript| Javascript is used by programmers across the world to create dynamic and interactive web content like applications and browsers. JavaScript is so popular that it's the most used programming language in the world, used as a client-side programming language by 97.0% of all websites. |
+| NodeJs| Node. js is a JavaScript runtime environment that achieves low latency and high throughput by taking a “non-blocking” approach to serving requests. In other words, Node. js wastes no time or resources on waiting for I/O requests to return.  |
+| Express| Express is a node js web application framework that provides broad features for building web and mobile applications. It is used to build a single page, multipage, and hybrid web application. It's a layer built on the top of the Node js that helps manage servers and routes.  |
+| Static website| A static website is delivered to a user exactly the way it's stored. That means that nothing on the page will change by the user or even the site administrator unless there's a redesign of the site, or the site administrator goes directly into the code to change it.
+Dynamic website | Dynamic Website is a website containing data that can be mutable or changeable. It uses client-side or server scripting to generate mutable content. Like a static website, it also contains HTML data. Dynamic websites are those websites that changes the content or layout with every request to the webserver.  |
+| Windows| Windows is an operating system designed by Microsoft. The operating system is what allows you to use a computer. Windows comes preloaded on most new personal computers (PCs), which helps to make it the most popular operating system in the world.  |
+| Linux| Linux® is an open source operating system (OS). An operating system is the software that directly manages a system's hardware and resources, like CPU, memory, and storage. The OS sits between applications and hardware and makes the connections between all of your software and the physical resources that do the work.  |
+| Raspberry Pi| The Raspberry Pi is a low cost, credit-card sized computer that plugs into a computer monitor or TV, and uses a standard keyboard and mouse. It is a capable little device that enables people of all ages to explore computing, and to learn how to program in languages like Scratch and Python.  |
 
 
 
