@@ -37,7 +37,7 @@ Author: Karine Vinette
 | Technical Leader  | [Karine VINETTE](https://github.com/KarineVinette)                                                                                                                                                                                           |
 | Program Manager   | [Robin DEBRY](https://github.com/robin-debry)                                                                                                                                                                                           |
 | Software Engineer | [Thomas PLANCHARD](https://github.com/thomas-planchard)                                                                                                                                                                                     |
-| Q&A               | Team's work |
+| Q&A               | [Quentin CLEMENT](https://github.com/Quentin-Clement) |
 
 - Created on: 2022-11-25
 
@@ -103,7 +103,7 @@ Their product is one exemple to our solution. The difference is that we need to 
 
 **The hardware:**
 We want to use a mini PC Windows with a monitor. It has an easy automatic setup system.
-Why Windows ?<br>
+Why Windows ?
 The Windows software is simply best because of how it has evolved with time. Its security system is state-of-the-art, its user interface allows convenient usage irrespective of the device that you are using it on. The only thing that will pinch some is its price.<br>
 In second choice, we can use a Linux technology, it wasn't our first choice because their leader product Raspberry Pi is not available for the moment, but we can use RogPi, a similar product.
 Linux offers great speed and security, on the other hand, Windows offers great ease of use, so that even non-tech-savvy people can work easily on personal computers. Linux is employed by many corporate organizations as servers and OS for security purpose while Windows is mostly employed by business users and gamers.
@@ -117,14 +117,14 @@ Use Windows startup.
 We have to make an intranet for **JACOBI**.
 How to do it ?
 To display a website on the browser, we have to use web's technologies like Javascript or Nodejs if we want a compiled language more powerful.<br>
-We will use the framework **Express** from NodeJs.<br>
+We will use the framework **Express** from NodeJs. (We studied this solution with our teacher in computer science and we wanted to apply our new skills.)<br>
 We will use a database to store the campaigns on the cloud to be accessible from all pages of the app.<br>
 We chose MongoDb because it is easy to use.<br>
-We need a system of authentification to secure the access of the campaign's creation. We will use firebase authentification because it is easy to use and powerfull. MongoDb doesn't provide a specific tool of authentification. We could have used Firebase database but it is not user friendly. We have to host the website on the cloud to be accessible from whatever browser, we choose to use Azure because it is the advice of **ALGOSUP**, we could have choose firebase hosting but it is for static website and ours is dynamic because we use NodeJS.<br>
+ MongoDb doesn't provide a specific tool of authentification. We could have used Firebase database but it is not user friendly. We have to host the website on the cloud to be accessible from whatever browser.<br>
 For the display each screen is related to a subdomain, when we type the subdomain address in the browser, the routage of the software is redirecting the app to a specific html page which is dedicated to display the informations that we want.
 
 **Login page:**
-We create a signin and signup with **Firebase** authentification because it is simple and secure.
+We create a signin and signup with **Firebase** authentification because it is simple and secure. We want that only someone who has a login can create a new account.
 
 **Persistance of the login:**
 We used the solution provided by **Firebase** to keep the user logged when he navigates into the website.
@@ -136,7 +136,7 @@ We chose Microsoft Azure because it is an advice from ALGOSUP and we needed an h
 
 **Managing the data with MongoDB:**
 CRUD : Create, Read, Update and Delete the data.
-In newCampaign.html, we take the informations of the campaign that the company wants to display.
+In newCampaign.html, we take the informations of the campaign that the company wants to display. We want a pop-up with the confirm method to valide the creation of a new campaign.
 In campaign.html, we display the list of campaigns that are stored in our database.
 In these campaigns, we are storing videos, images and pdfs.
 
@@ -240,7 +240,7 @@ Coding the backend
 Preparation of the presentation
 
 # 6. End Matter
-
+ The addresses are webjacobi.fr and jacobi-test.azurewebsites.net.
 
 ## a. References
 [MongoDb](https://www.mongodb.com/fr-fr)<br>
