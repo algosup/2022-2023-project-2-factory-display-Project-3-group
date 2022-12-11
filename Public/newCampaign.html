@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="CSS/newCampaign.css">
     <link rel="stylesheet" href="CSS/navbar.css">
     <script src="js/layout/header.js" defer></script>
-    <script src="js/newcampaign.js" defer></script>
+    <script src="js/newcampaign.js" ></script>
 	</head>
 
 
@@ -32,7 +32,7 @@
           <h5 class="card-title">Informations sur la campagne</h5><br>
           <p class="card-text">Nom de la campagne*</p>
           <form method="post" action="/api/newCampaign/test" enctype="multipart/form-data">
-          <input id="title" name = "title" type="text" class="form-control" placeholder="Nom de la campagne" aria-label="Nom de la campagne" required>
+          <input id="title" name = "title" type="text" class="form-control" placeholder="Nom de la campagne" aria-label="Nom de la campagne" required oninvalid="this.setCustomValidity('Entrez un nom de campagne')" >
         </div>
         <div class="card-body">
            
