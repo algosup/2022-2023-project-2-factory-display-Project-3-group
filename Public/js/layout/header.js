@@ -15,7 +15,7 @@ printHeader.innerHTML = `<nav class="navbar navbar-expand-lg bg-light">
         <a class="nav-link active" aria-current="page" href="accueil.html">Accueil</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="campaign.html">Campagne</a>
+        <a class="nav-link" href="campaign.html">Campagnes</a>
         <li class="nav-item">
           <a class="nav-link" href="addScreen.html">Ecrans</a>
         </li>
