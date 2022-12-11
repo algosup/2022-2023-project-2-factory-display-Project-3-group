@@ -126,7 +126,7 @@ h1{
   }
   
   input[type="submit"] {
-    width: 120px;
+    width: 80%;
     height: 32px;
     margin-top: 5%;
     background: #FF700F;
