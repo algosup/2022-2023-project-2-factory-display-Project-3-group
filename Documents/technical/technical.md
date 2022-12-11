@@ -175,6 +175,8 @@ console.log(isToday(new Date('2022-01-21')));
 **Connecting to subdomain**
 At the beginning we wanted to have ecran1.webjacobi.fr to host the first screen but with Azure we need to have a paid plan for mapping a URL path to a directory. So, our solution is to display webjacobi.fr/ecran1, that is simple.
 
+**Design**
+We add a favicon from the jacobi's logo.
 
 ## c. Release / Roll-out and Deployment Plan
 
