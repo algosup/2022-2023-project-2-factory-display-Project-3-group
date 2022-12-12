@@ -1,6 +1,6 @@
 import express from 'express';
 import './db.js';
-import { Campaign, Screen } from './db.js';
+import { Campaign, Screen, ScreenDisplay } from './db.js';
 import multer from 'multer';
 import fs from 'fs';
 import path from 'path';
@@ -40,6 +40,10 @@ app.post('/api/newCampaign', upload.single('image'), (req, res, next) => {
         endDate: req.body.end,
        
     }
+
+    const obj2 = {
+        ofString: "<H1>HELLO WORLD</H1>"
+    }
     Campaign.create(obj, (err, item) => {
         if (err) {
             console.log(err);
@@ -47,7 +51,15 @@ app.post('/api/newCampaign', upload.single('image'), (req, res, next) => {
         else {
             item.save();
             fsExtra.emptyDirSync("./Public/img/uploads/");
-            res.redirect('/accueil.html');
+            ScreenDisplay.create(obj2, (err, item) => {
+                if (err) {
+                    console.log(err);
+                    }
+                    else {
+                        item.save();
+                        res.redirect('/accueil.html');
+                    }
+            });
             
     };
    });
@@ -64,7 +76,15 @@ app.get("/api/getCampaign", (req, res) => {
     });
 });
 
-
+app.post("api/getDisplayScreen" , (req, res) => {
+    ScreenDisplay.find({}, (err, result) => {
+        if (err) {
+            res.status(400).send("unable to load data");
+        } else {
+            return res.json(result);
+        }
+    });
+});
 
 app.post("/api/getScreen", (req, res) => {
     const obj = {

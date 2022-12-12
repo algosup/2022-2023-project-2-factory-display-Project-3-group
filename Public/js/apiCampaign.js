@@ -2,15 +2,6 @@ const response = await fetch('/api/getCampaign');
 const campaigns = await response.json();
 
 
-function convertBufferToBase64(buffer) {
-  let binaryStr = '';
-  const byteArray = new Uint8Array(buffer);
-  for (let i = 0; i < byteArray.byteLength; i++) {
-    binaryStr += String.fromCharCode(bytes[i]);
-  }
-  return btoa(binaryStr);
-}
-
 const campaignElem = document.getElementById('table');
 
 for (let i = 0 ; i < campaigns.length; i++) {
