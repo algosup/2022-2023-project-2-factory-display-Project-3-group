@@ -1,0 +1,53 @@
+
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .form {
+    width: 600px;
+    background:white;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .form ol {
+    padding-left: 0;
+  }
+  
+  .form li, div > p {
+    background: #ccc;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    list-style-type: none;
+  }
+  
+  .form img {
+    height: 64px;
+    order: 1;
+  }
+  
+  .form p {
+    line-height: 32px;
+    padding-left: 10px;
+  }
+  
+  .form label {
+    background-color: #FF700F;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    height: auto;
+    color: white;
+  }
+  
+  .form label:hover {
+    background-color: blue;
+    color: white;
+  }
+  
+  .form label:active {
+    background-color: #FF700F;
+    color: white;
+  }
+  
