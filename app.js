@@ -67,13 +67,18 @@ app.get("/api/getCampaign", (req, res) => {
 
 
 app.post("/api/getScreen", (req, res) => {
-    const myData = new Screen(req.body);
-    myData.save()
-    .then(item => {
-    res.send("Screen created");
-    })
-    .catch(err => {
-    res.status(400).send("unable to save to database");
+    const obj = {
+        name: req.body.name,
+        adresse: req.body.adresse,
+    }
+    Screen.create(obj, (err, item) => {
+        if (err) {
+            console.log(err);
+        }
+        else {
+            item.save();
+            res.redirect('/accueil.html');
+        };
     });
    });
 
