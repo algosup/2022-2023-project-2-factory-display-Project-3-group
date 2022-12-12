@@ -21,7 +21,7 @@ const campaignSchema = new mangoose.Schema({
         type: String,
         required: true,
     },
-    //screenGroup: String, 
+    screenGroup: {type: String, default: null},
     startDate: { type: Date, default: Date.now },
     endDate: { type: Date, default: Date.now},
     
@@ -39,12 +39,21 @@ const screenSchema = new mangoose.Schema({
     },
 });
 
+const screenDisplaySchema = new mangoose.Schema({
+    ofString :{
+        type: String,
+        required: true,
+    },
+});
+
 
 
 
 export const Campaign =  mangoose.model('Campaign', campaignSchema);
 
 export const Screen =  mangoose.model('Screen', screenSchema);
+
+export const ScreenDisplay =  mangoose.model('ScreenDisplay', screenDisplaySchema);
 
 
 
