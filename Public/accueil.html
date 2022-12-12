@@ -17,7 +17,7 @@
     <script src="js/layout/header.js" defer></script>
     <script src="js/searchBar.js" defer></script>
     <script src="js/addGroup.js" defer></script>
-    <script src="js/apiScreen.js" defer></script>
+   
 	</head>
 
 
@@ -54,7 +54,6 @@
 
     <h5>Mes <b>écrans</b></h5>
     <a class="btn btn-success" data-bs-toggle="modal" href="#NewScreen" role="button">+ Ajouter écran</a>
-    <form method="post" action="/api/NewScreen">
     <div class="modal fade" id="NewScreen" aria-hidden="true" aria-labelledby="NewScreenGroup" tabindex="-1">
      <div class="modal-dialog modal-dialog-centered">
        <div class="modal-content popup">
@@ -62,6 +61,7 @@
            <h1 class="modal-title fs-5" id="title">Créer un nouvel ecran</h1>
            <span class="deleteMeetingClose" data-bs-toggle="modal">&times;</span>
          </div>
+         <form method="post" action="/api/getScreen">
          <p class="card-text">Nom*</p>
          <input type="text" id="nom" class="form-control" placeholder="Nom de l'écran" aria-label="Nom de l'écran">
          <br>
@@ -70,7 +70,7 @@
          <div id="bouton">
        </div>
          <br>
-         <button id="validerEcran" type="button" value="submit" class="addScreen">Valider</button>
+         <button id="validerEcran" type="button" value="submit" class="btn-btn-info">Valider</button>
          </div>
        </div>
       </form>
@@ -147,7 +147,7 @@
     <script src="js/logout.js" type="module"></script>
     <script src="js/protect.js" type="module"></script>
     <script src="js/apiScreen.js" type="module"></script>
-      
+    
 	</body>
 </html>
 

@@ -1,4 +1,4 @@
-const response = await fetch('/api/getScreen');
+const response = await fetch('/api/getScreen/find');
 const screens = await response.json();
 
 const screenElem = document.getElementById('table');
@@ -15,6 +15,5 @@ for (let i = 0 ; i < screens.length; i++) {
   screenRow.append(screenTh);
   screenRow.append(screenName);
   screenRow.append(screenAdress);
-
   screenElem.append(screenRow); // append the row to the table
 };
