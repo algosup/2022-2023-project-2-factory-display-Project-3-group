@@ -1,6 +1,16 @@
 const response = await fetch('/api/getCampaign');
 const campaigns = await response.json();
 
+
+function convertBufferToBase64(buffer) {
+  let binaryStr = '';
+  const byteArray = new Uint8Array(buffer);
+  for (let i = 0; i < byteArray.byteLength; i++) {
+    binaryStr += String.fromCharCode(bytes[i]);
+  }
+  return btoa(binaryStr);
+}
+
 const campaignElem = document.getElementById('table');
 
 for (let i = 0 ; i < campaigns.length; i++) {
@@ -8,23 +18,21 @@ for (let i = 0 ; i < campaigns.length; i++) {
   const campaignTh = document.createElement('th');
   const campaignDate = document.createElement('td');
   const campaignTitle = document.createElement('td');
+  const campaignScreen = document.createElement('td');
   const campaignImg = document.createElement('td');
   campaignTh.setAttribute('scope', 'row');
   campaignTh.textContent = i;
+  campaignImg.innerHTML = `<img src="data:image/png;base64,${campaigns[i].img.data}" width="100px">`;
+  campaignScreen.textContent = campaigns[i].screen;
   campaignTitle.textContent = campaigns[i].title;
   campaignDate.textContent = campaigns[i].startDate.split('T')[0];
-  campaignImg.innerHTML = `<img src="data:image/;base64,${campaigns[i].img.data.toString('base64')}" width="200px" >`;
   campaignRow.append(campaignTh);
   campaignRow.append(campaignDate);
   campaignRow.append(campaignTitle);
+  campaignRow.append(campaignScreen);
   campaignRow.append(campaignImg);
-
   campaignElem.append(campaignRow); // append the row to the table
 };
 
-
-
-
- 
 
 

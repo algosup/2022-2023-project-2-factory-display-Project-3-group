@@ -1,9 +1,11 @@
 import express from 'express';
 import './db.js';
-import { Campaign, Screen, Test } from './db.js';
+import { Campaign, Screen } from './db.js';
 import multer from 'multer';
 import fs from 'fs';
 import path from 'path';
+import * as fsExtra from "fs-extra";
+
 
 const app = express();
 const port = 3000;
@@ -14,7 +16,7 @@ app.use(express.static('./Public'));
 
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
-        cb(null, './Public/img/campaigns');
+        cb(null, './Public/img/uploads');
     },
     filename: function (req, file, cb) {
         cb(null, file.originalname);
@@ -24,43 +26,31 @@ const storage = multer.diskStorage({
 const upload = multer({ storage: storage });
 
 
-app.post("/api/newCampaign", (req, res) => {
-    const myData = new Campaign(req.body,);
-    myData.save()
-    .then(item => {
-    res.send("Campaign created");
-    })
-    .catch(err => {
-    res.status(400).send("unable to save to database");
-    });
-   });
 
 
-
-app.post('/api/newCampaign/test', upload.single('image'), (req, res, next) => {
- 
-    const obj = new Campaign({
+app.post('/api/newCampaign', upload.single('image'), (req, res, next) => {
+    const obj = {
         title: req.body.title,
         img: {
-            data: fs.readFileSync(path.join('Public/img/campaigns/' + req.file.filename)),
+            data: fs.readFileSync(path.join('./Public/img/uploads/' + req.file.filename)),
             contentType: 'image/png'
         },
         screen: req.body.screen,
         startDate: req.body.start,
         endDate: req.body.end,
        
-
-    })
-        obj.save()
-        .then(item => {
-            res.send("Campaign created");
-        })
-        .catch(err => {
-            res.status(400).send("unable to save to database");
-    });
+    }
+    Campaign.create(obj, (err, item) => {
+        if (err) {
+            console.log(err);
+        }
+        else {
+            item.save();
+            fsExtra.emptyDirSync("./Public/img/uploads/");
+            
+    };
    });
-
-
+});
 
 
 app.get("/api/getCampaign", (req, res) => {
@@ -88,7 +78,7 @@ app.post("/api/getScreen", (req, res) => {
 
 
 
-app.get("/api/getScreen", (req, res) => {
+app.get("/api/getScreen/find", (req, res) => {
     Screen.find({}, (err, result) => {
         if (err) {
             res.status(400).send("unable to load data");
