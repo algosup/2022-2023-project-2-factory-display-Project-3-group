@@ -16,17 +16,16 @@ printHeader.innerHTML = `<nav class="navbar navbar-expand-lg bg-light">
       </li>
       <li class="nav-item">
         <a class="nav-link" href="campaign.html">Campagnes</a>
-        <li class="nav-item">
-          <a class="nav-link" href="addScreen.html">Ecrans</a>
         </li>
+        <li class="nav-item">
+        <a class="nav-link" href="newAccount.html">Créer un compte</a>
         </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           Mon Espace
         </a>
         <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="../account/my_account.html">Mon compte</a></li>
-          <li><a class="dropdown-item" href="newAccount.html">Créer un compte</a></li>
+          <li><a class="dropdown-item" href="#">Mon compte</a></li>
           <li><a class="dropdown-item" id="logout">Déconnexion</a></li>
         </ul>
       </li>

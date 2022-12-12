@@ -47,6 +47,7 @@ app.post('/api/newCampaign', upload.single('image'), (req, res, next) => {
         else {
             item.save();
             fsExtra.emptyDirSync("./Public/img/uploads/");
+            res.redirect('/accueil.html');
             
     };
    });

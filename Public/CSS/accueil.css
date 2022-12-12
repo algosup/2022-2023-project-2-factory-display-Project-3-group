@@ -10,6 +10,10 @@
     background-color: black;
 }
 
+.btn-success:hover{
+    background-color: #FF700F;
+}
+
 
  h5{
     padding-left: 100px;
@@ -17,7 +21,7 @@
  } 
   
 .btn{
-    margin-left: 1080px;
+    margin-left: 80%;
     margin-top: -45px;
 
 }
@@ -25,10 +29,7 @@ img{
     margin-left: 100px;
     margin-top: 50px;
 }
-.btn-primary{
-    margin-left: 1057px;
-    margin-top: 50px;
-}
+
 p{
     margin-left: 20px;
 }
@@ -53,7 +54,7 @@ p{
     }
 } 
 #searchbar{
-    margin-left: 100px;
+    margin-left: 6%;
     padding:15px;
     border-radius: 10px;
   }
@@ -90,7 +91,7 @@ p{
 
  table
 {
-    margin-left: 100px
+    margin-left: 6%
     
     
 }
@@ -213,7 +214,7 @@ a {
     
 }
 .delete{
-    margin-top:10px;
+    margin-top:1%;
 }
 
 #add{
