@@ -29,13 +29,13 @@ const campaignSchema = new mangoose.Schema({
  
 
 const screenSchema = new mangoose.Schema({
-    name :{
+    name:{
         type: String,
-        // required: true,
+        required: true,
     },
-    adresse :{
+    adresse:{
         type: String,
-        // required: true,
+        required: true,
     },
 });
 

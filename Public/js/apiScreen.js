@@ -8,8 +8,8 @@ for (let i = 0 ; i < screens.length; i++) {
   const screenTh = document.createElement('th');
   const screenName = document.createElement('td');
   const screenAdress = document.createElement('td');
-  screenTh.setAttribute('scope', 'row');
-  screenTh.textContent = i;
+  
+  screenTh.innerHTML = '<input type="checkbox" name="select" value="' + screens[i].name + '"/>';
   screenName.textContent = screens[i].name;
   screenAdress.textContent = screens[i].adresse;
   screenRow.append(screenTh);
@@ -17,3 +17,14 @@ for (let i = 0 ; i < screens.length; i++) {
   screenRow.append(screenAdress);
   screenElem.append(screenRow); // append the row to the table
 };
+
+$(document).ready(function() {
+    $(".delete").click(function() {
+        $("table.testGroup").find('input[name="select"]').each(function() {
+            if ($(this).is(":checked")) {
+                $(this).parents("table.testGroup tr").remove();
+            }
+        });
+    });
+});
+
