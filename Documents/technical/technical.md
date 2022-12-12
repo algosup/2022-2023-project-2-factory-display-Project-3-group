@@ -136,7 +136,7 @@ We chose Microsoft Azure because it is an advice from ALGOSUP and we needed an h
 
 **Managing the data with MongoDB:**
 CRUD : Create, Read, Update and Delete the data.
-In newCampaign.html, we take the informations of the campaign that the company wants to display. We want a pop-up with the confirm method to valide the creation of a new campaign.
+In newCampaign.html, we take the informations (with a form) of the campaign that the company wants to display. We want a pop-up with the confirm method to valide the creation of a new campaign.
 In campaign.html, we display the list of campaigns that are stored in our database.
 In these campaigns, we are storing videos, images and pdfs.
 
