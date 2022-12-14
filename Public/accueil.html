@@ -16,7 +16,7 @@
     <script src="js/layout/header.js" defer></script>
     <script src="js/layout/favicon.js" defer></script>
     <script src="js/searchBar.js" defer></script>
-    <script src="js/addGroup.js" defer></script>
+    
    
 	</head>
 
@@ -79,11 +79,11 @@
     <br><br>  
     
     <table id="ecranSeul" class="testEcran">
-      <tr>
-          <th>Sélectionner</th>
+      <thead>
+        <tr>
           <th>Nom</th>
           <th>Adresse</th>
-      
+        </tr>
    </table>
    <!-- pop up groupe d'ecrans -->
    <h5>Mes <b> groupe d'écrans</b></h5>
@@ -92,18 +92,19 @@
    <div class="modal fade" id="NewScreenGroup" aria-hidden="true" aria-labelledby="NewScreenGroup" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content popup">
+       <form method="post" action="/api/getGroupScreen"></form>
         <div class="modal-header">
           <h1 class="modal-title fs-5" id="title">Créer un nouveau groupe</h1>
           <span class="deleteMeetingClose" data-bs-toggle="modal">&times;</span>
 
         </div>
         <p class="card-text">Nom*</p>
-        <input type="text" id="nomGroup" class="form-control" placeholder="Nom du groupe" aria-label="Nom du groupe">
+        <input type="text" id="name" name="name" class="form-control" placeholder="Nom du groupe" aria-label="Nom du groupe">
         <br>
-        <p class="card-text">Description</p>
-        <input type="text" id="description" class="form-control" placeholder="Description" aria-label="description">
+        <p class="card-text">Description*</p>
+        <input type="text" id="description" name="description" class="form-control" placeholder="Description" aria-label="description">
         <br>
-        <p class="card-text" id="ecran">Écrans</p>
+        <p class="card-text" id="numberScreen" name="numberScreen">Écrans</p>
        
         <select class="form-select">
         <option>Ecran 1</option>
@@ -117,28 +118,31 @@
         <button id="remove" onclick="removeSelect()">-</button>
       </div>
         <br>
-        <button id="validerEcran" type="button" value="submit" class="addGroup">Valider</button>
+        <button id="validerEcran" type="submit" class="btn-btn-info">Valider</button>
         </div>
         
       </div>
       
-    </div>    
-   <table class="groupeEcran testGroup">
+    </div> 
+  </form>
+   <table id="groupeEcran" class="groupeEcran testGroup">
+    <thead>
     <tr>
-        <th>Sélectionner</th>
         <th>Nom du groupe</th>
         <th>Nombre d'écrans</th>
         <th>Description</th>
     </tr>
     
  </table>
- <button type="button" class="btn btn-success delete">Supprimer une ligne</button>
 </section>
 
     <script src="js/logout.js" type="module"></script>
     <script src="js/protect.js" type="module"></script>
     <script src="js/apiScreen.js" type="module"></script>
     <script src="js/apiAccueil.js" type="module"></script>
+    <script src="js/apiGroup.js" type="module"></script>
+    
+    
     
 	</body>
 </html>

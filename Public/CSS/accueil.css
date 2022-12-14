@@ -99,7 +99,7 @@ td, th /* Mettre une bordure sur les td ET les th */
     padding: 1%;
     text-align: left;
 }
-th
+thead
 {
     background-color: #FF700F;
     color: black;

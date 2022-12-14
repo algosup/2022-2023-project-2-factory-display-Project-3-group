@@ -46,6 +46,24 @@ const screenDisplaySchema = new mangoose.Schema({
     },
 });
 
+const groupScreenSchema = new mangoose.Schema({
+    name:{
+        type: String,
+        required: true,
+    },
+
+    numberScreen:{
+        type: Number,
+        required: true,
+    },
+    description:{
+        type: String,
+        required: true,
+    },
+
+});
+
+
 
 
 
@@ -55,6 +73,6 @@ export const Screen =  mangoose.model('Screen', screenSchema);
 
 export const ScreenDisplay =  mangoose.model('ScreenDisplay', screenDisplaySchema);
 
-
+export const GroupScreen =  mangoose.model('GroupScreen', groupScreenSchema);
 
 

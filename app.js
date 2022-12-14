@@ -1,6 +1,6 @@
 import express from 'express';
 import './db.js';
-import { Campaign, Screen, ScreenDisplay } from './db.js';
+import { Campaign, GroupScreen, Screen, ScreenDisplay } from './db.js';
 import multer from 'multer';
 import fs from 'fs';
 import path from 'path';
@@ -119,11 +119,32 @@ app.post("/api/createScreen",(req,res) => {
     fs.writeFile('Public/Screen/'+nameScreen+'.html', htmlContent, (error) => { /* handle error */ });
 });
 
+app.post("/api/getGroupScreen", (req, res) => {
+    const obj = {
+        name: req.body.name,
+        numberScreen: req.body.numberScreen,
+        description: req.body.description,
+    }
+    GroupScreen.create(obj, (err, item) => {
+        if (err) {
+            console.log(err);
+        }
+        else {
+            item.save();
+            res.redirect('/accueil.html');
+        };
+    });
+   });
 
-
-
-
-
+app.get("/api/getGroupScreen/find", (req, res) => {
+    GroupScreen.find({}, (err, result) => {
+        if (err) {
+            res.status(400).send("unable to load data");
+        } else {
+            return res.json(result);
+        }
+    });
+});
 
 
 app.listen(port, () => {
