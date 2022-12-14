@@ -4,6 +4,7 @@
   "description": "",
   "main": "app.js",
   "type": "module",
+  "start": "node app.js",
   "scripts": {},
   "repository": {
     "type": "git",
