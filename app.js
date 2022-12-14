@@ -114,7 +114,10 @@ app.get("/api/getScreen/find", (req, res) => {
     });
 });
 
-
+app.post("/api/createScreen",(req,res) => {
+    const nameScreen = req.body.name;
+    fs.writeFile('Public/Screen/'+nameScreen+'.html', htmlContent, (error) => { /* handle error */ });
+});
 
 
 app.listen(port, () => {
