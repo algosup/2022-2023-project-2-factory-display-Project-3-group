@@ -78,9 +78,21 @@ app.post("/api/implementScreen", (req, res) => {
             console.log(err);
         }
         else {
-            const nameScreen = req.body.name;
-            fs.writeFile('Public/Screen/'+nameScreen+'.html', `<!DOCTYPE html><html lang='en'><head><META HTTP-EQUIV='refresh' CONTENT='60'><meta charset='UTF-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><meta name='viewport'content='width=device-width, initial-scale=1.0'><title>Document</title>
+            let nameScreen = req.body.name;
+            nameScreen = nameScreen.toString();
+
+            fs.writeFile('Public/Screen/'+nameScreen+'.html', `<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><meta name='viewport'content='width=device-width, initial-scale=1.0'><title>Document</title>
             </head>
+            <style>
+                img{
+                border:0;
+                margin:0;
+                position: fixed; 
+                top: 0; 
+                left: 0;
+                min-height: 100%;
+                }
+            </style>
             <body>
                 <div class='container'>
                 </div>
@@ -91,24 +103,51 @@ app.post("/api/implementScreen", (req, res) => {
             
             
             const container = document.querySelector('.container');
-            const todayDate = new Date();
+            const campaignImg = document.createElement('div');
             
-            for (let i = 0 ; i < campaigns.length; i++) {
-              const campaignImg = document.createElement('div');
-            //   console.log(campaigns[i].startDate.split('T')[1].split(':')[0])  // HOUR DB
-            //   console.log(campaigns[i].startDate.split('T')[1].split(':')[1])  // MINUTE DB 
-            //   console.log(campaigns[i].startDate.split('T')[0].split('-')[2])  // day
-            //     console.log(todayDate.getHours())   // Hour
-            //     console.log(todayDate.getDate())    // DAY
-            //     console.log(todayDate.getMinutes())   // MINUTE
-                if(campaignImg[i].screen == ${nameScreen} && (campaigns[i].startDate.split('T')[1].split(':')[0])+1 == todayDate.getHours() && campaigns[i].startDate.split('T')[1].split(':')[1] == todayDate.getMinutes() && campaigns[i].startDate.split('T')[0].split('-')[2] == todayDate.getDate()){
-                    campaignImg.innerHTML = ``<img src="data:image/png;base64,${campaigns[i].img.data}" width="100%">``;
+            function timeperiod(startdate,enddate){ // returns the time in seconds between the start and end date
+                const mounth = startdate.split('T')[0].split('-')[1];
+                const day = startdate.split('T')[0].split('-')[2];
+                const hour = startdate.split('T')[1].split(':')[0];
+                const minute = startdate.split('T')[1].split(':')[1];
+                const mounth2 = enddate.split('T')[0].split('-')[1];
+                const day2 = enddate.split('T')[0].split('-')[2];
+                const hour2 = enddate.split('T')[1].split(':')[0];
+                const minute2 = enddate.split('T')[1].split(':')[1];
+                let mounthDiff = mounth2 - mounth;
+                let dayDiff = day2 - day;
+                let hourDiff = hour2 - hour;
+                let minuteDiff = minute2 - minute;
+            
+                mounthDiff = mounthDiff * 30 * 24 * 60 * 60;
+                dayDiff = dayDiff * 24 * 60 * 60;
+                hourDiff = hourDiff * 60 * 60;
+                minuteDiff = minuteDiff * 60;
+            
+                return mounthDiff + dayDiff + hourDiff + minuteDiff;
+            
+            }
+            const sleep = ms => new Promise(r => setTimeout(r, ms));
+            
+            
+            let todayDate = new Date();
+            
+            for (let i= 0; i < campaigns.length; i++) {
+            
+                if(campaigns[i].screen==`+"'"+nameScreen+"'"+` &&campaigns[i].startDate.split('T')[1].split(':')[0] == todayDate.getUTCHours() && campaigns[i].startDate.split('T')[1].split(':')[1] == todayDate.getMinutes() && campaigns[i].startDate.split('T')[0].split('-')[2] == todayDate.getUTCDate()){
+                    campaignImg.innerHTML = `+"`"+`<img src="data:image/png;base64,`+'${campaigns[i].img.data}'+`">`+"`"+`;
                     container.append(campaignImg); // append the img to the container
+                    await sleep(timeperiod(campaigns[i].startDate,campaigns[i].endDate)*1000)
+                    document.location.reload(true);
+            
                 }
-                else
-                campaignImg.innerHTML = ``<h1>NO CAMPAIGN</h1>``;
-                container.append(campaignImg); // append the error to the container
+                
             };
+            
+            setTimeout(function(){ 
+                        document.location.reload(true);
+                    }, 10000);
+            
             </script>
             </html>`, (error) => { /* handle error */ });
             item.save();
@@ -116,7 +155,6 @@ app.post("/api/implementScreen", (req, res) => {
         };
     });
    });
-
 
 
 app.get("/api/getScreen/find", (req, res) => {
