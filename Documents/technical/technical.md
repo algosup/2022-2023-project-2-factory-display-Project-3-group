@@ -1,3 +1,6 @@
+<h1 style="text-align: center">Project 1 smart signage project 3 group - Technical Specifications</h1>
+
+
 - [1. Front matter](#1-front-matter)
 - [2. Introduction](#2-introduction)
   - [a. Overview](#a-overview)
