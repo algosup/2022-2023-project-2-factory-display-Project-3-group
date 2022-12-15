@@ -34,7 +34,7 @@
           <h5 class="card-title">Informations sur la campagne</h5><br>
           <p class="card-text">Nom de la campagne*</p>
           <form method="post" action="/api/newCampaign" enctype="multipart/form-data">
-          <input id="title" name = "title" type="text" class="form-control" placeholder="Nom de la campagne" aria-label="Nom de la campagne" required oninvalid="this.setCustomValidity('Entrez un nom de campagne')" >
+          <input id="title" name = "title" type="text" class="form-control" placeholder="Nom de la campagne" aria-label="Nom de la campagne" required>
         </div>
         <div class="card-body">
            
@@ -57,12 +57,12 @@
                 <option>Disabled select</option>
               </select><br>
             <p class="card-text">Début de diffusion*</p>
-            <input type="date" class="form-control" name="start" placeholder="date" aria-label="Date">
-            <input type="time" class="form-control" placeholder="time" aria-label="Time">
+            <input type="date" class="form-control" name="start" placeholder="date" aria-label="Date"required>
+            <input type="time" class="form-control" placeholder="time" aria-label="Time"required>
               <br>
             <p class="card-text">Fin de diffusion*</p>
-            <input type="date" class="form-control" name="end" placeholder="date" aria-label="Date">
-            <input type="time" class="form-control" placeholder="time" aria-label="Time">
+            <input type="date" class="form-control" name="end" placeholder="date" aria-label="Date"required>
+            <input type="time" class="form-control" placeholder="time" aria-label="Time"required>
           </div><br>
           <button id="valider" type="submit" class="btn-btn-info" >Valider</button>
 

@@ -29,6 +29,7 @@
         <div class="card-body">
           <h5 class="card-title">Informations sur la campagne</h5><br>
           <p class="card-text">Nom de la campagne*</p>
+          <form method="post" action="/api/newCampaign" enctype="multipart/form-data">
           <input id="title" type="text" class="form-control" placeholder="Nom de la campagne" aria-label="Nom de la campagne" required>
         </div>
         <div class="card-body">
@@ -52,13 +53,14 @@
                 <option>Disabled select</option>
               </select><br>
             <p class="card-text">Début de diffusion*</p>
-            <input type="date" class="form-control" placeholder="date" aria-label="Date">
-            <input type="time" class="form-control" placeholder="time" aria-label="Time">
+            <input type="date" class="form-control" placeholder="date" aria-label="Date"required>
+            <input type="time" class="form-control" placeholder="time" aria-label="Time"required>
               <br>
             <p class="card-text">Fin de diffusion*</p>
-            <input type="date" class="form-control" placeholder="date" aria-label="Date">
-             </div><br>
-          <button id="valider" type="button" class="btn-btn-info">Valider</button>
+            <input type="date" class="form-control" placeholder="date" aria-label="Date"required>
+            <input type="time" class="form-control" placeholder="time" aria-label="Time"required>
+          </div><br>
+          <button id="valider" type="submit" class="btn-btn-info">Valider</button>
       </div>
       <div class="card" style="width: 30rem;">
        
@@ -74,51 +76,11 @@
     
       <!-- <br><br><progress value="0" max="100" id="uploader">0%</progress> -->
       <!-- <input type="file" value="upload" id="fileButton" /> -->
-      <input type="file" accept="video/*" id="input-tag"/>
+      <input type="file" accept="video/*" id="input-tag"required/>
     </div>
-      <!-- <script>
-        function DownloadFile() {
-        file = input.files[0];
-        fr = new FileReader();
-        fr.readAsDataURL(file);
-
-        var blob = new Blob([file], { type: "application/mp4" });
-
-        var objectURL = window.URL.createObjectURL(blob);
-        console.log(objectURL);
-
-        if (navigator.appVersion.toString().indexOf('.NET') > 0) {
-            window.navigator.msSaveOrOpenBlob(blob, 'myFileName.mp4');
-        } else {
-            var link = document.createElement('a');
-            link.href = objectURL;
-            link.download = "myFileName.mp4";
-            document.body.appendChild(link);
-            link.click();
-            link.remove();
-        }
+  </form>
+     
        
-       
-     }
-     function Apercu() {
-        var img = document.createElement("img");
-        img.src = "img/video.jpeg";
-        var div = document.getElementById("apercu");
-        img.style.height = '300px';
-        img.style.width = '500px';
-        div.appendChild(img);
-        }
-      </script>
-      
-    <script>
-       $('#changeframe').click(function () {
-          $('#declinedframe').attr('src', '/ecran1/SMART-SIGNAGE.pdf');
-      });
-    </script> -->
-     <input type="time" class="form-control" placeholder="time" aria-label="Time">
-       
-
-   
     <script src="js/protect.js" type="module"></script>
     <script src="js/apiScreenName.js" type="module"></script>
     
