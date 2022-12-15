@@ -1,4 +1,4 @@
-<h1 style="text-align: center">Project 1 smart signage project 4 group - Functional Specifications</h1>
+<h1 style="text-align: center">Project 1 smart signage project 3 group - Functional Specifications</h1>
 
 <details> 
 <summary style="text-decoration: underline; font-size:150%">Table of contents:</summary>

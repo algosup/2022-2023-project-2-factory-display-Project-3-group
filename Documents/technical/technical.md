@@ -1,3 +1,8 @@
+<h1 style="text-align: center">Project 1 smart signage project 3 group - Technical Specifications</h1>
+
+<details> 
+<summary style="text-decoration: underline; font-size:150%">Table of contents:</summary>
+
 - [1. Front matter](#1-front-matter)
 - [2. Introduction](#2-introduction)
   - [a. Overview](#a-overview)
@@ -24,7 +29,9 @@
 - [6. End Matter](#6-end-matter)
   - [a. References](#a-references)
   - [b. Acknowledgement](#b-acknowledgement)
+</details>
 
+--- 
 
 # 1. Front matter
 Factory display - Jacobi Project 3
