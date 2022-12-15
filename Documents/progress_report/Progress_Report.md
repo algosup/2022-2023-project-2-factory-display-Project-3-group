@@ -25,4 +25,13 @@ Week | Date | Title | Stakeholders | Description |
 | <p style="text-decoration: underline">Week 5</p> | Tuesday 12/06/2022 | Technical Meeting | Karine | A meeting with Franck has been made to discuss about changes to apply to the specifications to improve it.
 | |  | "addWidget" Page | Robin | A page to addWidget has been add.
 | |  | "apiCampaign" Page | Thomas | The "apiCampaign" page has been add.
-
+| |  | Product Requirement Specifications | Robin | Product requirement specifications have been add.
+| | Friday 12/09/2022 | Functional Specifications | Robin | The functional specifications are done.
+| <p style="text-decoration: underline">Week 6</p> | Monday 12/12/2022 | Technical Specifications | Karine | The technical specifications are done.
+| |  | Correct Errors | Quentin/Karine | Errors corrected and bug fixed everywhere on the website.
+| | Wednesday 12/14/2022 | Oral Exam Slides | Quentin | The slides for the oral exam are done.
+| | Thursday 12/15/2022 | Test Plan | Quentin | The test plan has been made.
+| |  | Oral Exam Speech | Everyone | We prepared our speech for the oral exam of friday 12/16/2022.
+| |  | Software V1 | Everyone | The V1 of the software is done and ready.
+| | Friday 12/16/2022 | Oral Exam | Everyone | The oral exam with the staff has been done.
+| |  | End of the Jacobi Project | Everyone | We reached the deadline of the project and we will not rework until Jacobi asks us for a V2.

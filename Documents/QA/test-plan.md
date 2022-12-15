@@ -9,12 +9,9 @@
   - [Screens](#screens)
   - [Screen Groups](#screen-groups)
 - [Sign up page](#sign-up-page)
-- [Add widgets page](#add-widgets-page)
-- [New campaign page](#new-campaign-page)
 - [Add widget page](#add-widget-page)
+- [New campaign page](#new-campaign-page)
 - [Add video page](#add-video-page)
-- [Campaigns](#campaigns)
-- [Screens](#screens-1)
 
 ## Login page
 | Test Name | Description | Number of steps |    Steps list     |    Expected    |       Got       |       Priority       | 
@@ -44,7 +41,6 @@
 | "Widgets" button | Open the "Add Widgets" page when  "Widgets" button is clicked.| 1 |    1. Click on the "Widgets" button.     |    You are redirected to the "Add Widgets" page.    |     You are redirected to the "Add Widgets" page.       |     Medium     |     
 | "Importer un fichier" button | Open the "newCampaign" page when "Importer un fichier" button is clicked.  | 1 |    1. Click on the "Importer un fichier" button.   |    You are redirected to the "newCampaign" page.   |     You are redirected to the "newCampaign" page.       |     Medium     |   
 | "Importer une vidéo" button | Open the "addVideo" page when  "Importer une vidéo" button is clicked.| 1 |    1. Click on "Importer une vidéo" button.   |    You are redirected to the "addVideo" page.   |     You are redirected to the "addVideo" page.       |     Medium     |
-| Test Name | Description | Number of steps |    Steps list     |    Expected    |       Got       |       Priority       | 
 
 ### Screens
 
@@ -61,7 +57,7 @@
 | Test Name | Description | Number of steps |    Steps list     |    Expected    |       Got       |       Priority       | 
 | --------- | ----------------- | -------------------- |    ---------------     |    --------    |       ---       |       ---       |
 | "Ajouter groupe" button | Open the pop up when  "Ajouter groupe" button is clicked. | 1 |    1. Click on "Ajouter groupe" button.  |    The pop up is displayed.   |     The pop up is displayed.       |     High     |
-| Everything is filled | Create a screen group line. | 3 |    1. Fill the screen group name. <br> 2. Fill the screen group description. <br> 3. Choose the number of screens you want in the group with the "+" and "-" buttons. <br> 4. Choose the screen you want to add to group via the list. <br> 5. Click on the "Valider" button.  |    A line is created in "Mes groupes" with the references of the new screen group.   |     A line is created in "Mes groupes" with the references of the new screen group.       |     Medium     |
+| Everything is filled | Create a screen group line. | 5 |    1. Fill the screen group name. <br> 2. Fill the screen group description. <br> 3. Choose the number of screens you want in the group with the "+" and "-" buttons. <br> 4. Choose the screen you want to add to group via the list. <br> 5. Click on the "Valider" button.  |    A line is created in "Mes groupes" with the references of the new screen group.   |     A line is created in "Mes groupes" with the references of the new screen group.       |     Medium     |
 | Info missing | Some fields are empty | 1 |    1. Click on "Valider" button.  |    Nothing happened.   |     Nothing happened.       |     Medium     |
 | Delete screen group | Delete a screen group line | 2 |    1. Click in the checkbox of the line you want to delete. <br> 2. Click on the "Supprimer une ligne" button.   |    The screen group line is deleted.   |     The screen group line is deleted.       |     Low     |
 
@@ -74,26 +70,25 @@
 | Email already used | Correct name, family, password and confirm password but email adress filled is already used. | 6 |    1. Enter a name. <br> 2. Enter a family name. <br> 3. Enter a wrong email adress. <br> 4. Enter the new password. <br> 5. Confirm new password.  <br> 6. Click on login.     |    A message says "Veuillez utiliser une adresse mail Jacobi." is displayed.    |      A message saying "Veuillez utiliser une adresse mail Jacobi." is displayed.     |     Low     | 
 | Confirm password doesn't match | Correct name, family, email adress, but the password and confirm password doesn't match filled is already used. | 6 |    1. Enter a name <br> 2. Enter a family name. <br> 3. Enter the wanted Jocabi email adress. <br> 4. Enter the new password. <br> 5. Enter a different password that doesn't match.  <br> 6. Click on login.     |    A message saying "Les mots de passe ne correspondent pas." is displayed.    |      A message saying "Les mots de passe ne correspondent pas." is displayed.     |     Medium     |   
 
-## Add widgets page
+## Add widget page
+
+| Test Name | Description | Number of steps |    Steps list     |    Expected    |       Got       |       Priority       |
+| --------- | ----------------- | -------------------- |    ---------------     |    --------    |       ---       |       ---       |
+| Everything correctly filled | Every information about the new widget is filled. | 8 |    1. Enter the campaign name. <br> 2. Choose a screen group or a screen. <br> 3. Choose a campaign type. <br> 4. Choose the date of the beginning of diffusion. <br> 5. Choose the hour of the beginning of diffusion. <br> 6. Choose the date of the end of diffusion. <br> 7. Click on "Choisir un fichier". <br> 8. Click on "Valider".     |    You are redirected to the "Accueil" page. The campaign is stored in firebase and will be displayed at the time chosen. You will see the preview of the campaign on the "Accueil" page.    |     You are redirected to the "Accueil" page. The campaign is stored in firebase and will be displayed at the time chosen. You will see the preview of the campaign on the "Accueil" page.      |     High     | 
+| Info not filled | Info are missing. | 1 |    1. Click on "Valider".    |    You will be redirected to the empty field.    |     You will be redirected to the empty field.      |     Medium     | 
 
 ## New campaign page
 
 | Test Name | Description | Number of steps |    Steps list     |    Expected    |       Got       |       Priority       | 
 | --------- | ----------------- | -------------------- |    ---------------     |    --------    |       ---       |       ---       | 
-| Everything correctly filled | Every information about the new campaign are filled. | 11 |    1. Enter the campaign name. <br> 2. Choose a screen group or a screen. <br> 3. Choose a campaign type. <br> 4. Choose the date of the beginning of diffusion. <br> 5. Choose the hour of the beginning of diffusion. <br> 6. Choose the date of the end of diffusion. <br> 7. Choose the hour of the end of diffusion. <br> 8. Click on "Valider". <br> 9. Click on "Choisir un fichier". <br> 10. Choose the file. <br> 11. Click on "Envoyer le fichier".    |    A message saying "Votre campagne a été créée avec succès." is displayed for 5 seconds then you are redirected to the "Accueil" page. The campaign is stored in firebase and will be displayed at the time chosen.    |     A message saying "Votre campagne a été créée avec succès." is displayed for 5 seconds then you are redirected to the "Accueil" page. The campaign is stored in firebase and will be displayed at the time chosen.      |     High     | 
-| Info not filled | Info are missing. | 1 |    1. Click on "Envoyer le fichier".    |    A message saying "Veuillez remplir ce champ." is displayed under the first empty field.    |     A message saying "Veuillez remplir ce champ." is displayed under the first empty field.      |     Medium     | 
+| Everything correctly filled | Every information about the new campaign is filled. | 8 |    1. Enter the campaign name. <br> 2. Choose a screen group or a screen. <br> 3. Choose a campaign type. <br> 4. Choose the date of the beginning of diffusion. <br> 5. Choose the hour of the beginning of diffusion. <br> 6. Choose the date of the end of diffusion. <br> 7. Choose the hour of the end of diffusion. <br> 9. Click on "Choisir un fichier". <br> 10. Choose the file. <br> 8. Click on "Valider".    |    You are redirected to the "Accueil" page. The campaign is stored in firebase and will be displayed at the time chosen. You will see the preview of the campaign on the "Accueil" page.    |     You are redirected to the "Accueil" page. The campaign is stored in firebase and will be displayed at the time chosen. You will see the preview of the campaign on the "Accueil" page.      |     High     | 
+| Info not filled | Info are missing. | 1 |    1. Click on "Valider".    |    A message saying "Veuillez remplir ce champ." is displayed under the first empty field.    |     A message saying "Veuillez remplir ce champ." is displayed under the first empty field.      |     Medium     | 
 | Wrong file | The file is not a .jpg or .png or .pdf. | 2 |    1. Click on "Choisir un fichier".    |    You should not be able to select another file type than these 3 ones.    |     You can't select another file type than these 3 ones.      |     High     |
-
-## Add widget page
 
 ## Add video page
 
 | Test Name | Description | Number of steps |    Steps list     |    Expected    |       Got       |       Priority       | 
 | --------- | ----------------- | -------------------- |    ---------------     |    --------    |       ---       |       ---       | 
-| Everything correctly filled | Every information about the new campaign are filled. | 11 |    1. Enter the campaign name. <br> 2. Choose a screen group or a screen. <br> 3. Choose a campaign type. <br> 4. Choose the date of the beginning of diffusion. <br> 5. Choose the hour of the beginning of diffusion. <br> 6. Choose the date of the end of diffusion. <br> 7. Choose the hour of the end of diffusion. <br> 8. Click on "Valider". <br> 9. Click on "Choisir un fichier". <br> 10. Choose the file. <br> 11. Click on "Envoyer le fichier".    |    A message saying "Votre campagne a été créée avec succès." is displayed for 5 seconds then you are redirected to the "Accueil" page. The campaign is stored in firebase and will be displayed at the time chosen.    |     A message saying "Votre campagne a été créée avec succès." is displayed for 5 seconds then you are redirected to the "Accueil" page. The campaign is stored in firebase and will be displayed at the time chosen.      |     High     | 
-| Info not filled | Info are missing. | 1 |    1. Click on "Envoyer le fichier".    |    A message saying "Veuillez remplir ce champ." is displayed under the first empty field.    |     A message saying "Veuillez remplir ce champ." is displayed under the first empty field.      |     Medium     | 
-| Wrong file | The file is not a .mp4. | 2 |    1. Click on "Choisir un fichier".    |    You should not be able to select another file type than a .mp4.    |     You can't select another file type than these 3 ones.      |     High     |
-
-## Campaigns
-
-## Screens
+| Everything correctly filled | Every information about the new campaign is filled. | 9 |    1. Enter the campaign name. <br> 2. Choose a screen group or a screen. <br> 3. Choose a campaign type. <br> 4. Choose the date of the beginning of diffusion. <br> 5. Choose the hour of the beginning of diffusion. <br> 6. Choose the date of the end of diffusion. <br> 7. Choose the hour of the end of diffusion. <br> 8. Choose the file. <br> 9. Click on "Valider".    |    You are redirected to the "Accueil" page. The campaign is stored in firebase and will be displayed at the time chosen. You will see the preview of the campaign on the "Accueil" page.    |     You are redirected to the "Accueil" page. The campaign is stored in firebase and will be displayed at the time chosen. You will see the preview of the campaign on the "Accueil" page.      |     High     | 
+| Info not filled | Info are missing. | 1 |    1. Click on "Valider".    |    A message saying "Veuillez remplir ce champ." is displayed under the first empty field.    |     A message saying "Veuillez remplir ce champ." is displayed under the first empty field.      |     Medium     | 
+| Wrong file | The file is not a .mp4. | 2 |    1. Click on "Choisir un fichier". <br> 2. Try to chose a file other than a .mp4.    |    You should not be able to select another file type than a .mp4.    |     You can't select another file type than these 3 ones.      |     High     |
