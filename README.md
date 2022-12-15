@@ -15,7 +15,7 @@ The client of this project is the company [**Jacobi**](https://www.jacobi.net/fr
 ## Documents
 
 [Trello](https://trello.com/b/XybHzKnD/retroplanning) <br>
-[Project Requirements Document](Documents/PRD/Product-Requirements-Document) <br>
+[Project Requirements Document](Documents/PRD/Product-Requirements-Document.md) <br>
 [Hardware Choices](Documents/hardware%20choice/hardware_choice.md) <br>
 [Progress Report](Documents/progress_report/Progress_Report.md) <br>
 [Functional Specifications](Documents/functional//Functional.md) <br>
