@@ -1,6 +1,6 @@
 import express from 'express';
 import './db.js';
-import { Campaign, GroupScreen, Screen, ScreenDisplay } from './db.js';
+import { Campaign, GroupScreen, Screen } from './db.js';
 import multer from 'multer';
 import fs from 'fs';
 import path from 'path';
