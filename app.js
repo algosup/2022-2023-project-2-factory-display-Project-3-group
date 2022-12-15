@@ -41,9 +41,6 @@ app.post('/api/newCampaign', upload.single('image'), (req, res, next) => {
        
     }
 
-    const obj2 = {
-        ofString: "<H1>HELLO WORLD</H1>"
-    }
     Campaign.create(obj, (err, item) => {
         if (err) {
             console.log(err);
@@ -51,15 +48,8 @@ app.post('/api/newCampaign', upload.single('image'), (req, res, next) => {
         else {
             item.save();
             fsExtra.emptyDirSync("./Public/img/uploads/");
-            ScreenDisplay.create(obj2, (err, item) => {
-                if (err) {
-                    console.log(err);
-                    }
-                    else {
-                        item.save();
-                        res.redirect('/accueil.html');
-                    }
-            });
+            res.redirect('/accueil.html');
+                
             
     };
    });
@@ -76,17 +66,9 @@ app.get("/api/getCampaign", (req, res) => {
     });
 });
 
-app.post("api/getDisplayScreen" , (req, res) => {
-    ScreenDisplay.find({}, (err, result) => {
-        if (err) {
-            res.status(400).send("unable to load data");
-        } else {
-            return res.json(result);
-        }
-    });
-});
 
-app.post("/api/getScreen", (req, res) => {
+
+app.post("/api/implementScreen", (req, res) => {
     const obj = {
         name: req.body.name,
         adresse: req.body.adresse,
@@ -96,6 +78,39 @@ app.post("/api/getScreen", (req, res) => {
             console.log(err);
         }
         else {
+            const nameScreen = req.body.name;
+            fs.writeFile('Public/Screen/'+nameScreen+'.html', `<!DOCTYPE html><html lang='en'><head><META HTTP-EQUIV='refresh' CONTENT='60'><meta charset='UTF-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><meta name='viewport'content='width=device-width, initial-scale=1.0'><title>Document</title>
+            </head>
+            <body>
+                <div class='container'>
+                </div>
+            </body>
+            <script type="module">
+            const response = await fetch('/api/getCampaign');
+            const campaigns = await response.json();
+            
+            
+            const container = document.querySelector('.container');
+            const todayDate = new Date();
+            
+            for (let i = 0 ; i < campaigns.length; i++) {
+              const campaignImg = document.createElement('div');
+            //   console.log(campaigns[i].startDate.split('T')[1].split(':')[0])  // HOUR DB
+            //   console.log(campaigns[i].startDate.split('T')[1].split(':')[1])  // MINUTE DB 
+            //   console.log(campaigns[i].startDate.split('T')[0].split('-')[2])  // day
+            //     console.log(todayDate.getHours())   // Hour
+            //     console.log(todayDate.getDate())    // DAY
+            //     console.log(todayDate.getMinutes())   // MINUTE
+                if(campaignImg[i].screen == ${nameScreen} && (campaigns[i].startDate.split('T')[1].split(':')[0])+1 == todayDate.getHours() && campaigns[i].startDate.split('T')[1].split(':')[1] == todayDate.getMinutes() && campaigns[i].startDate.split('T')[0].split('-')[2] == todayDate.getDate()){
+                    campaignImg.innerHTML = ``<img src="data:image/png;base64,${campaigns[i].img.data}" width="100%">``;
+                    container.append(campaignImg); // append the img to the container
+                }
+                else
+                campaignImg.innerHTML = ``<h1>NO CAMPAIGN</h1>``;
+                container.append(campaignImg); // append the error to the container
+            };
+            </script>
+            </html>`, (error) => { /* handle error */ });
             item.save();
             res.redirect('/accueil.html');
         };
@@ -114,12 +129,9 @@ app.get("/api/getScreen/find", (req, res) => {
     });
 });
 
-app.post("/api/createScreen",(req,res) => {
-    const nameScreen = req.body.name;
-    fs.writeFile('Public/Screen/'+nameScreen+'.html', htmlContent, (error) => { /* handle error */ });
-});
 
-app.post("/api/getGroupScreen", (req, res) => {
+
+app.post("/api/createGroupScreen", (req, res) => {
     const obj = {
         name: req.body.name,
         numberScreen: req.body.numberScreen,
@@ -145,6 +157,7 @@ app.get("/api/getGroupScreen/find", (req, res) => {
         }
     });
 });
+
 
 
 app.listen(port, () => {
