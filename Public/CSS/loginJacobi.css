@@ -1,0 +1,219 @@
+body{
+    background: linear-gradient(90.55deg, #F9D9C2 0.46%, #CCC9C9 99.51%, #797979 99.52%);
+    height: 100vh;
+    width: 100vw;
+    /* overflow-y: hidden; */
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  height: 50vh;
+  width: 100vw;
+}
+
+@media (max-width: 945px) {
+    #logo2{
+        height: 2vh;
+    }
+}
+    
+
+h1{
+    color: #FF700F;
+    font-family: 'Oswald', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 5vh;
+    font-size: 200%;
+}
+
+#header{
+    background-color: #fff;
+    border: 0.5px solid #3A3A3A;
+}
+
+#logo{
+    margin-left: 1vh;
+    margin-bottom: 2vh;
+    margin-top: 1vh;
+    height: 7vh;
+}
+
+
+#logo2{
+   height: 60vh;
+   margin-top: 7%;
+   margin-right: 12%;
+   z-index: 1;
+}
+
+
+
+*:focus {
+    outline: none;
+  }
+
+
+  #login-box {
+    position: relative;
+    margin-left: 8%;
+    margin-top: 12% ;
+    width: 22%;
+    height: 85%;
+    background: rgb(255, 255, 255);
+    border-radius: 2px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  }
+
+  #signup-box {
+    position: relative;
+    margin-left: 12%;
+    margin-top: 5% ;
+    width: 22%;
+    height: 135%;
+    background: rgb(255, 255, 255);
+    border-radius: 2px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  }
+
+  .left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 40px;
+    width: 300px;
+    height: 400px;
+  }
+
+
+  
+  input[type="text"] {
+    display: block;
+    box-sizing: border-box;
+    margin-bottom: 9%;
+    padding: 4px;
+    width: 220px;
+    height: 32px;
+    border: none;
+    border-bottom: 1px solid #AAA;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    transition: 0.2s ease;
+  }
+
+  input[type="password"] {
+    display: block;
+    box-sizing: border-box;
+    padding: 4px;
+    width: 220px;
+    height: 32px;
+    border: none;
+    border-bottom: 1px solid #AAA;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    transition: 0.2s ease;
+  }
+  
+  input[type="text"]:focus,
+  input[type="password"]:focus {
+    border-bottom: 2px solid #FF700F;
+    color: #FF700F;
+    transition: 0.2s ease;
+  }
+  
+  input[type="submit"] {
+    width: 80%;
+    height: 32px;
+    margin-top: 5%;
+    background: #FF700F;
+    border: none;
+    border-radius: 2px;
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: 0.1s ease;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover,
+  input[type="submit"]:focus {
+    opacity: 0.8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    transition: 0.1s ease;
+  }
+  
+  input[type="submit"]:active {
+    opacity: 1;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+    transition: 0.1s ease;
+  }
+  
+
+  .or {
+    position: absolute;
+    top: 180px;
+    left: 280px;
+    width: 40px;
+    height: 40px;
+    background: #DDD;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    line-height: 40px;
+    text-align: center;
+  }
+  
+  .right {
+    position: absolute;
+    top: 0;
+    right: -310px;
+    box-sizing: border-box;
+    padding: 40px;
+    width: 300px;
+    height: 400px;
+  }
+  
+  .right .loginwith {
+    display: block;
+    margin-bottom: 40px;
+    font-size: 28px;
+    color: black;
+    text-align: center;
+  }
+
+  p {
+    font-size: 75%;
+  }  
+
+  #checkbox1, #checkbox2 {
+    box-sizing: border-box;
+    height: 10%;
+    border: none;
+    border-bottom: 1px solid #AAA;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    transition: 0.2s ease;
+    accent-color: #FF700F;
+  }
+
+  .checkbox-div {
+    display: flex;
+    align-items: center;
+    margin-top: 2%;
+    margin-bottom: 9%;
+    margin-left: 2%;
+  }
+
+  .showPassword {
+    margin-bottom: 0%;
+    margin-left: 2%;
+  }
+
+  #password, #password2, #confirm-password {
+    margin-bottom: 0% !important;
+  }

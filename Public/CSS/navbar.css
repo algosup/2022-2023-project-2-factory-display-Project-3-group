@@ -1,0 +1,43 @@
+nav {
+    height: 100%;
+    width: 100%;
+}
+
+
+hr {
+    margin-top: 0%;
+    margin: 0%;
+}
+
+.navbar-nav{
+    padding-left: 40vw;
+    
+} 
+
+.navbar-brand{
+    width: min-content;
+    height: min-content;
+    padding-top: 0px;
+}
+.navbar-nav li a{
+    color: black;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+@media screen and (max-width: 768px){
+    .navbar-nav{
+        padding-left: 0px;
+    }
+} 
+.logo{
+    width: 80px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    float: left;
+}
+

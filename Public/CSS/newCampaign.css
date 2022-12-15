@@ -1,0 +1,52 @@
+.orange{
+    color: #FF700F;
+    word-spacing: 30vw;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+.white{
+    color: white;
+    font-size: 50px;
+
+}
+.bi-bi-trash3{
+color: red;
+float: right;
+}
+.card{
+    display: inline-block;
+    /* aligner haut */
+    vertical-align: top;
+}
+.btn-btn-info{
+    background-color: #FF700F;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    transition-duration: 0.4s;
+}
+    .btn-btn-info:hover{
+        background-color: rgb(33, 33, 225);
+        color: white;
+    }
+
+
+
+video{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.myinput img {
+    height: 100px;
+    order: 1;
+  }
+  

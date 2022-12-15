@@ -1,0 +1,166 @@
+#info-bar {
+    background-color: black;
+    height: 81px;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: 'Oswald', sans-serif;
+}
+
+#text {
+    margin-left: 15%;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+#client {
+    color: #FF700F;
+    font-size: 80%;
+}
+
+#info-h {
+    font-size: 150%;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+#bottom-info {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+#links {
+    width: 25%;
+    margin-left: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    width: 11.5%;
+    margin-left: 85%;
+    margin-top: 5vh;
+    color: white;
+    background-color: #FF700F;
+    font-size: 80%;
+    font-weight: 600;
+}
+
+h1 {
+    margin-top: 2%;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+#title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#second {
+    width: 30%;
+    margin-top: 2%;
+}
+
+#description {
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 20%;
+    background-color: #FF700F;
+    border-radius: 5%;
+}
+
+#status-icon {
+    height: 200%;
+    width: 200%;
+    
+}
+
+.group {
+    display: flex;
+    flex-direction: raw;
+    align-items: baseline;
+    margin-top: 10%;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 100%;
+} 
+
+.i {
+    font-size: 150%;
+}
+
+.column {
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 8%;
+}
+
+#users {
+    display: flex;
+    flex-direction: row;
+    margin-left: 0%;
+}
+
+.h3 {
+    height: 6vh;
+    margin-top: 1%;
+    margin-left: 2%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.subtitle {
+    margin-top: 1%;
+    margin-left: 2%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#add-user {
+    font-size: 50%;
+    margin-left: 3%;
+    color: black;
+}
+
+ul {
+    padding-left: 0%;
+}
+
+#user-cat {
+    margin-left: 2%;
+}
+
+img {
+    margin-top: 3%;
+}
+
+#form 
+{
+    /* display form center*/
+    margin: 0 auto;
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 3%;
+    background-color: #f1f1f1;
+    font-size: 20px;
+
+}

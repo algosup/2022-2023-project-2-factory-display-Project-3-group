@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Nouvelle campagne</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	 <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous" defer ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer ></script>
+    <link rel="stylesheet" href="CSS/newCampaign.css">
+    <link rel="stylesheet" href="CSS/navbar.css">
+    <link rel="stylesheet" href="CSS/addWidget.css">
+    <script src="js/addVideo.js" defer ></script>
+    <script src="js/layout/header.js" defer></script>
+    <script src="js/layout/favicon.js" defer></script>
+
+    <script src="js/addWidget.js" defer></script>
+	</head>
+
+
+	<body onload=showDate();>
+    <header></header>
+      <h3 class="orange">Formulaire Aperçus</h3><br>
+      <div class="card" style="width: 35rem;">
+        <div class="card-body">
+          <h5 class="card-title">Informations sur la campagne</h5><br>
+          <p class="card-text">Nom de la campagne*</p>
+          <form method="post" action="/api/newCampaign" enctype="multipart/form-data">
+          <input id="title" type="text" class="form-control" placeholder="Nom de la campagne" aria-label="Nom de la campagne"required>
+        </div>
+        <div class="card-body">
+           
+            <h5 class="card-title">Lieu de diffusion</h5>
+
+            <p class="card-text" style="color:rgb(178, 175, 175)">Groupe</p>
+            <select id="disabledSelect" class="form-select" style="color:rgb(178, 175, 175)">
+                <option >Disabled select</option>
+              </select><br>
+            <p class="card-text">Ecran*</p>
+            <select id="nameScreen" class="form-select">
+                
+              </select>
+
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Paramètres de diffusion</h5><br>
+            <p class="card-text" style="color:rgb(178, 175, 175)" >Type de campagne</p>
+            <select id="disabledSelect" class="form-select" style="color:rgb(178, 175, 175)">
+                <option>Disabled select</option>
+              </select><br>
+            <p class="card-text">Début de diffusion*</p>
+            <input type="date" class="form-control" placeholder="date" aria-label="Date"required>
+            <input type="time" class="form-control" placeholder="time" aria-label="Time"required>
+              <br>
+            <p class="card-text">Fin de diffusion*</p>
+            <input type="date" class="form-control" placeholder="date" aria-label="Date"required>
+            <input type="time" class="form-control" placeholder="time" aria-label="Time"required>
+          </div><br>
+          <button id="valider" type="submit" class="btn-btn-info">Valider</button>
+      </div>
+      <div onload=showDate(); id="apercu" class="card container" style="width: 52rem;">
+        
+        <span id='horloge' style="background-color:black;color:orange;font-size:60px;"></span>
+        <iframe src="https://fr.euronews.com/embed/timeline" id="news" scrolling="no" frameborder="1" style="border:none; min-height:400px; width:30%; height:20%;"></iframe>
+        <a id="meteo" target="_blank" href="https://hotelmix.fr/weather/vierzon-4824"><img id="meteoWidget" src="https://w.bookcdn.com/weather/picture/4_4824_1_3_137AE9_160_ffffff_333333_08488D_1_ffffff_333333_0_6.png?scode=&domid=581&anc_id=13091"  alt="booked.net"/></a>
+      </div>
+    </form>
+      
+    <script src="js/protect.js" type="module"></script>
+    <script src="js/apiScreenName.js" type="module"></script>
+      
+    
+
+  </body>
+</html>

@@ -1,0 +1,9 @@
+{
+    "liveServer.settings.port": 5503,
+    "appService.defaultWebAppToDeploy": "/subscriptions/feefc65c-95fd-4e51-ac7c-0435bd0dbc37/AppServices/subscriptions/feefc65c-95fd-4e51-ac7c-0435bd0dbc37/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/JacobiFactoryDisplay",
+    "appService.deploySubpath": ".",
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ]
+}

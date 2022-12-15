@@ -1,0 +1,256 @@
+.deleteMeetingClose {
+    font-size: 1.5em;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+
+.btn-success{
+    background-color: black;
+}
+
+.btn-success:hover{
+    background-color: #FF700F;
+}
+
+ h5{
+    padding-left: 100px;
+    padding-top: 80px;
+ } 
+  
+.btn{
+    margin-left: 80%;
+    margin-top: -45px;
+
+}
+img{
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+p{
+    margin-left: 20px;
+}
+@media screen and (max-width: 768px){
+    .navbar-nav{
+        padding-left: 0px;
+    }
+    .logo{
+        margin-left: 0px;
+    }
+    .btn{
+        margin-left: 0px;
+    }
+    .btn-primary{
+        margin-left: 0px;
+    }
+    img{
+        margin-left: 0px;
+    }
+    h5{
+        padding-left: 0px;
+    }
+} 
+#searchbar{
+    margin-left: 6%;
+    padding:15px;
+    border-radius: 10px;
+  }
+
+  input[type=text] {
+     width: 20%;
+     -webkit-transition: width 0.15s ease-in-out;
+     transition: width 0.15s ease-in-out;
+  }
+
+  #NewScreenGroup input[type=text] {
+    width: 40% !important;
+    margin-left:1vh ;
+ }
+
+ #NewScreen input[type=text] {
+    width: 40% !important;
+    margin-left:20vh ;
+ }
+
+  /* When the input field gets focus,
+       change its width to 100% */
+  input[type=text]:focus {
+    width: 40%;
+    transition: 1s;
+  }
+
+ #list{
+   font-size:  1.5em;
+   margin-left: 90px;
+  }
+
+
+
+ table
+{
+    margin-left: 6%
+    
+    
+}
+td, th /* Mettre une bordure sur les td ET les th */
+{
+    padding: 1%;
+    text-align: left;
+}
+thead
+{
+    background-color: #FF700F;
+    color: black;
+    padding: 1%;
+}
+#groupe{
+    margin-left: 1130px;
+}
+.groupeEcran{
+    border: 1px solid #ddd;
+    width: 92%;
+}
+
+.groupeEcran tr{
+    border-bottom: 1px solid #ddd;
+}
+
+#ecranSeul{
+    width: 92%;
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+}
+
+#ecranSeul tr{
+    border-bottom: 1px solid #ddd;
+}
+
+.card-body {
+    height: 500px;
+    width: 500px;
+}
+
+.card-text{
+    margin-left: 170px;
+}
+
+#title{
+    color: rgb(43, 104, 104);
+}
+
+/* Style popoup new campaign */
+
+.modal-dialog-centered2 {
+    display: flex;
+    justify-content: center;
+}
+
+#popup-campaign {
+    height: 350px;
+    width: 350px;
+}
+
+.modal-header2 {
+    height: 20%;
+}
+
+#exampleModalToggleLabel {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#choices {
+    height: 80%;
+    display:flex ;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+.p-btn {
+    width: 19vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    background-color: #FF700F;
+    font-size: 150%;
+}
+
+.p-btn:hover {
+    background-color: #FFA000;
+}
+
+.p-btn:active {
+    background-color: #FF700F;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+#popupNewcampaign h1{
+    text-align: center;
+}
+
+#validerEcran{
+    display: inline-block;
+    background-color: #FF700F;
+    border-radius: 10px;
+    border: 4px double #cccccc;
+    color: #eeeeee;
+    text-align: center;
+    font-size: 14px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-left: 165px;
+    
+}
+.delete{
+    margin-top:1%;
+}
+
+#add{
+    display: inline-block;
+    background-color: #FF700F;
+    border-radius: 10px;
+    border: 4px double #cccccc;
+    color: #eeeeee;
+    text-align: center;
+    font-size: 14px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+#remove{
+    display: inline-block;
+        background-color: #FF700F;
+        border-radius: 10px;
+        border: 4px double #cccccc;
+        color: #eeeeee;
+        text-align: center;
+        font-size: 14px;
+        width: 150px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin-left: 175px;
+}
+a:hover{
+    color:blue;
+
+}
+
+#name
+{
+    margin-left: 140px;
+}
+#adresse{
+    margin-left: 140px;
+}
