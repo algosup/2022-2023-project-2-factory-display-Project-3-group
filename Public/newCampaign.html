@@ -58,11 +58,11 @@
               </select><br>
             <p class="card-text">Début de diffusion*</p>
             <input type="date" class="form-control" name="start" placeholder="date" aria-label="Date">
-            <input type="time" class="form-control" placeholder="time" aria-label="Time">
+            <input type="time" class="form-control" name="start" placeholder="time" aria-label="Time">
               <br>
             <p class="card-text">Fin de diffusion*</p>
             <input type="date" class="form-control" name="end" placeholder="date" aria-label="Date">
-            <input type="time" class="form-control" placeholder="time" aria-label="Time">
+            <input type="time" class="form-control" name="end" placeholder="time" aria-label="Time">
           </div><br>
           <button id="valider" type="submit" class="btn-btn-info" >Valider</button>
 
@@ -77,10 +77,6 @@
         <div id="apercu"  class="card-img-top" alt="..."></div>
         <label for="Select File">Choisir un fichier</label>
         <input type="file" class="form-control"  name="image" accept=".jpg, .jpeg, .png" required>
-        <div class="form-group">
-          <button class="btn-block btn btn-danger">
-            Envoyer le fichier
-          </button>
         </div>
         </form>
 
