@@ -90,7 +90,7 @@ app.post("/api/implementScreen", (req, res) => {
                 position: fixed; 
                 top: 0; 
                 left: 0;
-                min-height: 100%;
+                max-height: 100%;
                 }
             </style>
             <body>
