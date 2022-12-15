@@ -14,10 +14,11 @@ The client of this project is the company [**Jacobi**](https://www.jacobi.net/fr
 
 ## Documents
 
-[Hardware Choices](hardware.md) <br>
-[Functional Specifications](Documents/functional//Functional.md) <br>
 [Trello](https://trello.com/b/XybHzKnD/retroplanning) <br>
+[Project Requirements Document](Documents/PRD/Product-Requirements-Document) <br>
+[Hardware Choices](Documents/hardware%20choice/hardware_choice.md) <br>
 [Progress Report](Documents/progress_report/Progress_Report.md) <br>
-
-<!-- [Technical Specifications](Documents/Technical-Specifications.md) <br> -->
-<!-- [Software Architecture Design](Documents/Software-Architecture-Design.png) <br> -->
+[Functional Specifications](Documents/functional//Functional.md) <br>
+[Technical Specifications](Documents/technical/technical.md) <br>
+[Software Architecture Design](Documents/technical/Jacobi's-Software-Architecture.png) <br>
+[Test Plan](Documents/QA/test-plan.md) <br>
