@@ -112,6 +112,7 @@ If the company asks us, we can make a technology change.
 **Launch the website at the start of the computer:**
 Use Windows startup.
 [Tutorial](https://support.microsoft.com/en-us/windows/add-an-app-to-run-automatically-at-startup-in-windows-10-150da165-dcd9-7230-517b-cf3c295d89dd)
+We want to use a fullscreen to display the webpage of the ecran, so we used a fullscreen plugin available with Firefox browser.
 
 **Software:**
 We have to make an intranet for **JACOBI**.
