@@ -199,6 +199,8 @@ With a phone you can display a subdomain of the campaigns's website easily and w
 
 We have been ask to respect a budget of 1000€ per device. So we did our choice considering this restriction.
 
+hardware_choice.md](https://github.com/algosup/2022-2023-project-2-factory-display-Project-3-group/blob/main/Documents/hardware%20choice/hardware_choice.md)
+
 
 ## d. Security considerations
 
